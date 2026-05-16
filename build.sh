@@ -52,6 +52,7 @@ echo "=== Copying to release/ ==="
 mkdir -p release
 cp "$OUT/NanGuoHeitiPinyin.ttc"  release/
 cp "$OUT/NanGuoSongtiPinyin.ttc" release/
+cp "$OUT"/*.ttf  release/
 
 echo "=== Running tests ==="
 python tests/run_all.py

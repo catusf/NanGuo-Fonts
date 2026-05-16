@@ -2,7 +2,7 @@
 
 This file lists the remaining issues/features need addressing. Whenever an issues is confirmed done/fixed, update the item from [ ] to [X]. Never delete this file.
 
-- [ ] Prepare 2 packages to submit to Google Fonts: one with Heiti fonts (regular+bold variants) and one with Songti fonts (regular+bold variants), and save them to @release folder
+- [X] Prepare 2 packages to submit to Google Fonts: one with Heiti fonts (regular+bold variants) and one with Songti fonts (regular+bold variants), and save them to @release folder
 
 
 - [X] In the Heiti variants, the pinyin overlaps with next character pinyins. Make sure pinyin width do not exceed 98% hanzi width. You can compress pinyins horizontally to fit. But keep vertical heights consistent.
