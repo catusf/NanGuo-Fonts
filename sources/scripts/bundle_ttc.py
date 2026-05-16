@@ -7,11 +7,8 @@ combined collection holds two glyf payloads plus 12 small cmap+name pairs.
 
 Default mode (no arguments) bundles each family's Regular + Bold weights
 into a single .ttc per family:
-    NanGuoSansPinyin.ttc       (6 Regular + 6 Bold = 12 sub-fonts)
-    NanGuoSerifPinyin.ttc      (6 Regular + 6 Bold = 12 sub-fonts)
-
-To bundle a single weight on its own, pass --name (and optionally --suffix):
-    python scripts/bundle_ttc.py --name NanGuoSerifPinyin --suffix -Bold
+    fonts/Heiti/ttc/NanGuoHeitiPinyin.ttc   (6 Regular + 6 Bold = 12 sub-fonts)
+    fonts/Songti/ttc/NanGuoSongtiPinyin.ttc (6 Regular + 6 Bold = 12 sub-fonts)
 """
 from __future__ import annotations
 
@@ -22,22 +19,17 @@ from fontTools.ttLib import TTCollection, TTFont
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
-# Each entry is (family_name, [weight_suffixes_in_order]).
-DEFAULT_FAMILIES: list[tuple[str, list[str]]] = [
-    ("NanGuoHeitiPinyin", ["", "-Bold"]),
-    ("NanGuoSongtiPinyin", ["", "-Bold"]),
+# (family_name, subfamily_dir, [weight_suffixes])
+DEFAULT_FAMILIES: list[tuple[str, str, list[str]]] = [
+    ("NanGuoHeitiPinyin",  "Heiti",  ["", "-Bold"]),
+    ("NanGuoSongtiPinyin", "Songti", ["", "-Bold"]),
 ]
 
 
-def bundle(family: str, suffixes: list[str], out_dir: pathlib.Path,
-           ttc_name: str | None = None) -> pathlib.Path:
-    """Bundle 6 variants per weight (across `suffixes`) into one .ttc.
-
-    The output is `{family}{first-suffix}.ttc` by default; pass `ttc_name`
-    to override (without the .ttc extension).
-    """
+def bundle(family: str, ttf_dir: pathlib.Path, suffixes: list[str],
+           ttc_dir: pathlib.Path, ttc_name: str | None = None) -> pathlib.Path:
     ttf_paths = [
-        out_dir / f"{family}-{i}{suffix}.ttf"
+        ttf_dir / f"{family}-{i}{suffix}.ttf"
         for suffix in suffixes
         for i in range(1, 7)
     ]
@@ -51,8 +43,9 @@ def bundle(family: str, suffixes: list[str], out_dir: pathlib.Path,
     ttc = TTCollection()
     ttc.fonts = fonts
 
-    stem = ttc_name if ttc_name is not None else f"{family}{suffixes[0]}"
-    ttc_path = out_dir / f"{stem}.ttc"
+    ttc_dir.mkdir(parents=True, exist_ok=True)
+    stem = ttc_name if ttc_name is not None else family
+    ttc_path = ttc_dir / f"{stem}.ttc"
     ttc.save(str(ttc_path))
 
     total_ttf = sum(p.stat().st_size for p in ttf_paths)
@@ -69,31 +62,32 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--name", default=None,
-        help="PostScript prefix matching the -1..-6 TTF stems. "
-             "If omitted, every family in DEFAULT_FAMILIES is bundled with "
-             "all its weights combined into one .ttc per family.",
+        help="Family name prefix, e.g. NanGuoHeitiPinyin. "
+             "If omitted, all families in DEFAULT_FAMILIES are bundled.",
+    )
+    ap.add_argument(
+        "--subdir", default=None,
+        help="Subfamily directory under fonts/, e.g. Heiti. "
+             "Required when --name is used.",
     )
     ap.add_argument(
         "--suffix", default="",
-        help="Suffix after the variant number, e.g. '-Bold' "
-             "for files named NanGuoSansPinyin-1-Bold.ttf. "
-             "Only used with --name (single-weight bundle).",
-    )
-    ap.add_argument(
-        "--out", default=str(ROOT / "output"),
-        help="Directory holding the input TTFs and receiving the .ttc",
+        help="Weight suffix, e.g. -Bold. Only used with --name.",
     )
     args = ap.parse_args()
 
-    out_dir = pathlib.Path(args.out)
-    print(f"Bundling .ttc collections in {out_dir}/")
-
     if args.name is not None:
-        bundle(args.name, [args.suffix], out_dir)
+        subdir = args.subdir or args.name
+        ttf_dir = ROOT / "fonts" / subdir / "ttf"
+        ttc_dir = ROOT / "fonts" / subdir / "ttc"
+        bundle(args.name, ttf_dir, [args.suffix], ttc_dir)
         return
 
-    for family, suffixes in DEFAULT_FAMILIES:
-        bundle(family, suffixes, out_dir, ttc_name=family)
+    print(f"Bundling .ttc collections into fonts/*/ttc/")
+    for family, subdir, suffixes in DEFAULT_FAMILIES:
+        ttf_dir = ROOT / "fonts" / subdir / "ttf"
+        ttc_dir = ROOT / "fonts" / subdir / "ttc"
+        bundle(family, ttf_dir, suffixes, ttc_dir)
 
 
 if __name__ == "__main__":
