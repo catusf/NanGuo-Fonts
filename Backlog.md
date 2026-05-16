@@ -2,6 +2,8 @@
 
 This file lists the remaining issues/features need addressing. Whenever an issues is confirmed done/fixed, update the item from [ ] to [X]. Never delete this file.
 
+- [ ] Create TTC and OFC versions of the fonts
+
 - [X] Prepare 2 packages to submit to Google Fonts: one with Heiti fonts (regular+bold variants) and one with Songti fonts (regular+bold variants), and save them to @release folder
 
 
