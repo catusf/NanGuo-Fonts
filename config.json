@@ -1,0 +1,72 @@
+{
+  "_comment": "Tunable numeric parameters for make_pinyin_font.py. All values are stated at the 1000-UPM reference grid; the build script must scale them linearly when the source font's UPM differs (e.g. baseline_at_upm_1000 * actual_upm / 1000). See Output_font_requirements.md.",
+
+  "upm_reference": 1000,
+
+  "metrics_at_upm_1000": {
+    "hhea_ascent": 1338,
+    "hhea_descent": -288,
+    "hhea_line_gap": 0,
+    "os2_win_ascent": 1338,
+    "os2_win_descent": 288,
+    "os2_typo_ascender": 1253,
+    "os2_typo_descender": -120,
+    "os2_typo_line_gap": 0,
+    "os2_weight_class": 400,
+    "os2_width_class": 5
+  },
+
+  "ruby_geometry_at_upm_1000": {
+    "_comment_baseline_y": "Y-coordinate of the ruby baseline (where non-descender letters sit). FZ-extracted ruby and Latin-composed ruby both align on this baseline; descenders (g/p/q/y) hang ~64 units below. Raise to widen the gap above the base CJK glyph (typical CJK yMax ≈ 840), lower to tighten it. Current gap: ~124 (non-descender) / ~60 (descender). Ascent values above are sized to baseline_y + em + headroom_above_ruby.",
+    "baseline_y": 964,
+    "em": 320,
+    "headroom_above_ruby": 54,
+    "_comment_max_overflow_factor": "Maximum width of a composed ruby relative to the CJK advance (1.0 = ruby never exceeds the cell, 1.15 = up to 15% overflow allowed). Long syllables (zhuāng, chuáng, shuāng, …) hit this cap and are uniformly scaled down to fit, so values >1.0 cause adjacent ruby pinyins to overlap. Keep at 1.0 unless you accept neighbor overlap.",
+    "max_overflow_factor": 1.0
+  },
+
+  "pua_range": {
+    "start": "0xE000",
+    "end":   "0xE7DA",
+    "glyph_name_format": "uni{:04X}"
+  },
+
+  "composite": {
+    "components_per_hanzi": 2,
+    "component_0_role": "base_cjk_glyph_from_source_font",
+    "component_1_role": "pua_ruby_syllable"
+  },
+
+  "variants": {
+    "count": 6,
+    "filename_suffix_format": "-{n}",
+    "ttc_index_for_variant_n": "n - 1",
+    "primary_reading_coverage_min": 0.73
+  },
+
+  "heteronym_divergence": {
+    "variant_2_vs_1_min_ratio": 0.70,
+    "higher_variants_must_diverge": true
+  },
+
+  "cmap_coverage": {
+    "ascii_printable_required": true,
+    "min_cjk_coverage": "GB2312",
+    "min_cjk_count": 6763,
+    "expose_pua_in_cmap": false
+  },
+
+  "os2_flags": {
+    "fs_type": 0,
+    "fs_selection_use_typo_metrics_bit_7": true,
+    "fs_selection_regular_bit_6_for_regular_weight": true
+  },
+
+  "post_table": {
+    "format_type": 3.0
+  },
+
+  "vendor": {
+    "ach_vend_id": "ADBO"
+  }
+}
