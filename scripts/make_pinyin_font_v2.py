@@ -32,7 +32,7 @@ import tempfile
 import textwrap
 from pathlib import Path
 
-from fontTools.ttLib import TTCollection, TTFont
+from fontTools.ttLib import TTFont
 from fontTools.ttLib.tables._c_m_a_p import CmapSubtable
 from fontTools.ttLib.tables._g_l_y_f import (
     ARGS_ARE_XY_VALUES, ROUND_XY_TO_GRID, Glyph, GlyphComponent,
@@ -48,17 +48,6 @@ DEFAULT_CONFIG = PROJECT_ROOT / "config.json"
 
 COMP_FLAGS = ROUND_XY_TO_GRID | ARGS_ARE_XY_VALUES
 
-# FZKTPY source-side constants (physical properties of the FZKTPY .ttc;
-# not tunable — these describe the input font's geometry).
-FZ_UPM = 256
-FZ_CJK_ADV = 256
-# Letter baseline in FZKTPY ruby PUA coords. Non-descender letters (a, h, u,
-# o, e, …) bottom out here at y=236; descenders (g, p, q, y) extend down to
-# y=218. Aligning by 236 keeps every ruby's *baseline* at ruby_y, matching
-# the Latin-compose path so mixed syllables in one variant don't shift.
-FZ_RUBY_YMIN = 236
-FZ_RUBY_H = 90
-
 # Reference yMax of the 'ǎ' glyph at UPM=1000 used by the Latin-compose path
 # to scale ruby height. Kept as a constant because it describes Noto's
 # physical glyph metrics, not a tunable.
@@ -73,9 +62,6 @@ CJK_RANGES = (
     (0x30000, 0x3FFFF),  # CJK Unified Ext G+
 )
 
-PUA_BMP = (0xE000, 0xF8FF)
-
-
 # ── config loading + scaling ─────────────────────────────────────────────────
 
 def load_config(path: Path = DEFAULT_CONFIG) -> dict:
@@ -89,10 +75,6 @@ def scale_to_upm(value_at_1000: float, upm: int, ref_upm: int = 1000) -> int:
 
 def is_hanzi(cp: int) -> bool:
     return any(lo <= cp <= hi for lo, hi in CJK_RANGES)
-
-
-def is_pua_bmp(cp: int) -> bool:
-    return PUA_BMP[0] <= cp <= PUA_BMP[1]
 
 
 # ── small TTF helpers ────────────────────────────────────────────────────────
@@ -224,65 +206,14 @@ def _compose_from_latin(font, syllable: str, m: dict):
         return None
 
 
-# ── Phase 2B: extract PUA glyphs from FZKTPY ─────────────────────────────────
-
-def _extract_fzktpy(fzktpy_path: str, m: dict, warn: list[str]) -> dict:
-    fz = TTCollection(fzktpy_path).fonts[0]
-    fzcm_sub = next(
-        (t for t in fz["cmap"].tables if t.platformID == 3 and t.platEncID == 1),
-        None,
-    )
-    if fzcm_sub is None:
-        warn.append("FZKTPY has no (3,1) cmap; PUA extraction skipped")
-        return {}
-    fzgl = fz["glyf"]
-    sx = m["cjk_adv"] / FZ_CJK_ADV
-    sy = m["ruby_em"] / FZ_RUBY_H
-    ty = m["ruby_y"] - FZ_RUBY_YMIN * sy
-    out: dict[str, tuple] = {}
-    for cp, gn in fzcm_sub.cmap.items():
-        if not is_pua_bmp(cp):
-            continue
-        g = fzgl.get(gn)
-        if g is None or g.numberOfContours == 0:
-            continue
-        pen = TTGlyphPen(None)
-        try:
-            if g.numberOfContours == -1:
-                for comp in g.components:
-                    cg = fzgl.get(comp.glyphName)
-                    if cg and cg.numberOfContours and cg.numberOfContours > 0:
-                        cg.draw(TransformPen(pen, (sx, 0, 0, sy, 0, ty)), fzgl)
-            else:
-                g.draw(TransformPen(pen, (sx, 0, 0, sy, 0, ty)), fzgl)
-            out[f"uni{cp:04X}"] = (pen.glyph(), m["cjk_adv"])
-        except Exception as exc:
-            warn.append(f"FZKTPY glyph {gn} (U+{cp:04X}) extract failed: {exc}")
-    print(f"  Extracted {len(out):,} PUA glyphs from FZKTPY")
-    return out
-
-
 # ── Phase 2: inject PUA glyphs ───────────────────────────────────────────────
 
 def phase2_pua(font_path: str, inv: dict, m: dict, cfg: dict,
-               fzktpy_path: str, warn: list[str]):
+               warn: list[str]):
     print("[2] Generating PUA glyphs...")
     font = TTFont(font_path)
     glyf = font["glyf"]
     hmtx = font["hmtx"]
-
-    fz_glyphs: dict = {}
-    fz_syl_map: dict = {}
-    if fzktpy_path:
-        fz_glyphs = _extract_fzktpy(fzktpy_path, m, warn)
-        mf = DATA_DIR / "fzktpy_pua_syllable_map.json"
-        if mf.exists():
-            raw = json.loads(mf.read_text(encoding="utf-8"))
-            for pua_key, meta in raw.items():
-                pua_hex = pua_key[2:] if pua_key.lower().startswith("0x") else pua_key
-                gn = f"uni{pua_hex.upper()}"
-                if gn in fz_glyphs:
-                    fz_syl_map[meta["syllable"]] = gn
 
     # Sort syllables for deterministic order.
     new_names: list[str] = []
@@ -295,11 +226,7 @@ def phase2_pua(font_path: str, inv: dict, m: dict, cfg: dict,
         if i % dot == 0:
             print(f"  [{i / total * 100:3.0f}%]", end="\r")
         gname = f"uni{meta['pua'].upper()}"
-        result = None
-        if syl in fz_syl_map:
-            result = fz_glyphs.get(fz_syl_map[syl])
-        if result is None:
-            result = _compose_from_latin(font, syl, m)
+        result = _compose_from_latin(font, syl, m)
         if result is None:
             failed.append(syl)
             continue
@@ -820,7 +747,6 @@ def main():
     p.add_argument("--author", default="Unknown")
     p.add_argument("--url", default="")
     p.add_argument("--out", default="./output")
-    p.add_argument("--pua-source", default="")
     p.add_argument("--year", default="2026")
     p.add_argument("--config", default=str(DEFAULT_CONFIG))
     p.add_argument("--variations-ps-prefix", default="",
@@ -869,7 +795,7 @@ def main():
 
     warn: list[str] = []
 
-    p2_path, syl_map = phase2_pua(a.font, inv, m, cfg, a.pua_source, warn)
+    p2_path, syl_map = phase2_pua(a.font, inv, m, cfg, warn)
     p3_path, vm_path = phase3_composites(p2_path, syl_map, pmap, het, m, cfg, warn)
     phase4_variants(p3_path, vm_path, cfg_dict, cfg, m, pmap, a.out, warn)
 

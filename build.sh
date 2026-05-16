@@ -10,12 +10,11 @@ fi
 
 OUT="output"
 DATA="data"
-PUA="$DATA/FangZhengKaiTiPinYinZiKu-1.ttc"
 
 echo "=== Building NanGuo Pinyin Fonts ==="
 
 echo "[1/4] Heiti Regular"
-python scripts/make_pinyin_font.py \
+python scripts/make_pinyin_font_v2.py \
     --font   "$DATA/NotoSansSC-Regular.ttf" \
     --name   "NanGuo Heiti Pinyin" \
     --author "Catus Felis" \
@@ -23,36 +22,28 @@ python scripts/make_pinyin_font.py \
     --out    "$OUT"
 
 echo "[2/4] Heiti Bold"
-python scripts/make_pinyin_font.py \
+python scripts/make_pinyin_font_v2.py \
     --font   "$DATA/NotoSansSC-Bold.ttf" \
-    --name   "NanGuo Heiti Pinyin Bold" \
+    --name   "NanGuo Heiti Pinyin" \
     --author "Catus Felis" \
     --url    "https://catusf.github.io" \
     --out    "$OUT"
-for i in 1 2 3 4 5 6; do
-    mv "$OUT/NanGuoHeitiPinyinBold-${i}.ttf" "$OUT/NanGuoHeitiPinyin-${i}-Bold.ttf"
-done
 
 echo "[3/4] Songti Regular"
-python scripts/make_pinyin_font.py \
-    --font       "$DATA/NotoSerifSC-Regular.ttf" \
-    --name       "NanGuo Songti Pinyin" \
-    --author     "Catus Felis" \
-    --url        "https://catusf.github.io" \
-    --pua-source "$PUA" \
-    --out        "$OUT"
+python scripts/make_pinyin_font_v2.py \
+    --font   "$DATA/NotoSerifSC-Regular.ttf" \
+    --name   "NanGuo Songti Pinyin" \
+    --author "Catus Felis" \
+    --url    "https://catusf.github.io" \
+    --out    "$OUT"
 
 echo "[4/4] Songti Bold"
-python scripts/make_pinyin_font.py \
-    --font       "$DATA/NotoSerifSC-Bold.ttf" \
-    --name       "NanGuo Songti Pinyin Bold" \
-    --author     "Catus Felis" \
-    --url        "https://catusf.github.io" \
-    --pua-source "$PUA" \
-    --out        "$OUT"
-for i in 1 2 3 4 5 6; do
-    mv "$OUT/NanGuoSongtiPinyinBold-${i}.ttf" "$OUT/NanGuoSongtiPinyin-${i}-Bold.ttf"
-done
+python scripts/make_pinyin_font_v2.py \
+    --font   "$DATA/NotoSerifSC-Bold.ttf" \
+    --name   "NanGuo Songti Pinyin" \
+    --author "Catus Felis" \
+    --url    "https://catusf.github.io" \
+    --out    "$OUT"
 
 echo "=== Bundling TTCs ==="
 python scripts/bundle_ttc.py --out "$OUT"

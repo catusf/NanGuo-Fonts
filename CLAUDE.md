@@ -12,7 +12,7 @@ here yet — they live wherever the skill is invoked from.
 
 | File | Purpose |
 |------|---------|
-| `data/FangZhengKaiTiPinYinZiKu-1.ttc` | The reference font file for chinese characters readings, structure, etc. |
+| `data/FangZhengKaiTiPinYinZiKu-1.ttc` | Historical reference font. Used by `scripts/extract_fzktpy_data.py` to regenerate the JSON caches in `data/`, but **no longer read by the build pipeline** (`build.sh`). |
 | `data/NotoSansSC-Regular` | The input font file for glyphs. You need to put the pinyin on top of Chinese characters in this font, and create a new output font. |
 | `good/NanGuoPinyin-1.ttf` | The reference output file that works properly. You need to refer to its structure for reference. |
 | `requirements/Output_font_requirements.md` | **Authoritative structural spec** for output TTFs — derived from comparing FZKTPY01 with `good/NanGuoPinyin-1.ttf`. Consult this before changing `make_pinyin_font.py`. |
@@ -34,8 +34,10 @@ heteronyms (多音字 — characters with more than one pronunciation, e.g. 行
 xíng / háng). The same character codepoint maps to a different
 `base + pinyin-ruby` composite glyph in each variant.
 
-For the output_font_variant_1.ttf, take the cmap from reference font FZKTPY01 (of the .ttc file), 
-output_font_variant_1.ttf from FZKTPY02, and so on.
+Variant divergence is driven by `data/heteronym_map.json` — variant 1 carries
+the primary reading from `data/pinyin_map.json`; variants 2–6 carry heteronym
+alternates. The slot convention (six variants) was originally modeled on the
+six FZKTPY sub-fonts, but the build no longer reads the .ttc at runtime.
 
 Typical use: stack the variants in CSS `font-family` fallback, or let the
 reader toggle between them when a character has multiple readings. Variant
@@ -55,13 +57,12 @@ python make_pinyin_font.py \
     --url    "https://catusf.github.io" \
     --out    ./output/
 
-# Serif (uses FZKTPY KaiTi PUA glyphs for fuller syllable coverage)
+# Serif (same Latin-composed ruby path as Sans)
 python make_pinyin_font.py \
     --font       NotoSerifSC-Regular.ttf \
     --name       "NanGuo Serif Pinyin" \
     --author     "Catus Felis" \
     --url        "https://catusf.github.io" \
-    --pua-source FangZhengKaiTiPinYinZiKu-1.ttc \
     --out        ./output/
 ```
 
