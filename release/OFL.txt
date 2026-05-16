@@ -1,5 +1,0 @@
-Copyright 2026 The NanGuo Songti Pinyin Project Authors (https://catusf.github.io)
-Font data derived from Noto CJK fonts, Copyright 2014-2021 Google LLC.
-
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-http://scripts.sil.org/OFL

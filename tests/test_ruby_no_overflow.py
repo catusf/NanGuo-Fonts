@@ -29,7 +29,7 @@ WIDE_SYLLABLES = [
 
 @pytest.fixture(scope="module")
 def syllable_inventory() -> dict:
-    return json.loads((ROOT / "data" / "syllable_inventory.json").read_text(encoding="utf-8"))
+    return json.loads((ROOT / "sources" / "data" / "syllable_inventory.json").read_text(encoding="utf-8"))
 
 
 def _check_overflow(ttf_path, syllable_inventory, tolerance: int = 5):

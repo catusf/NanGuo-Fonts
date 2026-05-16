@@ -1,0 +1,67 @@
+FONTLOG for NanGuo Pinyin
+=========================
+
+This file provides detailed information on the NanGuo Pinyin Font Software.
+This information should be distributed along with the NanGuo Pinyin fonts
+and any derivative works.
+
+Basic Font Information
+----------------------
+NanGuo Pinyin is a Simplified Chinese educational typeface that embeds
+Hanyu Pinyin pronunciation guides directly above each Chinese character
+as font-native composite glyphs.
+
+The font is built on Noto Sans SC as a base and adds 1,349 pre-composed
+Pinyin syllable glyphs (PUA U+E000–U+E544) and 6,763 TrueType composite
+CJK glyphs that pair each character with its Pinyin annotation.
+
+Six variants cover the primary through sixth tonal readings of
+multi-pronunciation characters (多音字). Characters with fewer
+pronunciations than the variant number render without annotation.
+
+Designer:   Catus Felis (catusf.github.io)
+Repository: https://github.com/catusf/nanguo-pinyin
+Base font:  Noto Sans SC (Google LLC, OFL 1.1)
+
+Coverage
+--------
+- 6,763 GB2312 Simplified Chinese characters (all annotated with Pinyin)
+- 20,976 CJK Unified Ideographs (U+4E00–U+9FFF)
+- 6,582 CJK Extension-A (U+3400–U+4DBF)
+- 1,349 PUA Pinyin syllable glyphs (U+E000–U+E544)
+- Hiragana (96/96), Katakana (96/96), Bopomofo (43/48)
+- Basic Latin (100%), Latin-1 Supplement (100%)
+- Latin Extended-A/B (Pinyin diacritics: ā á ǎ à ē é ě è etc.)
+- CJK Symbols & Punctuation (100%), Halfwidth/Fullwidth Forms (93%)
+- Kangxi Radicals (95%), CJK Radicals Supplement (90%)
+
+Technical Notes
+---------------
+- Format: TrueType (.ttf), UPM 1000
+- Ruby glyphs are TrueType composite glyphs:
+    CJK_char = [base_outline at (0,0)] + [PUA_pinyin at (0,0)]
+- PUA syllables placed at ruby_y=1026, ruby_EM=320 above baseline
+- usWinAscent=1400 to accommodate ruby zone above CJK body
+- USE_TYPO_METRICS=OFF; sTypoAscender=880 for normal line spacing
+- Letter spacing uses full advance widths (natural sidebearings)
+- All 10,305 composite component flags: ARGS_ARE_XY_VALUES|ROUND_XY_TO_GRID
+
+ChangeLog
+---------
+2025-05-13  v1.000  Initial release
+  - 6,763 CJK characters annotated across 6 pronunciation variants
+  - Fixed baseline alignment for Pinyin letters (ty=ruby_y)
+  - Fixed letter spacing: advance-width based (natural sidebearings)
+  - Fixed USE_TYPO_METRICS=OFF for correct line height in all apps
+  - Added Mac Roman cmap (Platform 1, Format 4)
+  - Explicit ARGS_ARE_XY_VALUES on all composite components
+  - 129 additional PUA glyphs for heteronym (alternate-reading) syllables
+
+Acknowledgements
+----------------
+NanGuo Pinyin is built on Noto Sans SC:
+  Copyright 2014-2021 Google LLC.
+  Licensed under the SIL Open Font License, Version 1.1.
+  https://fonts.google.com/noto/specimen/Noto+Sans+SC
+
+Pinyin data derived from pypinyin (MIT License) and CC-CEDICT.

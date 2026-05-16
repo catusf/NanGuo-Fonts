@@ -14,14 +14,19 @@ import pytest
 from fontTools.ttLib import TTFont
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-# Build outputs live in output/ when present; fall back to project root.
-TTF_DIR = (ROOT / "output") if (ROOT / "output").is_dir() else ROOT
+# Build outputs live in fonts/<Family>/ttf/ per the GF upstream layout.
+_HEITI_DIR = ROOT / "fonts" / "Heiti" / "ttf"
+_SONGTI_DIR = ROOT / "fonts" / "Songti" / "ttf"
 
 # Filename forms:
-#   Regular: NanGuoSansPinyin-1.ttf .. NanGuoSansPinyin-6.ttf
-#   Bold:    NanGuoSansPinyin-1-Bold.ttf .. NanGuoSansPinyin-6-Bold.ttf
-_REGULAR_RE = re.compile(r"^NanGuo(?P<fam>Sans|Serif)Pinyin-[1-6]\.ttf$")
-_WEIGHT_RE = re.compile(r"^NanGuo(?P<fam>Sans|Serif)Pinyin-[1-6]-(?P<wt>[A-Za-z]+)\.ttf$")
+#   Regular: NanGuoHeitiPinyin-1.ttf .. NanGuoHeitiPinyin-6.ttf
+#   Bold:    NanGuoHeitiPinyin-1-Bold.ttf .. NanGuoHeitiPinyin-6-Bold.ttf
+_REGULAR_RE = re.compile(r"^NanGuo(?P<fam>Heiti|Songti)Pinyin-[1-6]\.ttf$")
+_WEIGHT_RE = re.compile(r"^NanGuo(?P<fam>Heiti|Songti)Pinyin-[1-6]-(?P<wt>[A-Za-z]+)\.ttf$")
+
+# Logical → physical family name mapping (fixture names kept for compatibility)
+_FAMILY_MAP = {"Sans": "Heiti", "Serif": "Songti"}
+_FAMILY_DIR = {"Heiti": _HEITI_DIR, "Songti": _SONGTI_DIR}
 
 
 def _exclude(p: pathlib.Path) -> bool:
@@ -30,26 +35,34 @@ def _exclude(p: pathlib.Path) -> bool:
 
 
 def _all_ttfs() -> list[pathlib.Path]:
-    return sorted(p for p in TTF_DIR.glob("NanGuo*Pinyin-*.ttf") if not _exclude(p))
+    paths: list[pathlib.Path] = []
+    for d in (_HEITI_DIR, _SONGTI_DIR):
+        if d.is_dir():
+            paths.extend(p for p in d.glob("NanGuo*Pinyin-*.ttf") if not _exclude(p))
+    return sorted(paths)
 
 
 def _family_ttfs(family: str, weight: str = "Regular") -> list[pathlib.Path]:
-    """Return the 6 variants of `family` ('Sans' | 'Serif') at the given weight.
+    """Return the 6 variants for `family` ('Sans'|'Serif') at the given weight.
 
-    Weight matching: 'Regular' → bare filenames (NanGuoSansPinyin-1.ttf); any
-    other value → '-<weight>' suffix (NanGuoSansPinyin-1-Bold.ttf).
+    'Sans' maps to NanGuoHeitiPinyin; 'Serif' maps to NanGuoSongtiPinyin.
+    Weight 'Regular' → bare filenames; any other value → '-<weight>' suffix.
     """
+    phys = _FAMILY_MAP.get(family, family)  # Sans→Heiti, Serif→Songti
+    ttf_dir = _FAMILY_DIR.get(phys)
+    if ttf_dir is None or not ttf_dir.is_dir():
+        return []
     out: list[pathlib.Path] = []
-    for p in TTF_DIR.glob(f"NanGuo{family}Pinyin-*.ttf"):
+    for p in ttf_dir.glob(f"NanGuo{phys}Pinyin-*.ttf"):
         if _exclude(p):
             continue
         if weight == "Regular":
             m = _REGULAR_RE.match(p.name)
-            if m and m.group("fam") == family:
+            if m and m.group("fam") == phys:
                 out.append(p)
         else:
             m = _WEIGHT_RE.match(p.name)
-            if m and m.group("fam") == family and m.group("wt") == weight:
+            if m and m.group("fam") == phys and m.group("wt") == weight:
                 out.append(p)
     return sorted(out)
 

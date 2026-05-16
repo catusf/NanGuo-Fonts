@@ -1,0 +1,2 @@
+fonttools>=4.50
+pypinyin>=0.51

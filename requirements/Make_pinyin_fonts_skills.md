@@ -76,7 +76,7 @@ output/
 | `pinyin_map.json` | 6,763 GB2312 chars → primary pinyin |
 | `syllable_inventory.json` | 1,349 unique syllables → PUA codepoints |
 | `heteronym_map.json` | 2,381 multi-pronunciation chars → all readings |
-| `fzktpy_pua_syllable_map.json` | FZKTPY PUA → syllable mapping (1,618 entries) |
+| `refdata_pua_syllable_map.json` | FZKTPY PUA → syllable mapping (1,618 entries) |
 
 ## Dependencies
 ```bash

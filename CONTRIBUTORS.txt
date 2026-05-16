@@ -1,0 +1,3 @@
+# Contributors to NanGuo Pinyin Fonts
+# (People listed here contributed to the project but are not the primary authors.
+#  See AUTHORS.txt for the primary author list.)

@@ -1,0 +1,7 @@
+The specimen images in this directory (specimen-heiti.png, specimen-songti.png)
+are generated from the NanGuo Pinyin font files and are released under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+https://creativecommons.org/licenses/by/4.0/
+
+Copyright 2026 The NanGuo Pinyin Project Authors (https://catusf.github.io)
