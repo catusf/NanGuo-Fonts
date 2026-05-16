@@ -51,3 +51,4 @@ _tmp_*.py
 # Project-specific
 *.ttf
 output/
+release/*.zip
