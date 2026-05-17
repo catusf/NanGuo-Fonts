@@ -22,7 +22,7 @@ except ImportError:
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 FONTS_DIR = ROOT / "fonts"
-SAMPLES_OUT = ROOT / "samples" / "output"
+DOC_DIR = ROOT / "documentation"
 
 POEM = [
     ("红豆生南国，", "Đậu đỏ mọc đất phương Nam,",     "Red beans grow in the southern lands,"),
@@ -59,7 +59,7 @@ def pdf_to_png(pdf_path: pathlib.Path, dpi: int = 150) -> pathlib.Path:
     doc = fitz.open(str(pdf_path))
     zoom = dpi / 72
     pix = doc[0].get_pixmap(matrix=fitz.Matrix(zoom, zoom))
-    out = pdf_path.with_suffix(".png")
+    out = DOC_DIR / (pdf_path.stem + ".png")
     pix.save(str(out))
     doc.close()
     return out
@@ -188,8 +188,8 @@ def build(out_path: pathlib.Path) -> None:
 
 
 def main() -> None:
-    SAMPLES_OUT.mkdir(parents=True, exist_ok=True)
-    out = SAMPLES_OUT / "NanGuo_Poem_XiangSi.pdf"
+    DOC_DIR.mkdir(parents=True, exist_ok=True)
+    out = DOC_DIR / "NanGuo_Poem_XiangSi.pdf"
     print("Building poem PDF (Songti, landscape) ...")
     build(out)
     png = pdf_to_png(out)

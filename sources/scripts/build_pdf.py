@@ -21,7 +21,7 @@ except ImportError:
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 FONTS_DIR = ROOT / "fonts"
 SAMPLE_MD = ROOT / "samples" / "sample_text.md"
-SAMPLES_OUT = ROOT / "samples" / "output"
+DOC_DIR = ROOT / "documentation"
 
 CHINESE_ROW_H = 15
 LABEL_W = 58
@@ -219,20 +219,16 @@ def pdf_to_png(pdf_path: pathlib.Path, dpi: int = 150) -> list[pathlib.Path]:
 
 
 def main() -> None:
-    SAMPLES_OUT.mkdir(parents=True, exist_ok=True)
-    doc_dir = ROOT / "documentation"
-    doc_dir.mkdir(parents=True, exist_ok=True)
+    DOC_DIR.mkdir(parents=True, exist_ok=True)
     print(f"Reading  {SAMPLE_MD.relative_to(ROOT)}")
     for style in ("Heiti", "Songti"):
-        out = SAMPLES_OUT / f"NanGuo_Demo_{style}.pdf"
+        out = DOC_DIR / f"NanGuo_Demo_{style}.pdf"
         print(f"Writing  {out.relative_to(ROOT)} ...", end=" ", flush=True)
         build(out, style)
         print(f"{out.stat().st_size // 1024} KB")
         pngs = pdf_to_png(out)
-        for p in [out] + pngs:
-            dest = doc_dir / p.name
-            dest.write_bytes(p.read_bytes())
-            print(f"  → {dest.relative_to(ROOT)}")
+        for p in pngs:
+            print(f"  → {p.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
