@@ -47,10 +47,10 @@ về kiểu dáng và độ đậm.
 
 <!-- Nhớ copy hai file PNG này từ samples/output/ vào thư mục assets của blog -->
 
-![Font NanGuo Heiti Pinyin](https://github.com/catusf/NanGuo-Fonts/releases/download/v1.0/NanGuo_Specimen-Heiti.png)
+![Font NanGuo Heiti Pinyin](https://github.com/catusf/NanGuo-Fonts/releases/download/v1.0/NanGuo_Demo_Heiti.png)
 
 
-![Font NanGuo Songti Pinyin](https://github.com/catusf/NanGuo-Fonts/releases/download/v1.0/NanGuo_Specimen-Songti.png)
+![Font NanGuo Songti Pinyin](https://github.com/catusf/NanGuo-Fonts/releases/download/v1.0/NanGuo_Demo_Songti.png)
 
 ## Ghi chú
 

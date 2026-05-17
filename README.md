@@ -11,9 +11,9 @@ Two families are provided:
 
 Each family ships six TTFs (`-1` through `-6`) plus Bold variants, for 12 files per family. Variant `-1` carries the primary (most common) reading; variants `-2` through `-6` carry alternate readings for multi-pronunciation characters (多音字 — e.g. 行 xíng / háng). Characters with only one reading show that reading in every variant.
 
-![NanGuo Heiti specimen](documentation/NanGuo_Specimen-Heiti.png)
+![NanGuo Heiti specimen](documentation/NanGuo_Specimen_Heiti.png)
 
-![NanGuo Songti specimen](documentation/NanGuo_Specimen-Songti.png)
+![NanGuo Songti specimen](documentation/NanGuo_Specimen_Songti.png)
 
 ## Building
 

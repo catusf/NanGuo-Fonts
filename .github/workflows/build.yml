@@ -47,8 +47,8 @@ jobs:
             NanGuo-Songti-Fonts.zip
             fonts/Heiti/ttc/NanGuoHeitiPinyin.ttc
             fonts/Songti/ttc/NanGuoSongtiPinyin.ttc
-            documentation/NanGuo_Specimen-Heiti.png
-            documentation/NanGuo_Specimen-Songti.png
+            documentation/NanGuo_Specimen_Heiti.png
+            documentation/NanGuo_Specimen_Songti.png
             documentation/NanGuo_Demo_Heiti.pdf
             documentation/NanGuo_Demo_Heiti.png
             documentation/NanGuo_Demo_Songti.pdf

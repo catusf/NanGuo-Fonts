@@ -33,8 +33,8 @@ NanGuo-Fonts/
 ├── CLAUDE.md, Backlog.md             (KEEP — project meta)
 │
 ├── documentation/                    (NEW)
-│   ├── NanGuo_Specimen-Heiti.png
-│   ├── NanGuo_Specimen-Songti.png
+│   ├── NanGuo_Specimen_Heiti.png
+│   ├── NanGuo_Specimen_Songti.png
 │   └── image-license.txt
 │
 ├── fonts/
@@ -66,7 +66,7 @@ NanGuo-Fonts/
 - `AUTHORS.txt` — seed with `Catus Felis <phanmanhdan@gmail.com>` (1 line per author).
 - `CONTRIBUTORS.txt` — empty placeholder with a leading comment explaining the file's purpose.
 - `requirements.txt` — pinned build deps (`fonttools>=4.50`, `pypinyin>=0.51`).
-- `README.md` — replace the 1-line stub: project description, 6-variant heteronym scheme summary, install + build instructions (`pip install -r requirements.txt && ./build.sh`), embedded `documentation/NanGuo_Specimen-Heiti.png`, links to both families, license note.
+- `README.md` — replace the 1-line stub: project description, 6-variant heteronym scheme summary, install + build instructions (`pip install -r requirements.txt && ./build.sh`), embedded `documentation/NanGuo_Specimen_Heiti.png`, links to both families, license note.
 
 ### 2. Build the new tree
 

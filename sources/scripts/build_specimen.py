@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build documentation/NanGuo_Specimen-Heiti.png and documentation/NanGuo_Specimen-Songti.png.
+"""Build documentation/NanGuo_Specimen_Heiti.png and documentation/NanGuo_Specimen_Songti.png.
 
 Each image is 1200×400 px:  large Chinese text (with embedded pinyin) in the
 NanGuo font, a subtitle line, and a coloured bottom bar.
@@ -36,14 +36,14 @@ SPECS = [
         "display": "NanGuo Heiti Pinyin",
         "ttf": FONTS_DIR / "Heiti" / "ttf" / "NanGuoHeitiPinyin-1.ttf",
         "bar": (70, 120, 180),
-        "out": "NanGuo_Specimen-Heiti.png",
+        "out": "NanGuo_Specimen_Heiti.png",
     },
     {
         "style": "Songti",
         "display": "NanGuo Songti Pinyin",
         "ttf": FONTS_DIR / "Songti" / "ttf" / "NanGuoSongtiPinyin-1.ttf",
         "bar": (180, 100, 50),
-        "out": "NanGuo_Specimen-Songti.png",
+        "out": "NanGuo_Specimen_Songti.png",
     },
 ]
 
