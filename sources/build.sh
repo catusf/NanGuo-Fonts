@@ -56,9 +56,9 @@ echo "=== Building specimen images ==="
 python scripts/build_specimen.py
 
 echo "=== Building poem specimen ==="
-python sources/scripts/build_poem_pdf.py
-cp samples/output/NanGuo_Poem_XiangSi.pdf documentation/
-cp samples/output/NanGuo_Poem_XiangSi.png documentation/
+python scripts/build_poem_pdf.py
+cp ../samples/output/NanGuo_Poem_XiangSi.pdf ../documentation/
+cp ../samples/output/NanGuo_Poem_XiangSi.png ../documentation/
 
 echo "=== Running tests ==="
 python ../tests/run_all.py

@@ -1,6 +1,6 @@
 .PHONY: all fonts clean
 
-all: fonts poem
+all: fonts
 
 fonts:
 	cd sources && bash build.sh

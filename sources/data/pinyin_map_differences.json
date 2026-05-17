@@ -1,0 +1,65 @@
+111111111111111111111111111111111111111{
+  "summary": {
+    "total_differences": 47,
+    "missing_in_map": 1,
+    "map_errors": 4,
+    "particles": 5,
+    "heteronyms_wrong_primary": 38
+  },
+  "missing_in_map": [
+    { "char": "〇", "code": "3007", "hsk": "líng", "note": "circle/zero symbol" }
+  ],
+  "map_errors": [
+    { "char": "缺", "code": "7F3A", "map": "guì",   "hsk": "quē" },
+    { "char": "惹", "code": "60F9", "map": "nuò",   "hsk": "rě" },
+    { "char": "逛", "code": "901B", "map": "guāng", "hsk": "guàng" },
+    { "char": "拽", "code": "62FD", "map": "zhuāi", "hsk": "zhuài" }
+  ],
+  "particles": [
+    { "char": "吧", "code": "5427", "map": "bā", "hsk": "ba" },
+    { "char": "呀", "code": "5440", "map": "yā", "hsk": "ya" },
+    { "char": "呢", "code": "5462", "map": "ní", "hsk": "ne" },
+    { "char": "哇", "code": "54C7", "map": "wā", "hsk": "wa" },
+    { "char": "啦", "code": "5566", "map": "lā", "hsk": "la" }
+  ],
+  "heteronyms_wrong_primary": [
+    { "char": "佛", "code": "4F5B", "map": "fú",    "hsk": "fó" },
+    { "char": "倔", "code": "5014", "map": "jué",   "hsk": "juè" },
+    { "char": "切", "code": "5207", "map": "qiè",   "hsk": "qiē" },
+    { "char": "剥", "code": "5265", "map": "bō",    "hsk": "bāo" },
+    { "char": "勒", "code": "52D2", "map": "lè",    "hsk": "lēi" },
+    { "char": "占", "code": "5360", "map": "zhān",  "hsk": "zhàn" },
+    { "char": "咽", "code": "54BD", "map": "yān",   "hsk": "yàn" },
+    { "char": "哦", "code": "54E6", "map": "ó",     "hsk": "ò" },
+    { "char": "唉", "code": "5509", "map": "āi",    "hsk": "ài" },
+    { "char": "嚼", "code": "56BC", "map": "jué",   "hsk": "jiáo" },
+    { "char": "场", "code": "573A", "map": "cháng", "hsk": "chǎng" },
+    { "char": "奔", "code": "5954", "map": "bēn",   "hsk": "bèn" },
+    { "char": "幢", "code": "5E62", "map": "chuáng","hsk": "zhuàng" },
+    { "char": "弹", "code": "5F39", "map": "dàn",   "hsk": "tán" },
+    { "char": "挨", "code": "6328", "map": "āi",    "hsk": "ái" },
+    { "char": "撇", "code": "6487", "map": "piē",   "hsk": "piě" },
+    { "char": "教", "code": "6559", "map": "jiào",  "hsk": "jiāo" },
+    { "char": "数", "code": "6570", "map": "shù",   "hsk": "shǔ" },
+    { "char": "斗", "code": "6597", "map": "dǒu",   "hsk": "dòu" },
+    { "char": "晕", "code": "6655", "map": "yùn",   "hsk": "yūn" },
+    { "char": "曲", "code": "66F2", "map": "qū",    "hsk": "qǔ" },
+    { "char": "更", "code": "66F4", "map": "gēng",  "hsk": "gèng" },
+    { "char": "曾", "code": "66FE", "map": "zēng",  "hsk": "céng" },
+    { "char": "杆", "code": "6746", "map": "gān",   "hsk": "gǎn" },
+    { "char": "炮", "code": "70AE", "map": "páo",   "hsk": "pào" },
+    { "char": "熟", "code": "719F", "map": "shú",   "hsk": "shú/shóu" },
+    { "char": "盛", "code": "76DB", "map": "shèng", "hsk": "chéng" },
+    { "char": "着", "code": "7740", "map": "zhuó",  "hsk": "zhe/zháo" },
+    { "char": "累", "code": "7D2F", "map": "lěi",   "hsk": "lèi" },
+    { "char": "翘", "code": "7FD8", "map": "qiáo",  "hsk": "qiào" },
+    { "char": "脏", "code": "810F", "map": "zàng",  "hsk": "zāng" },
+    { "char": "血", "code": "8840", "map": "xuè",   "hsk": "xiě" },
+    { "char": "觉", "code": "89C9", "map": "jué",   "hsk": "jiào" },
+    { "char": "谁", "code": "8C01", "map": "shuí",  "hsk": "shéi/shuí" },
+    { "char": "趟", "code": "8D9F", "map": "tāng",  "hsk": "tàng" },
+    { "char": "逮", "code": "902E", "map": "dài",   "hsk": "dǎi" },
+    { "char": "都", "code": "90FD", "map": "dū",    "hsk": "dōu" },
+    { "char": "钉", "code": "9489", "map": "dīng",  "hsk": "dìng" }
+  ]
+}

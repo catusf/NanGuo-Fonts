@@ -1,4 +1,12 @@
 {
+  "3007": [
+    "líng",
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
   "4E00": [
     "yī",
     null,
@@ -1560,7 +1568,7 @@
     null
   ],
   "4F5B": [
-    "fú",
+    "fó",
     "fú",
     null,
     null,
@@ -2192,8 +2200,8 @@
     null
   ],
   "5014": [
-    "jué",
     "juè",
+    "jué",
     null,
     null,
     null,
@@ -3504,7 +3512,7 @@
     null
   ],
   "5207": [
-    "qiè",
+    "qiē",
     "qiè",
     null,
     null,
@@ -3864,8 +3872,8 @@
     null
   ],
   "5265": [
-    "bō",
     "bāo",
+    "bō",
     null,
     null,
     null,
@@ -4160,8 +4168,8 @@
     null
   ],
   "52D2": [
-    "lè",
     "lēi",
+    "lè",
     null,
     null,
     null,
@@ -4584,8 +4592,8 @@
     null
   ],
   "5360": [
-    "zhān",
     "zhàn",
+    "zhān",
     null,
     null,
     null,
@@ -5464,8 +5472,8 @@
     null
   ],
   "5427": [
-    "bā",
     "ba",
+    "bā",
     null,
     null,
     null,
@@ -5600,8 +5608,8 @@
     null
   ],
   "5440": [
-    "yā",
     "ya",
+    "yā",
     null,
     null,
     null,
@@ -5736,8 +5744,8 @@
     null
   ],
   "5462": [
-    "ní",
     "ne",
+    "ní",
     null,
     null,
     null,
@@ -6112,8 +6120,8 @@
     null
   ],
   "54BD": [
-    "yān",
     "yàn",
+    "yān",
     "yè",
     null,
     null,
@@ -6168,8 +6176,8 @@
     null
   ],
   "54C7": [
-    "wā",
     "wa",
+    "wā",
     null,
     null,
     null,
@@ -6336,8 +6344,8 @@
     null
   ],
   "54E6": [
-    "ó",
     "ò",
+    "ó",
     "é",
     null,
     null,
@@ -6464,8 +6472,8 @@
     null
   ],
   "5509": [
-    "āi",
     "ài",
+    "āi",
     null,
     null,
     null,
@@ -6744,8 +6752,8 @@
     null
   ],
   "5566": [
-    "lā",
     "la",
+    "lā",
     null,
     null,
     null,
@@ -7696,7 +7704,7 @@
     null
   ],
   "56BC": [
-    "jué",
+    "jiáo",
     "jué",
     "jiào",
     null,
@@ -8040,8 +8048,8 @@
     null
   ],
   "573A": [
-    "cháng",
     "chǎng",
+    "cháng",
     null,
     null,
     null,
@@ -9416,8 +9424,8 @@
     null
   ],
   "5954": [
-    "bēn",
     "bèn",
+    "bēn",
     null,
     null,
     null,
@@ -12736,8 +12744,8 @@
     null
   ],
   "5E62": [
-    "chuáng",
     "zhuàng",
+    "chuáng",
     null,
     null,
     null,
@@ -13392,8 +13400,8 @@
     null
   ],
   "5F39": [
-    "dàn",
     "tán",
+    "dàn",
     null,
     null,
     null,
@@ -15000,7 +15008,7 @@
     null
   ],
   "60F9": [
-    "nuò",
+    "rě",
     null,
     null,
     null,
@@ -16488,8 +16496,8 @@
     "pīn"
   ],
   "62FD": [
-    "zhuāi",
     "zhuài",
+    "zhuāi",
     "yè",
     null,
     null,
@@ -16664,8 +16672,8 @@
     null
   ],
   "6328": [
-    "āi",
     "ái",
+    "āi",
     null,
     null,
     null,
@@ -17712,8 +17720,8 @@
     null
   ],
   "6487": [
-    "piē",
     "piě",
+    "piē",
     null,
     null,
     null,
@@ -18152,8 +18160,8 @@
     null
   ],
   "6559": [
-    "jiào",
     "jiāo",
+    "jiào",
     null,
     null,
     null,
@@ -18224,8 +18232,8 @@
     null
   ],
   "6570": [
-    "shù",
     "shǔ",
+    "shù",
     "shuò",
     null,
     null,
@@ -18304,8 +18312,8 @@
     null
   ],
   "6597": [
-    "dǒu",
     "dòu",
+    "dǒu",
     null,
     null,
     null,
@@ -18936,8 +18944,8 @@
     null
   ],
   "6655": [
-    "yùn",
     "yūn",
+    "yùn",
     null,
     null,
     null,
@@ -19240,8 +19248,8 @@
     null
   ],
   "66F2": [
-    "qū",
     "qǔ",
+    "qū",
     null,
     null,
     null,
@@ -19256,8 +19264,8 @@
     null
   ],
   "66F4": [
-    "gēng",
     "gèng",
+    "gēng",
     null,
     null,
     null,
@@ -19288,8 +19296,8 @@
     null
   ],
   "66FE": [
-    "zēng",
     "céng",
+    "zēng",
     null,
     null,
     null,
@@ -19528,8 +19536,8 @@
     null
   ],
   "6746": [
-    "gān",
     "gǎn",
+    "gān",
     null,
     null,
     null,
@@ -25640,9 +25648,9 @@
     null
   ],
   "70AE": [
+    "pào",
     "páo",
     "bāo",
-    "pào",
     null,
     null,
     null
@@ -29584,8 +29592,8 @@
     null
   ],
   "76DB": [
-    "shèng",
     "chéng",
+    "shèng",
     null,
     null,
     null,
@@ -29864,10 +29872,10 @@
     null
   ],
   "7740": [
+    "zhe",
     "zhuó",
     "zháo",
     "zhāo",
-    "zhe",
     null,
     null
   ],
@@ -33456,8 +33464,8 @@
     null
   ],
   "7D2F": [
-    "lěi",
     "lèi",
+    "lěi",
     "léi",
     null,
     null,
@@ -34672,7 +34680,7 @@
     null
   ],
   "7F3A": [
-    "guì",
+    "quē",
     null,
     null,
     null,
@@ -35072,8 +35080,8 @@
     null
   ],
   "7FD8": [
-    "qiáo",
     "qiào",
+    "qiáo",
     null,
     null,
     null,
@@ -36216,8 +36224,8 @@
     null
   ],
   "810F": [
-    "zàng",
     "zāng",
+    "zàng",
     null,
     null,
     null,
@@ -41272,8 +41280,8 @@
     null
   ],
   "8840": [
-    "xuè",
     "xiě",
+    "xuè",
     null,
     null,
     null,
@@ -42056,8 +42064,8 @@
     null
   ],
   "89C9": [
-    "jué",
     "jiào",
+    "jué",
     null,
     null,
     null,
@@ -43032,8 +43040,8 @@
     null
   ],
   "8C01": [
-    "shuí",
     "shéi",
+    "shuí",
     null,
     null,
     null,
@@ -44304,8 +44312,8 @@
     null
   ],
   "8D9F": [
-    "tāng",
     "tàng",
+    "tāng",
     null,
     null,
     null,
@@ -46032,7 +46040,7 @@
     null
   ],
   "901B": [
-    "guāng",
+    "guàng",
     null,
     null,
     null,
@@ -46104,8 +46112,8 @@
     null
   ],
   "902E": [
-    "dài",
     "dǎi",
+    "dài",
     null,
     null,
     null,
@@ -46792,8 +46800,8 @@
     null
   ],
   "90FD": [
-    "dū",
     "dōu",
+    "dū",
     null,
     null,
     null,
@@ -47528,8 +47536,8 @@
     null
   ],
   "9489": [
-    "dīng",
     "dìng",
+    "dīng",
     null,
     null,
     null,

@@ -54,7 +54,7 @@ COMP_FLAGS = ROUND_XY_TO_GRID | ARGS_ARE_XY_VALUES
 # physical glyph metrics, not a tunable.
 REF_ASC_1000 = 833
 
-# CJK ranges that get pruned from cmap if not in pinyin_map.json.
+# CJK ranges that get pruned from cmap if not in heteronym_map.json.
 CJK_RANGES = (
     (0x3400, 0x4DBF),    # CJK Unified Ext A
     (0x4E00, 0x9FFF),    # CJK Unified
@@ -590,7 +590,7 @@ def strip_pua_from_best_cmap(font, cfg: dict):
 
 
 def strip_unmapped_hanzi(font, pmap: dict):
-    """Drop hanzi codepoints not in pinyin_map.json from every cmap subtable.
+    """Drop hanzi codepoints not in heteronym_map.json from every cmap subtable.
 
     Latin / Greek / Cyrillic / symbols are preserved; only CJK ranges are
     pruned. Glyphs themselves stay in glyf (per spec §8).
@@ -786,10 +786,9 @@ def main():
           f"ruby_y={m['ruby_y']}  ruby_em={m['ruby_em']}  "
           f"subfamily={sf['subfamily']} (weight={sf['weight_class']})")
 
-    with open(DATA_DIR / "pinyin_map.json", encoding="utf-8") as f:
-        pmap = json.load(f)
     with open(DATA_DIR / "heteronym_map.json", encoding="utf-8") as f:
         het = json.load(f)
+    pmap = {k: v[0] for k, v in het.items()}
     with open(DATA_DIR / "syllable_inventory.json", encoding="utf-8") as f:
         inv = json.load(f)
     print(f"  {len(pmap):,} chars · {len(inv):,} syllables · {len(het):,} polyphones")
