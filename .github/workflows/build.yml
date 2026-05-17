@@ -1,0 +1,59 @@
+name: Build Fonts
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-test.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements-test.txt
+
+      - name: Build fonts
+        run: make
+
+      - name: Zip Heiti fonts
+        run: zip -j NanGuo-Heiti-Fonts.zip fonts/Heiti/ttf/*.ttf fonts/Heiti/ttc/*.ttc
+
+      - name: Zip Songti fonts
+        run: zip -j NanGuo-Songti-Fonts.zip fonts/Songti/ttf/*.ttf fonts/Songti/ttc/*.ttc
+
+      - name: Create draft release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          name: "NanGuo Pinyin Fonts ${{ github.ref_name }} (${{ github.sha }})"
+          tag_name: "build-${{ github.run_number }}"
+          body: |
+            Automated build from commit ${{ github.sha }}.
+
+            **Families**
+            - NanGuo Heiti Pinyin (Sans) — 12 TTFs + 1 TTC
+            - NanGuo Songti Pinyin (Serif) — 12 TTFs + 1 TTC
+
+            Each family ships 6 variants × Regular + Bold.
+            Variant -1 carries the primary (most common) reading;
+            variants -2 through -6 carry alternate readings for multi-pronunciation characters.
+          files: |
+            NanGuo-Heiti-Fonts.zip
+            NanGuo-Songti-Fonts.zip
+            documentation/NanGuo_Specimen-Heiti.png
+            documentation/NanGuo_Specimen-Songti.png
+            documentation/NanGuo_Demo_Heiti.pdf
+            documentation/NanGuo_Demo_Heiti.png
+            documentation/NanGuo_Demo_Songti.pdf
+            documentation/NanGuo_Demo_Songti.png
