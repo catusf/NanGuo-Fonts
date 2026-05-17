@@ -23,9 +23,17 @@ FONTS_DIR = ROOT / "fonts"
 SAMPLE_MD = ROOT / "samples" / "sample_text.md"
 SAMPLES_OUT = ROOT / "samples" / "output"
 
-# Row height (mm) for Chinese rows rendered at 24pt — 1.6× spaced to fit on one page.
 CHINESE_ROW_H = 15
-LABEL_W = 58  # mm — font-name label column
+LABEL_W = 58
+
+# Traditional Chinese book color palette (matches build_poem_pdf.py)
+IVORY      = (253, 248, 235)
+VERMILION  = (193,  39,  45)
+DARK_RED   = (120,  15,  15)
+CREAM      = (253, 245, 215)
+INK        = ( 20,  10,   5)
+INDIGO     = ( 30,  50, 140)
+WARM_BROWN = (100,  65,  30)
 
 
 # ── font helpers ──────────────────────────────────────────────────────────────
@@ -124,23 +132,29 @@ def build(out_path: pathlib.Path, style: str) -> None:
         pdf.add_font(bold_alias, fname=str(bold_ttf))
         loaded.add(bold_alias)
 
+    # ── Page background — 宣纸 ivory ──────────────────────────────────────────
+    pdf.set_fill_color(*IVORY)
+    pdf.rect(0, 0, pdf.w, pdf.h, style="F")
+
+    # ── Title bar — dark red fill, cream text ─────────────────────────────────
     style_label = "黑体" if style == "Heiti" else "宋体"
-    pdf.set_font(default, size=15)
-    pdf.set_text_color(25, 25, 25)
-    pdf.cell(0, 10, f"NanGuo Pinyin — Sample Text ({style} / {style_label}) / 南国拼音示例文字",
-             new_x="LMARGIN", new_y="NEXT")
-    pdf.set_draw_color(160, 160, 160)
-    pdf.set_line_width(0.4)
-    pdf.line(pdf.l_margin, pdf.get_y(), pdf.w - pdf.r_margin, pdf.get_y())
-    pdf.ln(6)
+    title_text = f"NanGuo Pinyin — Sample Text ({style} / {style_label}) / 南国拼音示例文字"
+    title_h = 18
+    pdf.set_fill_color(*DARK_RED)
+    pdf.rect(0, 0, pdf.w, pdf.t_margin + title_h, style="F")
+    pdf.set_font(default, size=26)
+    pdf.set_text_color(*CREAM)
+    pdf.cell(0, title_h, title_text, new_x="LMARGIN", new_y="NEXT")
+    pdf.ln(2)
 
     for section in sections:
         font_size = section["font_size"]
 
-        pdf.set_font(bold_alias, size=14)
-        pdf.set_text_color(25, 25, 25)
+        # Section title — vermilion
+        pdf.set_font(bold_alias, size=13)
+        pdf.set_text_color(*VERMILION)
         pdf.cell(0, 8, section["title"], new_x="LMARGIN", new_y="NEXT")
-        pdf.ln(2)
+        pdf.ln(1)
 
         for item in section["items"]:
 
@@ -150,32 +164,32 @@ def build(out_path: pathlib.Path, style: str) -> None:
                 label = f"NanGuo {style} PinYin {variant}"
 
                 pdf.set_font(default, size=7)
-                pdf.set_text_color(120, 120, 120)
+                pdf.set_text_color(*WARM_BROWN)
                 pdf.cell(LABEL_W, CHINESE_ROW_H, label, align="R")
 
                 pdf.set_font(alias, size=font_size)
-                pdf.set_text_color(10, 10, 10)
+                pdf.set_text_color(*INK)
                 pdf.cell(0, CHINESE_ROW_H, "  " + item["text"],
                          new_x="LMARGIN", new_y="NEXT")
 
             elif item["type"] == "text":
                 row_h = round(font_size * 25.4 / 72 * 1.6, 1)
-                # Always use variant 1 of the current style for body text
                 text_alias = load("variant 1")
 
                 pdf.set_font(default, size=9)
-                pdf.set_text_color(80, 80, 150)
+                pdf.set_text_color(*WARM_BROWN)
                 pdf.cell(30, row_h, item["label"] + ":")
 
                 pdf.set_font(text_alias, size=font_size)
-                pdf.set_text_color(10, 10, 10)
+                pdf.set_text_color(*INDIGO)
                 pdf.cell(0, row_h, item["text"],
                          new_x="LMARGIN", new_y="NEXT")
 
-        pdf.ln(4)
-        pdf.set_draw_color(210, 210, 210)
+        pdf.ln(2)
+        pdf.set_draw_color(*VERMILION)
+        pdf.set_line_width(0.3)
         pdf.line(pdf.l_margin, pdf.get_y(), pdf.w - pdf.r_margin, pdf.get_y())
-        pdf.ln(6)
+        pdf.ln(4)
 
     pdf.output(str(out_path))
 

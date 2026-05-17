@@ -92,7 +92,7 @@ def build(out_path: pathlib.Path) -> None:
     pdf.set_text_color(*WARM_BROWN)
     pdf.cell(0, 6, "王维 · 唐    Wang Wei · Tang Dynasty",
              align="C", new_x="LMARGIN", new_y="NEXT")
-    pdf.ln(5)
+    pdf.ln(24)
 
     # ── Column geometry ───────────────────────────────────────────────────────
     usable_w = pdf.w - pdf.l_margin - pdf.r_margin   # ≈ 267 mm
