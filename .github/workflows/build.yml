@@ -29,11 +29,11 @@ jobs:
       - name: Build fonts
         run: make
 
-      - name: Zip Heiti fonts
-        run: zip -j NanGuo-Heiti-Fonts.zip fonts/Heiti/ttf/*.ttf fonts/Heiti/ttc/*.ttc
+      - name: Zip Heiti TTFs
+        run: zip -j NanGuo-Heiti-Fonts.zip fonts/Heiti/ttf/*.ttf
 
-      - name: Zip Songti fonts
-        run: zip -j NanGuo-Songti-Fonts.zip fonts/Songti/ttf/*.ttf fonts/Songti/ttc/*.ttc
+      - name: Zip Songti TTFs
+        run: zip -j NanGuo-Songti-Fonts.zip fonts/Songti/ttf/*.ttf
 
       - name: Create draft release
         uses: softprops/action-gh-release@v2
@@ -54,6 +54,8 @@ jobs:
           files: |
             NanGuo-Heiti-Fonts.zip
             NanGuo-Songti-Fonts.zip
+            fonts/Heiti/ttc/NanGuoHeitiPinyin.ttc
+            fonts/Songti/ttc/NanGuoSongtiPinyin.ttc
             documentation/NanGuo_Specimen-Heiti.png
             documentation/NanGuo_Specimen-Songti.png
             documentation/NanGuo_Demo_Heiti.pdf
