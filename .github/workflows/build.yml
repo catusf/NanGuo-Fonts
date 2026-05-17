@@ -41,16 +41,7 @@ jobs:
           draft: true
           name: "NanGuo Pinyin Fonts ${{ github.ref_name }} (${{ github.sha }})"
           tag_name: "build-${{ github.run_number }}"
-          body: |
-            Automated build from commit ${{ github.sha }}.
-
-            **Families**
-            - NanGuo Heiti Pinyin (Sans) — 12 TTFs + 1 TTC
-            - NanGuo Songti Pinyin (Serif) — 12 TTFs + 1 TTC
-
-            Each family ships 6 variants × Regular + Bold.
-            Variant -1 carries the primary (most common) reading;
-            variants -2 through -6 carry alternate readings for multi-pronunciation characters.
+          body_path: documentation/release_draft.md
           files: |
             NanGuo-Heiti-Fonts.zip
             NanGuo-Songti-Fonts.zip
