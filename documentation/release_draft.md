@@ -1,6 +1,6 @@
 ## Font chữ Hán có phiên âm
 
-Đây là bộ font chữ Hán giản thể đặc biệt: mỗi chữ Hán đã có sẵn phiên âm pinyin in nhỏ ở phía trên. Bạn chỉ cần gõ chữHán như bình thường — pinyin tự xuất hiện.
+Đây là bộ font chữ Hán giản thể đặc biệt: mỗi chữ Hán đã có sẵn phiên âm pinyin in nhỏ ở phía trên. Bạn chỉ cần gõ chữ Hán như bình thường — pinyin tự xuất hiện.
 
 Có hai bộ font:
 
