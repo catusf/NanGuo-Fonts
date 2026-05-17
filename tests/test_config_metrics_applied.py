@@ -8,8 +8,9 @@ the integer rounding in `int(round(v * upm / 1000))`.
 
 from __future__ import annotations
 
-import json
 import pathlib
+
+import yaml
 
 import pytest
 
@@ -18,8 +19,8 @@ TOL = 2  # accept 1-unit rounding jitter on either side
 
 
 def _cfg():
-    p = pathlib.Path(__file__).resolve().parent.parent / "config.json"
-    return json.loads(p.read_text(encoding="utf-8"))
+    p = pathlib.Path(__file__).resolve().parent.parent / "sources" / "config.yaml"
+    return yaml.safe_load(p.read_text(encoding="utf-8"))
 
 
 def _expected(value_at_1000: float, upm: int) -> int:

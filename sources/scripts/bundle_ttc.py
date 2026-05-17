@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Bundle the NanGuoPinyin variants of one family into a single .ttc collection.
 
 fontTools' TTCollection.save() shares byte-identical tables across sub-fonts.
@@ -17,7 +18,7 @@ import pathlib
 
 from fontTools.ttLib import TTCollection, TTFont
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 
 # (family_name, subfamily_dir, [weight_suffixes])
 DEFAULT_FAMILIES: list[tuple[str, str, list[str]]] = [

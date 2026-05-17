@@ -6,13 +6,14 @@ should write this from config, not inherit silently from the Noto source.
 
 from __future__ import annotations
 
-import json
 import pathlib
+
+import yaml
 
 
 def test_vendor_id_matches_config(ttfont):
-    cfg_path = pathlib.Path(__file__).resolve().parent.parent / "config.json"
-    cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+    cfg_path = pathlib.Path(__file__).resolve().parent.parent / "sources" / "config.yaml"
+    cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8"))
     expected = cfg["vendor"]["ach_vend_id"]
     actual = ttfont["OS/2"].achVendID
     if isinstance(actual, bytes):

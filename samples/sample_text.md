@@ -9,32 +9,27 @@ Switch between font variants 1–6 to see heteronyms (多音字) change pronunci
 ---
 
 ## Chinese Showcase / 中文展示
-Font size: 20pt
+Font size: 24pt
 
-Render in NanGuo Heiti PinYin 1 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Songti PinYin 1 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Heiti PinYin 2 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Songti PinYin 2 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Heiti PinYin 3 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Songti PinYin 3 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Heiti PinYin 4 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Songti PinYin 4 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Heiti PinYin 5 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Songti PinYin 5 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Heiti PinYin 6 font:  呵和啊哪差恶着与么得中长三不床装
-Render in NanGuo Songti PinYin 6 font:  呵和啊哪差恶着与么得中长三不床装
+Render in variant 1 font:  呵和啊哪差恶着与么得中长三不床装
+Render in variant 2 font:  呵和啊哪差恶着与么得中长三不床装
+Render in variant 3 font:  呵和啊哪差恶着与么得中长三不床装
+Render in variant 4 font:  呵和啊哪差恶着与么得中长三不床装
+Render in variant 5 font:  呵和啊哪差恶着与么得中长三不床装
+Render in variant 6 font:  呵和啊哪差恶着与么得中长三不床装
 
 
 ## Multilingual Test Text (NanGuo Songti PinYin 1)
 Font size: 16pt
-NanGuo Songti PinYin 1 font
+
+Simplified Chinese:南国拼音将拼音发音直接融入每一个汉字字形。
+
+Pinyin: Nán guó pīnyīn jiāng pīnyīn fāyīn zhíjiē róng rù měi yī gè hànzì zìxíng.
 
 English: NanGuo Pinyin embeds Pinyin pronunciation directly into each Chinese character glyph.
 
 Tiếng Việt: NanGuo Pinyin nhúng phiên âm Bính âm trực tiếp vào từng ký tự chữ Hán.
 
 Русский: NanGuo Pinyin встраивает пиньинь непосредственно в каждый китайский иероглиф.
-
-Bahasa Melayu: NanGuo Pinyin menyematkan sebutan Pinyin terus ke dalam setiap aksara Cina.
 
 Português: NanGuo Pinyin incorpora a pronúncia Pinyin diretamente em cada glifo de caractere chinês.

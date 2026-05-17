@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 *.so
 
+.claude
+
 # Virtual environments
 .venv/
 venv/
@@ -36,6 +38,7 @@ coverage.xml
 # IDEs / editors
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
 
@@ -49,6 +52,6 @@ desktop.ini
 _tmp_*.py
 
 # Project-specific
-*.ttf
+fonts/**/*.ttf
 output/
 release/*.zip

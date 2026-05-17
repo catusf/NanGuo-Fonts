@@ -6,14 +6,15 @@ clipping on Windows, and inconsistent face mapping across the 6 variants.
 
 from __future__ import annotations
 
-import json
 import pathlib
+
+import yaml
 
 import pytest
 from fontTools.ttLib import TTFont
 
-_CFG = json.loads(
-    (pathlib.Path(__file__).resolve().parent.parent / "config.json").read_text(
+_CFG = yaml.safe_load(
+    (pathlib.Path(__file__).resolve().parent.parent / "sources" / "config.yaml").read_text(
         encoding="utf-8"
     )
 )

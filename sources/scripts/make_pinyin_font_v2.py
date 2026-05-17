@@ -2,7 +2,7 @@
 """make_pinyin_font_v2.py — config-driven NanGuo Pinyin Font Builder.
 
 Spec source of truth: ../Output_font_requirements.md
-Tunable parameters:    ../config.json
+Tunable parameters:    ../config.yaml
 
 What changed vs. v1:
 - All numeric parameters sourced from config.json (no hardcoded geometry).
@@ -28,6 +28,7 @@ import json
 import os
 import re
 import sys
+import yaml
 import tempfile
 import textwrap
 from pathlib import Path
@@ -44,7 +45,7 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent.parent  # sources/scripts/ -> sources/ -> project root
 DATA_DIR = PROJECT_ROOT / "sources" / "data"
-DEFAULT_CONFIG = PROJECT_ROOT / "config.json"
+DEFAULT_CONFIG = SCRIPT_DIR.parent / "config.yaml"
 
 COMP_FLAGS = ROUND_XY_TO_GRID | ARGS_ARE_XY_VALUES
 
@@ -66,7 +67,7 @@ CJK_RANGES = (
 
 def load_config(path: Path = DEFAULT_CONFIG) -> dict:
     with open(path, encoding="utf-8") as f:
-        return json.load(f)
+        return yaml.safe_load(f)
 
 
 def scale_to_upm(value_at_1000: float, upm: int, ref_upm: int = 1000) -> int:

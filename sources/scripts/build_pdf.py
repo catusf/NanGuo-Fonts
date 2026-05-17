@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""Generate NanGuo_Demo.pdf by following instructions in samples/sample_text.md.
+"""Generate NanGuo_Demo_Heiti.pdf and NanGuo_Demo_Songti.pdf from samples/sample_text.md.
 
-Font name mapping (from markdown):
-    NanGuo Heiti PinYin N  -> fonts/Heiti/ttf/NanGuoHeitiPinyin-N.ttf
+Font name mapping:
+    NanGuo Heiti  PinYin N -> fonts/Heiti/ttf/NanGuoHeitiPinyin-N.ttf
     NanGuo Songti PinYin N -> fonts/Songti/ttf/NanGuoSongtiPinyin-N.ttf
-
-Output: samples/output/NanGuo_Demo.pdf
 """
 from __future__ import annotations
 
@@ -25,39 +23,28 @@ FONTS_DIR = ROOT / "fonts"
 SAMPLE_MD = ROOT / "samples" / "sample_text.md"
 SAMPLES_OUT = ROOT / "samples" / "output"
 
-# Row height (mm) for Chinese rows rendered at 20pt.
-CHINESE_ROW_H = 13
+# Row height (mm) for Chinese rows rendered at 24pt — 1.6× spaced to fit on one page.
+CHINESE_ROW_H = 15
 LABEL_W = 58  # mm — font-name label column
 
 
 # ── font helpers ──────────────────────────────────────────────────────────────
 
 def _ttf_path(style: str, variant: int, bold: bool = False) -> pathlib.Path:
-    """style is 'Heiti' or 'Songti'."""
     suffix = "-Bold" if bold else ""
     return FONTS_DIR / style / "ttf" / f"NanGuo{style}Pinyin-{variant}{suffix}.ttf"
 
 
-def _resolve(md_name: str) -> tuple[str, str, int]:
-    """'NanGuo Heiti PinYin 3' -> (alias, style, variant)."""
-    m = re.search(r"(Heiti|Songti)\s+PinYin\s+(\d+)", md_name)
-    if not m:
-        return ("NanGuo_Heiti_v1", "Heiti", 1)
-    style = m.group(1)
-    variant = int(m.group(2))
+def _resolve(md_name: str, style: str) -> tuple[str, str, int]:
+    """Extract a variant number from md_name and return (alias, style, variant)."""
+    m = re.search(r"(\d+)", md_name)
+    variant = int(m.group(1)) if m else 1
     return (f"NanGuo_{style}_v{variant}", style, variant)
 
 
 # ── markdown parser ───────────────────────────────────────────────────────────
 
 def parse_md(path: pathlib.Path) -> list[dict]:
-    """Return a list of section dicts parsed from the markdown.
-
-    Each section:
-        title     : str
-        font_size : int  (from 'Font size: Npt' directive)
-        items     : list of dicts with type 'render' or 'text'
-    """
     sections: list[dict] = []
     cur: dict | None = None
 
@@ -93,9 +80,9 @@ def parse_md(path: pathlib.Path) -> list[dict]:
             })
             continue
 
-        # Multilingual line: "Label: text" (split on first ': ')
-        if ": " in line:
-            label, _, text = line.partition(": ")
+        # Multilingual line: "Label: text" or "Label:text"
+        if ":" in line:
+            label, _, text = line.partition(":")
             cur["items"].append({
                 "type": "text",
                 "label": label.strip(),
@@ -107,7 +94,7 @@ def parse_md(path: pathlib.Path) -> list[dict]:
 
 # ── PDF builder ───────────────────────────────────────────────────────────────
 
-def build(out_path: pathlib.Path) -> None:
+def build(out_path: pathlib.Path, style: str) -> None:
     sections = parse_md(SAMPLE_MD)
 
     pdf = FPDF(format="A4", orientation="L")
@@ -118,28 +105,29 @@ def build(out_path: pathlib.Path) -> None:
     loaded: set[str] = set()
 
     def load(md_name: str) -> str:
-        alias, style, variant = _resolve(md_name)
+        alias, s, variant = _resolve(md_name, style)
         if alias not in loaded:
-            ttf = _ttf_path(style, variant)
+            ttf = _ttf_path(s, variant)
             if not ttf.exists():
                 raise FileNotFoundError(f"Font not found: {ttf}")
             pdf.add_font(alias, fname=str(ttf))
             loaded.add(alias)
         return alias
 
-    default = load("NanGuo Heiti PinYin 1")
+    default = load("variant 1")
 
-    bold_alias = "NanGuoHeiti_Bold"
+    bold_alias = f"NanGuo{style}_Bold"
     if bold_alias not in loaded:
-        bold_ttf = _ttf_path("Heiti", 1, bold=True)
+        bold_ttf = _ttf_path(style, 1, bold=True)
         if not bold_ttf.exists():
             raise FileNotFoundError(f"Bold font not found: {bold_ttf}")
         pdf.add_font(bold_alias, fname=str(bold_ttf))
         loaded.add(bold_alias)
 
+    style_label = "黑体" if style == "Heiti" else "宋体"
     pdf.set_font(default, size=15)
     pdf.set_text_color(25, 25, 25)
-    pdf.cell(0, 10, "NanGuo Pinyin — Sample Text / 南国拼音示例文字",
+    pdf.cell(0, 10, f"NanGuo Pinyin — Sample Text ({style} / {style_label}) / 南国拼音示例文字",
              new_x="LMARGIN", new_y="NEXT")
     pdf.set_draw_color(160, 160, 160)
     pdf.set_line_width(0.4)
@@ -158,10 +146,12 @@ def build(out_path: pathlib.Path) -> None:
 
             if item["type"] == "render":
                 alias = load(item["font_name"])
+                _, _, variant = _resolve(item["font_name"], style)
+                label = f"NanGuo {style} PinYin {variant}"
 
                 pdf.set_font(default, size=7)
                 pdf.set_text_color(120, 120, 120)
-                pdf.cell(LABEL_W, CHINESE_ROW_H, item["font_name"], align="R")
+                pdf.cell(LABEL_W, CHINESE_ROW_H, label, align="R")
 
                 pdf.set_font(alias, size=font_size)
                 pdf.set_text_color(10, 10, 10)
@@ -169,8 +159,9 @@ def build(out_path: pathlib.Path) -> None:
                          new_x="LMARGIN", new_y="NEXT")
 
             elif item["type"] == "text":
-                row_h = round(font_size * 25.4 / 72 * 1.5, 1)
-                text_alias = load(section["text_font"]) if section["text_font"] else default
+                row_h = round(font_size * 25.4 / 72 * 1.6, 1)
+                # Always use variant 1 of the current style for body text
+                text_alias = load("variant 1")
 
                 pdf.set_font(default, size=9)
                 pdf.set_text_color(80, 80, 150)
@@ -189,13 +180,45 @@ def build(out_path: pathlib.Path) -> None:
     pdf.output(str(out_path))
 
 
+# ── PNG export ────────────────────────────────────────────────────────────────
+
+def pdf_to_png(pdf_path: pathlib.Path, dpi: int = 150) -> list[pathlib.Path]:
+    """Render each page of pdf_path to a PNG next to the PDF. Returns written paths."""
+    try:
+        import fitz  # PyMuPDF
+    except ImportError:
+        subprocess.run([sys.executable, "-m", "pip", "install", "pymupdf"], check=True)
+        import fitz  # type: ignore
+
+    doc = fitz.open(str(pdf_path))
+    zoom = dpi / 72
+    mat = fitz.Matrix(zoom, zoom)
+    out_paths: list[pathlib.Path] = []
+    stem = pdf_path.stem
+    for i, page in enumerate(doc, start=1):
+        pix = page.get_pixmap(matrix=mat)
+        out = pdf_path.parent / f"{stem}.png"
+        pix.save(str(out))
+        out_paths.append(out)
+    doc.close()
+    return out_paths
+
+
 def main() -> None:
     SAMPLES_OUT.mkdir(parents=True, exist_ok=True)
-    out = SAMPLES_OUT / "NanGuo_Demo.pdf"
+    doc_dir = ROOT / "documentation"
+    doc_dir.mkdir(parents=True, exist_ok=True)
     print(f"Reading  {SAMPLE_MD.relative_to(ROOT)}")
-    print(f"Writing  {out.relative_to(ROOT)} ...", end=" ", flush=True)
-    build(out)
-    print(f"{out.stat().st_size // 1024} KB")
+    for style in ("Heiti", "Songti"):
+        out = SAMPLES_OUT / f"NanGuo_Demo_{style}.pdf"
+        print(f"Writing  {out.relative_to(ROOT)} ...", end=" ", flush=True)
+        build(out, style)
+        print(f"{out.stat().st_size // 1024} KB")
+        pngs = pdf_to_png(out)
+        for p in [out] + pngs:
+            dest = doc_dir / p.name
+            dest.write_bytes(p.read_bytes())
+            print(f"  → {dest.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

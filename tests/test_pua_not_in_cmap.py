@@ -10,13 +10,14 @@ is allowed to retain PUA entries so fontTools can resynthesize the
 
 from __future__ import annotations
 
-import json
 import pathlib
+
+import yaml
 
 
 def _load_pua_range() -> tuple[int, int]:
-    cfg_path = pathlib.Path(__file__).resolve().parent.parent / "config.json"
-    cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+    cfg_path = pathlib.Path(__file__).resolve().parent.parent / "sources" / "config.yaml"
+    cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8"))
     return int(cfg["pua_range"]["start"], 16), int(cfg["pua_range"]["end"], 16)
 
 
