@@ -52,8 +52,3 @@ về kiểu dáng và độ đậm.
 
 ![Font NanGuo Songti Pinyin](https://github.com/catusf/NanGuo-Fonts/releases/download/v1.0/NanGuo_Demo_Songti.png)
 
-## Ghi chú
-
-Font hỗ trợ đầy đủ bộ chữ **GB2312** (6.763 chữ Hán thông dụng), có cả
-độ đậm thường và đậm, phát hành theo giấy phép **OFL** (dùng miễn phí
-cho cả mục đích cá nhân và thương mại).
