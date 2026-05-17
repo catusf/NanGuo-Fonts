@@ -15,6 +15,13 @@ Each family ships six TTFs (`-1` through `-6`) plus Bold variants, for 12 files 
 
 ![NanGuo Songti specimen](documentation/NanGuo_Specimen_Songti.png)
 
+![NanGuo Heiti specimen](documentation/NanGuo_Demo_Heiti.png)
+
+![NanGuo Songti specimen](documentation/NanGuo_Demo_Songti.png)
+
+![NanGuo Heiti specimen](documentation/NanGuo_Poem_XiangSi.png)
+
+
 ## Building
 
 ```bash
