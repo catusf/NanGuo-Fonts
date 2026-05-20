@@ -5,7 +5,6 @@ Reads:
   data/refdata_pua_syllable_map.json   (PUA hex -> syllable)
 
 Writes:
-  data/pinyin_map.json         GB2312 cp_hex -> primary syllable
   data/heteronym_map.json      cp_hex -> [primary, alt1, alt2, ...]
                                (primary anchored to FZKTPY; alts from pypinyin)
   data/syllable_inventory.json syllable -> {"pua": "EXXX"}
@@ -82,14 +81,11 @@ def main() -> None:
         used.add(candidate)
         candidate += 1
 
-    (DATA / "pinyin_map.json").write_text(
-        json.dumps(primary, ensure_ascii=False, indent=2), encoding="utf-8")
     (DATA / "heteronym_map.json").write_text(
         json.dumps(het, ensure_ascii=False, indent=2), encoding="utf-8")
     (DATA / "syllable_inventory.json").write_text(
         json.dumps(inv, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"pinyin_map:         {len(primary):,} chars")
     print(f"heteronym_map:      {len(het):,} polyphones")
     print(f"syllable_inventory: {len(inv):,} syllables "
           f"({len(extras)} added beyond FZKTPY)")

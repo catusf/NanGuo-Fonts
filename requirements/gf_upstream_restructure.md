@@ -50,7 +50,7 @@ NanGuo-Fonts/
 ├── sources/
 │   ├── Heiti/base-font/              (NotoSansSC-Regular.ttf, NotoSansSC-Bold.ttf)
 │   ├── Songti/base-font/             (NotoSerifSC-Regular.ttf, NotoSerifSC-Bold.ttf)
-│   ├── data/                         (pinyin_map.json, heteronym_map.json, syllable_inventory.json, refdata_*.json)
+│   ├── data/                         (heteronym_map.json, syllable_inventory.json, refdata_*.json)
 │   ├── scripts/                      (make_pinyin_font_v2.py, bundle_ttc.py, build_variable.py, derive_pinyin_data*.py, extract_refdata.py, fix_post_table.py, update_ttf_year.py, compare_fonts.py)
 │   └── FONTLOG.txt
 │
@@ -76,7 +76,7 @@ Move + delete in a single pass:
 |---|---|
 | `data/NotoSansSC-Regular.ttf`, `NotoSansSC-Bold.ttf` | `sources/Heiti/base-font/` |
 | `data/NotoSerifSC-Regular.ttf`, `NotoSerifSC-Bold.ttf` | `sources/Songti/base-font/` |
-| `data/pinyin_map.json`, `heteronym_map.json`, `syllable_inventory.json`, `refdata_*.json` | `sources/data/` |
+| `data/heteronym_map.json`, `syllable_inventory.json`, `refdata_*.json` | `sources/data/` |
 | `data/FONTLOG.txt` | `sources/FONTLOG.txt` |
 | `scripts/*.py` (except `old/`) | `sources/scripts/` |
 | `release/METADATA-Heiti-Fonts.pb` | `fonts/Heiti/METADATA.pb` |

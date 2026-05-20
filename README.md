@@ -44,7 +44,7 @@ fonts/
 sources/
   Heiti/base-font/    NotoSansSC-Regular.ttf, NotoSansSC-Bold.ttf
   Songti/base-font/   NotoSerifSC-Regular.ttf, NotoSerifSC-Bold.ttf
-  data/               pinyin_map.json, heteronym_map.json, syllable_inventory.json, …
+  data/               heteronym_map.json, syllable_inventory.json, …
   scripts/            make_pinyin_font_v2.py and supporting utilities
 documentation/        specimen images
 ```

@@ -33,7 +33,7 @@ ruby_geometry_at_upm_1000:
   # Long syllables (zhuāng, chuáng, shuāng, …) hit this cap and are uniformly
   # scaled down to fit, so values >1.0 cause adjacent ruby pinyins to overlap.
   # Keep at 1.0 unless you accept neighbor overlap.
-  max_overflow_factor: 1.0
+  max_overflow_factor: 0.96
 
 pua_range:
   start: "0xE000"

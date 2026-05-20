@@ -8,8 +8,8 @@ ID cross-reference through FZKTPY01.
 
 Reads (inputs):
   data/FangZhengKaiTiPinYinZiKu-1.ttc       # 6 sub-fonts FZKTPY01..06
-  data/refdata_pua_syllable_map.json         # 1,216 PUA -> syllable (known)
-  data/pinyin_map.json                      # 6,763 char -> primary syllable
+  data/refdata_pua_syllable_map.json        # 1,216 PUA -> syllable (known)
+  data/refdata_cjk_composites.json          # 6,763 char codepoints to walk
 
 Writes (outputs):
   data/heteronym_map.json                   # cp_hex -> [V1, V2, V3, V4, V5, V6]
@@ -133,15 +133,16 @@ def main() -> None:
         known_pua_to_syl[f"uni{hexpart}"] = meta["syllable"]
     print(f"  Loaded {len(known_pua_to_syl):,} known PUA->syllable entries")
 
-    pmap = json.loads((DATA / "pinyin_map.json").read_text(encoding="utf-8"))
-    print(f"  Loaded {len(pmap):,} characters from pinyin_map.json")
+    comps0 = json.loads((DATA / "refdata_cjk_composites.json").read_text(encoding="utf-8"))["0"]
+    char_cps = [_strip0x(k).upper() for k in comps0]
+    print(f"  Loaded {len(char_cps):,} characters from refdata_cjk_composites.json")
 
     # First pass: walk every char × every sub-font, collect (cp, sub_idx) ->
     # FZKTPY01-anchored ruby PUA name.
     cp_to_readings_puas: dict[str, list[str | None]] = {}
     pua_to_users: dict[str, list[int]] = defaultdict(list)
     pua_to_users_seen: dict[str, set[int]] = defaultdict(set)
-    for cp_hex in pmap:
+    for cp_hex in char_cps:
         cp = int(cp_hex, 16)
         readings: list[str | None] = []
         for idx in range(6):
@@ -180,11 +181,9 @@ def main() -> None:
         syls: list[str | None] = [
             pua_to_syl.get(p) if p else None for p in pua_readings
         ]
-        # V1 must always exist; if FZKTPY01 has no reading, fall back to
-        # pmap's primary (pmap is derived from FZKTPY01 so this should
-        # not happen in practice).
+        # V1 must always exist (FZKTPY01 is the anchor for primary readings).
         if not syls or syls[0] is None:
-            syls = [pmap[cp_hex]] + syls[1:]
+            raise RuntimeError(f"U+{cp_hex}: FZKTPY01 has no primary reading")
         # Pad to 6 with None for any trailing missing variants.
         while len(syls) < 6:
             syls.append(None)

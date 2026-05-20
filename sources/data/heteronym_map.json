@@ -240,9 +240,9 @@
     null
   ],
   "4E2A": [
+    "ge",
     "gè",
     "gě",
-    null,
     null,
     null,
     null
@@ -592,16 +592,16 @@
     null
   ],
   "4E86": [
-    "liǎo",
     "le",
+    "liǎo",
     null,
     null,
     null,
     null
   ],
   "4E88": [
-    "yú",
     "yǔ",
+    "yú",
     null,
     null,
     null,
@@ -880,8 +880,8 @@
     null
   ],
   "4EC0": [
-    "shí",
     "shén",
+    "shí",
     null,
     null,
     null,
@@ -3720,8 +3720,8 @@
     null
   ],
   "5239": [
-    "chà",
     "shā",
+    "chà",
     null,
     null,
     null,
@@ -5952,8 +5952,8 @@
     null
   ],
   "5496": [
-    "gā",
     "kā",
+    "gā",
     null,
     null,
     null,
@@ -19480,8 +19480,8 @@
     null
   ],
   "6734": [
-    "pò",
     "pǔ",
+    "pò",
     "pō",
     "piáo",
     null,
@@ -20536,8 +20536,8 @@
     null
   ],
   "6854": [
-    "jié",
     "jú",
+    "jié",
     null,
     null,
     null,
@@ -21408,8 +21408,8 @@
     null
   ],
   "69DB": [
-    "jiàn",
     "kǎn",
+    "jiàn",
     null,
     null,
     null,
@@ -22352,8 +22352,8 @@
     null
   ],
   "6C13": [
-    "méng",
     "máng",
+    "méng",
     null,
     null,
     null,
@@ -27304,8 +27304,8 @@
     null
   ],
   "7387": [
-    "shuài",
     "lǜ",
+    "shuài",
     null,
     null,
     null,
@@ -33584,8 +33584,8 @@
     null
   ],
   "7EA4": [
-    "qiàn",
     "xiān",
+    "qiàn",
     null,
     null,
     null,
@@ -38672,8 +38672,8 @@
     null
   ],
   "83CC": [
-    "jùn",
     "jūn",
+    "jùn",
     null,
     null,
     null,
@@ -45704,8 +45704,8 @@
     null
   ],
   "8FD8": [
-    "huán",
     "hái",
+    "huán",
     null,
     null,
     null,
@@ -47736,8 +47736,8 @@
     null
   ],
   "94A5": [
-    "yuè",
     "yào",
+    "yuè",
     null,
     null,
     null,

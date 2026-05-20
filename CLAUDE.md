@@ -34,10 +34,11 @@ heteronyms (多音字 — characters with more than one pronunciation, e.g. 行
 xíng / háng). The same character codepoint maps to a different
 `base + pinyin-ruby` composite glyph in each variant.
 
-Variant divergence is driven by `data/heteronym_map.json` — variant 1 carries
-the primary reading from `data/pinyin_map.json`; variants 2–6 carry heteronym
-alternates. The slot convention (six variants) was originally modeled on the
-six FZKTPY sub-fonts, but the build no longer reads the .ttc at runtime.
+Variant divergence is driven by `data/heteronym_map.json` — each entry is a
+6-slot array `[V1, V2, …, V6]`; slot 0 is the primary reading and slots 1–5
+carry heteronym alternates (null where absent). The slot convention (six
+variants) was originally modeled on the six FZKTPY sub-fonts, but the build
+no longer reads the .ttc at runtime.
 
 Typical use: stack the variants in CSS `font-family` fallback, or let the
 reader toggle between them when a character has multiple readings. Variant

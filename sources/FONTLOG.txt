@@ -48,6 +48,21 @@ Technical Notes
 
 ChangeLog
 ---------
+2026-05-17  v1.001  Primary-reading corrections (HSK 3.0 alignment)
+  - Aligned primary readings (variant -1) with HSK 3.0 vocabulary
+    (sources/data/hsk30.csv, 11,093 entries)
+  - Build now derives the primary-reading map from heteronym_map.json
+    (slot 0); the standalone pinyin_map.json has been removed
+  - 47 corrections applied, documented in
+    sources/data/pinyin_map_differences.json:
+      · 1 missing character added (〇 → líng)
+      · 4 outright map errors fixed (缺 quē, 惹 rě, 逛 guàng, 拽 zhuài)
+      · 5 sentence-final particles given neutral tone
+        (吧 ba, 呀 ya, 呢 ne, 哇 wa, 啦 la)
+      · 38 heteronyms re-ordered so the HSK 3.0 primary reading
+        occupies slot 0 (e.g. 佛 fó, 教 jiāo, 觉 jiào, 都 dōu,
+        切 qiē, 剥 bāo, 曾 céng, 血 xiě, 谁 shéi)
+
 2025-05-13  v1.000  Initial release
   - 6,763 CJK characters annotated across 6 pronunciation variants
   - Fixed baseline alignment for Pinyin letters (ty=ruby_y)
