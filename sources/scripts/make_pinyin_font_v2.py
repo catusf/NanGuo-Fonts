@@ -479,6 +479,14 @@ def _force_intermediate_post_2(font):
         post.mapping = {}
 
 
+def _format_version(version: str) -> tuple[str, float]:
+    """SemVer-ish "X.Y.Z" → ("Version X.YYY", X.YYY) where YYY = Y*100 + Z."""
+    parts = [int(p) for p in version.split(".")]
+    major = parts[0]
+    minor = (parts[1] if len(parts) > 1 else 0) * 100 + (parts[2] if len(parts) > 2 else 0)
+    return f"Version {major}.{minor:03d}", major + minor / 1000.0
+
+
 def apply_name_table(font, cfg_dict: dict, variant_n: int):
     nm = cfg_dict["name"]
     ps_pfx = cfg_dict["ps_prefix"]
@@ -504,6 +512,9 @@ def apply_name_table(font, cfg_dict: dict, variant_n: int):
     )
     var_ps_prefix = cfg_dict.get("variations_ps_prefix", "NotoSansSC")
 
+    version_string, font_revision = _format_version(cfg_dict.get("version", "1.0.0"))
+    font["head"].fontRevision = font_revision
+
     tbl = font["name"]
 
     win_records = [
@@ -512,7 +523,7 @@ def apply_name_table(font, cfg_dict: dict, variant_n: int):
         (2, subfamily),
         (3, f"{ps}:{year}"),
         (4, f"{family} {subfamily}"),
-        (5, "Version 1.000"),
+        (5, version_string),
         (6, ps),
         (7, nm),
         (8, author),
@@ -774,6 +785,7 @@ def main():
         subfamily=sf["subfamily"],
         weight_class=sf["weight_class"],
         is_bold=sf["is_bold"],
+        version=cfg.get("version", "1.0.0"),
     )
 
     print(f"\n{'=' * 58}")

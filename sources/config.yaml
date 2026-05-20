@@ -4,6 +4,11 @@
 # (e.g. baseline_at_upm_1000 * actual_upm / 1000).
 # See requirements/Output_font_requirements.md.
 
+# Semantic version. Written into name[5] as "Version X.YYY" (Google Fonts
+# canonical form: minor*100 + patch, zero-padded to 3 digits) and into
+# head.fontRevision as the matching fixed-point number. Bump on every release.
+version: "1.0.2"
+
 upm_reference: 1000
 
 metrics_at_upm_1000:
