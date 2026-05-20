@@ -48,6 +48,20 @@ Technical Notes
 
 ChangeLog
 ---------
+2026-05-20  v1.002  Frequency-based readings + ruby overlap fix
+  - Re-ordered primary readings for 15 high-frequency heteronyms using
+    Unicode kHanyuPinlu data (sources/data/kHanyuPinlu.txt, 3,799 entries):
+      · 个 → ge (neutral, measure word — new slot-0 entry)
+      · 了 le, 予 yǔ, 什 shén, 剎 shā, 咖 kā, 朴 pǔ, 桔 jú,
+        槛 kǎn, 氓 máng, 率 lǜ, 纤 xiān, 菌 jūn, 还 hái, 钥 yào
+  - Fixed neighbor-pinyin overlap on long syllables (zhuāng, chuáng,
+    shuāng, …): config.yaml max_overflow_factor lowered from 1.00 to
+    0.96, so wide ruby is uniformly scaled to fit within the hanzi
+    advance width
+  - Build pipeline cleanup: pinyin_map.json removed entirely; the char
+    list now comes from refdata_cjk_composites.json, and slot-0 misses
+    in FZKTPY01 now fail loud instead of falling back
+
 2026-05-17  v1.001  Primary-reading corrections (HSK 3.0 alignment)
   - Aligned primary readings (variant -1) with HSK 3.0 vocabulary
     (sources/data/hsk30.csv, 11,093 entries)
