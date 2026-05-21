@@ -291,12 +291,9 @@ def phase3_composites(font_path: str, syl_map_path: str, pmap: dict,
 
     existing = set(font.getGlyphOrder())
 
-    # Blank-variant target: the U+3000 (ideographic space) glyph if Noto
-    # has it, else .notdef. Variants whose FZKTPY0N reading is absent map
-    # the codepoint here — character is "skipped" in that variant, mimicking
-    # FZKTPY's design. NEVER fall back to V1's ruby.
-    blank_glyph = cm12.get(0x3000) or ".notdef"
-    print(f"  Blank-variant target: {blank_glyph!r}")
+    # Variants whose reading is absent fall back to the bare-hanzi base
+    # glyph (orig.pynbase) — the codepoint still renders the character,
+    # just without ruby on top. NEVER fall back to V1's ruby.
 
     base_glyphs: dict[str, Glyph] = {}
     base_metrics: dict[str, tuple] = {}
@@ -348,15 +345,15 @@ def phase3_composites(font_path: str, syl_map_path: str, pmap: dict,
 
         for k, syl in enumerate(all_r):
             if syl is None:
-                # FZKTPY has no reading for this variant — blank slot.
-                variants.append(blank_glyph)
+                # No reading for this variant — render the bare hanzi.
+                variants.append(base_comp)
                 continue
             pua_name = syl_to_pua.get(syl)
             if pua_name is None:
                 # Syllable known but no PUA glyph was built (rare;
-                # logged as build warning). Skip to blank rather than
-                # silently using V1's ruby.
-                variants.append(blank_glyph)
+                # logged as build warning). Fall back to bare hanzi
+                # rather than silently using V1's ruby.
+                variants.append(base_comp)
                 continue
             if syl in syl_to_glyph:
                 variants.append(syl_to_glyph[syl])

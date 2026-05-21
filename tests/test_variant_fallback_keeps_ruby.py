@@ -1,14 +1,15 @@
-"""Single-reading hanzi: ruby in V1 only; V2..V6 are blank (FZKTPY-style).
+"""Single-reading hanzi: ruby in V1 only; V2..V6 fall back to bare hanzi.
 
-Per user spec: when a character has no FZKTPY0N reading for variant N, v2
-maps the codepoint to the U+3000 (ideographic space) glyph — NOT a fallback
-to V1's ruby. This mimics FZKTPY's actual design where variants 4..6 of a
-single-reading character render literally blank.
+When a character has no FZKTPY0N reading for variant N, V2..V6 map the
+codepoint to the original bare-hanzi base glyph (the source font's
+unaltered character contours) — NOT a fallback to V1's ruby, and NOT a
+blank/ideographic-space glyph. The codepoint still renders as the
+character, just without a pinyin ruby on top.
 
 Curated single-reading hanzi: variant -1's cmap[cp] must resolve to a
 2-component composite whose second component is PUA-named. Variants
--2..-6 must resolve cmap[cp] to the SAME glyph as cmap[U+3000] (the
-blank ideographic-space glyph).
+-2..-6 must resolve cmap[cp] to a glyph that does NOT carry a PUA-named
+ruby component (i.e., the bare hanzi).
 """
 
 from __future__ import annotations
@@ -64,29 +65,33 @@ def _v1_has_pua_composite(tt: TTFont, ch: str) -> tuple[bool, str]:
     return True, ""
 
 
-def _variant_is_blank(tt: TTFont, ch: str, blank_glyph: str) -> tuple[bool, str]:
-    """Variant N's cmap for `ch` resolves to the U+3000 glyph (blank)."""
+def _variant_is_bare_hanzi(tt: TTFont, ch: str) -> tuple[bool, str]:
+    """Variant N's cmap for `ch` resolves to a glyph that has no PUA-named ruby.
+
+    The bare hanzi may be either a simple contour glyph or a composite of
+    CJK radicals (Noto SC often builds hanzi from radical components).
+    What it must NOT contain is a PUA-named component — that would mean
+    V2..V6 still carries V1's ruby.
+    """
     cmap = tt.getBestCmap()
     cp = ord(ch)
     target = cmap.get(cp)
     if target is None:
-        return False, f"{ch} unmapped (should map to blank, not be absent)"
-    if target != blank_glyph:
-        return False, f"{ch} -> {target!r}, expected blank {blank_glyph!r}"
+        return False, f"{ch} unmapped"
+    g = tt["glyf"][target]
+    if g.isComposite():
+        for c in g.components:
+            if _is_pua_name(c.glyphName):
+                return False, (
+                    f"{ch} -> {target!r} has PUA ruby component "
+                    f"{c.glyphName!r} (expected bare hanzi)"
+                )
     return True, ""
 
 
 def _check_family(family_paths, single_reading_chars):
-    # Determine the blank-glyph name from variant -1 (cmap[U+3000]).
-    v1 = TTFont(str(family_paths[0]), lazy=True)
-    try:
-        blank_glyph = v1.getBestCmap().get(0x3000)
-    finally:
-        v1.close()
-    assert blank_glyph, "variant -1 has no U+3000 mapping; cannot determine blank target"
-
     v1_failures: list[str] = []
-    blank_failures: list[str] = []
+    bare_failures: list[str] = []
 
     for i, p in enumerate(family_paths):
         tt = TTFont(str(p), lazy=True)
@@ -97,30 +102,30 @@ def _check_family(family_paths, single_reading_chars):
                     if not ok:
                         v1_failures.append(f"{p.name}: {reason}")
                 else:
-                    ok, reason = _variant_is_blank(tt, ch, blank_glyph)
+                    ok, reason = _variant_is_bare_hanzi(tt, ch)
                     if not ok:
-                        blank_failures.append(f"{p.name}: {reason}")
+                        bare_failures.append(f"{p.name}: {reason}")
         finally:
             tt.close()
 
     # Allow ≤5% noise on V1 composite check for edge cases where pypinyin
-    # reports a single reading but FZKTPY built it as a heteronym.
+    # reports a single reading but the heteronym map built it as a heteronym.
     n = len(single_reading_chars)
     assert len(v1_failures) / n <= 0.05, (
         f"{len(v1_failures)}/{n} V1 single-reading hanzi missing PUA ruby; "
         f"first 5: {v1_failures[:5]}"
     )
-    # Same tolerance for blank check.
-    blank_total = n * (len(family_paths) - 1)
-    assert len(blank_failures) / blank_total <= 0.05, (
-        f"{len(blank_failures)}/{blank_total} V2..V6 single-reading hanzi "
-        f"NOT mapped to blank; first 5: {blank_failures[:5]}"
+    # Same tolerance for the bare-hanzi check on V2..V6.
+    bare_total = n * (len(family_paths) - 1)
+    assert len(bare_failures) / bare_total <= 0.05, (
+        f"{len(bare_failures)}/{bare_total} V2..V6 single-reading hanzi "
+        f"still carry PUA ruby; first 5: {bare_failures[:5]}"
     )
 
 
-def test_sans_single_reading_v1_ruby_v2plus_blank(sans_ttfs, single_reading_chars):
+def test_sans_single_reading_v1_ruby_v2plus_bare(sans_ttfs, single_reading_chars):
     _check_family(sans_ttfs, single_reading_chars)
 
 
-def test_serif_single_reading_v1_ruby_v2plus_blank(serif_ttfs, single_reading_chars):
+def test_serif_single_reading_v1_ruby_v2plus_bare(serif_ttfs, single_reading_chars):
     _check_family(serif_ttfs, single_reading_chars)

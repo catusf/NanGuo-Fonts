@@ -4042,5 +4042,278 @@
   },
   "ḿ": {
     "pua": "E1A5"
+  },
+  "bai": {
+    "pua": "E1AA"
+  },
+  "bing": {
+    "pua": "E1AF"
+  },
+  "bu": {
+    "pua": "E1B0"
+  },
+  "cai": {
+    "pua": "E1B2"
+  },
+  "che": {
+    "pua": "E1B3"
+  },
+  "cheng": {
+    "pua": "E1B4"
+  },
+  "chu": {
+    "pua": "E1B5"
+  },
+  "cun": {
+    "pua": "E1B6"
+  },
+  "dai": {
+    "pua": "E1B8"
+  },
+  "dan": {
+    "pua": "E1BB"
+  },
+  "dang": {
+    "pua": "E1BD"
+  },
+  "dao": {
+    "pua": "E1BE"
+  },
+  "di": {
+    "pua": "E1C3"
+  },
+  "du": {
+    "pua": "E1C5"
+  },
+  "fa": {
+    "pua": "E1C8"
+  },
+  "fan": {
+    "pua": "E1CA"
+  },
+  "fang": {
+    "pua": "E1CD"
+  },
+  "fen": {
+    "pua": "E1CE"
+  },
+  "fu": {
+    "pua": "E1CF"
+  },
+  "gai": {
+    "pua": "E1D2"
+  },
+  "ge": {
+    "pua": "E1D4"
+  },
+  "guo": {
+    "pua": "E1D7"
+  },
+  "hai": {
+    "pua": "E1DC"
+  },
+  "hao": {
+    "pua": "E1DD"
+  },
+  "he": {
+    "pua": "E1DE"
+  },
+  "hu": {
+    "pua": "E1E0"
+  },
+  "hua": {
+    "pua": "E1E1"
+  },
+  "huan": {
+    "pua": "E1E4"
+  },
+  "ji": {
+    "pua": "E1E6"
+  },
+  "jian": {
+    "pua": "E1E8"
+  },
+  "jing": {
+    "pua": "E1EA"
+  },
+  "ju": {
+    "pua": "E1EB"
+  },
+  "kou": {
+    "pua": "E1ED"
+  },
+  "kuai": {
+    "pua": "E1F0"
+  },
+  "liang": {
+    "pua": "E1F2"
+  },
+  "ling": {
+    "pua": "E1F5"
+  },
+  "long": {
+    "pua": "E1F7"
+  },
+  "mai": {
+    "pua": "E1FA"
+  },
+  "mao": {
+    "pua": "E1FC"
+  },
+  "mei": {
+    "pua": "E1FF"
+  },
+  "mian": {
+    "pua": "E201"
+  },
+  "ming": {
+    "pua": "E204"
+  },
+  "mo": {
+    "pua": "E206"
+  },
+  "mou": {
+    "pua": "E209"
+  },
+  "nai": {
+    "pua": "E20A"
+  },
+  "nan": {
+    "pua": "E20B"
+  },
+  "nao": {
+    "pua": "E20E"
+  },
+  "niu": {
+    "pua": "E210"
+  },
+  "pan": {
+    "pua": "E212"
+  },
+  "peng": {
+    "pua": "E213"
+  },
+  "po": {
+    "pua": "E214"
+  },
+  "pu": {
+    "pua": "E215"
+  },
+  "qi": {
+    "pua": "E218"
+  },
+  "qian": {
+    "pua": "E21D"
+  },
+  "qin": {
+    "pua": "E21F"
+  },
+  "qing": {
+    "pua": "E220"
+  },
+  "ran": {
+    "pua": "E221"
+  },
+  "ren": {
+    "pua": "E222"
+  },
+  "sao": {
+    "pua": "E227"
+  },
+  "shao": {
+    "pua": "E22C"
+  },
+  "shen": {
+    "pua": "E22F"
+  },
+  "sheng": {
+    "pua": "E231"
+  },
+  "shu": {
+    "pua": "E236"
+  },
+  "suan": {
+    "pua": "E239"
+  },
+  "tai": {
+    "pua": "E23B"
+  },
+  "tan": {
+    "pua": "E23D"
+  },
+  "tang": {
+    "pua": "E23E"
+  },
+  "teng": {
+    "pua": "E23F"
+  },
+  "tian": {
+    "pua": "E240"
+  },
+  "ting": {
+    "pua": "E241"
+  },
+  "tong": {
+    "pua": "E245"
+  },
+  "wang": {
+    "pua": "E248"
+  },
+  "wen": {
+    "pua": "E249"
+  },
+  "wu": {
+    "pua": "E24A"
+  },
+  "xi": {
+    "pua": "E24C"
+  },
+  "xia": {
+    "pua": "E24D"
+  },
+  "xian": {
+    "pua": "E24F"
+  },
+  "xie": {
+    "pua": "E250"
+  },
+  "xing": {
+    "pua": "E254"
+  },
+  "xiong": {
+    "pua": "E259"
+  },
+  "yi": {
+    "pua": "E25C"
+  },
+  "ying": {
+    "pua": "E25E"
+  },
+  "yong": {
+    "pua": "E25F"
+  },
+  "yuan": {
+    "pua": "E261"
+  },
+  "yue": {
+    "pua": "E263"
+  },
+  "zhan": {
+    "pua": "E268"
+  },
+  "zhang": {
+    "pua": "E26C"
+  },
+  "zheng": {
+    "pua": "E26D"
+  },
+  "zhi": {
+    "pua": "E271"
+  },
+  "zong": {
+    "pua": "E272"
+  },
+  "zui": {
+    "pua": "E275"
   }
 }

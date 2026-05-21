@@ -48,6 +48,24 @@ Technical Notes
 
 ChangeLog
 ---------
+2026-05-21  v1.0.3  Bare-hanzi fallback + neutral-tone alternates
+  - Variants whose Hanzi Pinyin slot is null now render the bare hanzi
+    (the source font's unaltered character outline) instead of mapping
+    the codepoint to U+3000 (ideographic space). The character is still
+    visible in every variant; only the pinyin ruby is absent when no
+    reading exists for that slot. Never silently falls back to V1's ruby.
+    Implementation: sources/scripts/make_pinyin_font_v2.py phase3 maps
+    missing slots to the bare-hanzi base glyph (orig.pynbase); regression
+    coverage in tests/test_variant_fallback_keeps_ruby.py.
+  - Added 183 neutral-tone non-primary readings to heteronym_map.json,
+    derived from sources/data/kHanyuPinlu.txt. Slot-1 (variant -2) of
+    common particles, measure words, and frequent characters now carries
+    the toneless alternate — e.g. 上 shang, 下 xia, 不 bu, 人 ren,
+    事 shi, 个 ge (slot 2), 和 huo/he, 量 liang. Full list and rationale
+    in requirements/Neutral_tone_non_primary_readings.md.
+  - syllable_inventory.json regenerated to include PUA glyphs for the
+    newly-referenced neutral-tone syllables.
+
 2026-05-20  v1.0.2  Frequency-based readings + ruby overlap fix
   - Re-ordered primary readings for 16 high-frequency heteronyms using
     Unicode kHanyuPinlu data (sources/data/kHanyuPinlu.txt, 3,799 entries):
@@ -91,7 +109,7 @@ ChangeLog
 
 Acknowledgements
 ----------------
-NanGuo Pinyin is built on Noto Sans SC:
+NanGuo Heiti/Songti Pinyin are built on Noto Sans/Serif SC:
   Copyright 2014-2021 Google LLC.
   Licensed under the SIL Open Font License, Version 1.1.
   https://fonts.google.com/noto/specimen/Noto+Sans+SC
