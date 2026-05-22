@@ -49,8 +49,13 @@ sources/
 documentation/        specimen images
 ```
 
+
+
 ## License
 
 This Font Software is licensed under the [SIL Open Font License, Version 1.1](OFL.txt).
 
 Font data derived from Noto CJK fonts, Copyright 2014–2021 Google LLC (OFL 1.1).
+
+
+![Tests](https://github.com/catusf/NanGuo-Fonts/actions/workflows/build.yml/badge.svg)
