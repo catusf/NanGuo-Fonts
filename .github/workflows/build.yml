@@ -27,7 +27,13 @@ jobs:
         run: pip install -r requirements-test.txt
 
       - name: Build fonts
-        run: make
+        run: make fonts
+
+      - name: Build samples
+        run: make samples
+
+      - name: Run tests
+        run: make test
 
       - name: Zip Heiti TTFs
         run: zip -j NanGuo-Heiti-Fonts.zip fonts/Heiti/ttf/*.ttf
@@ -45,6 +51,8 @@ jobs:
           files: |
             NanGuo-Heiti-Fonts.zip
             NanGuo-Songti-Fonts.zip
+            fonts/Heiti/ttf/*.ttf
+            fonts/Songti/ttf/*.ttf
             fonts/Heiti/ttc/NanGuoHeitiPinyin.ttc
             fonts/Songti/ttc/NanGuoSongtiPinyin.ttc
             documentation/NanGuo_Specimen_Heiti.png

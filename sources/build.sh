@@ -42,6 +42,19 @@ python scripts/make_pinyin_font_v2.py \
     --url    "https://catusf.github.io" \
     --out    "../fonts/Songti/ttf"
 
+echo "=== Adding contextual reading ligatures to variant-1 fonts ==="
+for FONT in \
+    "../fonts/Heiti/ttf/NanGuoHeitiPinyin-1.ttf" \
+    "../fonts/Heiti/ttf/NanGuoHeitiPinyin-1-Bold.ttf" \
+    "../fonts/Songti/ttf/NanGuoSongtiPinyin-1.ttf" \
+    "../fonts/Songti/ttf/NanGuoSongtiPinyin-1-Bold.ttf"; do
+    python scripts/add_ligatures.py \
+        --font     "$FONT" \
+        --data     "data/duoyinzi_pattern_one.txt" \
+        --heteronym "data/heteronym_map.json" \
+        --syllables "data/syllable_inventory.json"
+done
+
 echo "=== Bundling TTC collections ==="
 python scripts/bundle_ttc.py
 
