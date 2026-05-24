@@ -49,9 +49,8 @@ for FONT in \
     "../fonts/Songti/ttf/NanGuoSongtiPinyin-1.ttf" \
     "../fonts/Songti/ttf/NanGuoSongtiPinyin-1-Bold.ttf"; do
     python scripts/add_ligatures.py \
-        --font     "$FONT" \
-        --data     "data/duoyinzi_pattern_one.txt" \
-        --heteronym "data/heteronym_map.json" \
+        --font      "$FONT" \
+        --combined  "data/duoyinzi_combined.json" \
         --syllables "data/syllable_inventory.json"
 done
 

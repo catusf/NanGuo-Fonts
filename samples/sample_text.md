@@ -11,12 +11,12 @@ Switch between font variants 1–6 to see heteronyms (多音字) change pronunci
 ## Chinese Showcase / 中文展示
 Font size: 24pt
 
-Render in variant 1 font:  了解呵和啊哪着么得的中长不了衣服了吗
-Render in variant 2 font:  了解呵和啊哪着么得的中长不了衣服了吗
-Render in variant 3 font:  了解呵和啊哪着么得的中长不了衣服了吗
-Render in variant 4 font:  了解呵和啊哪着么得的中长不了衣服了吗
-Render in variant 5 font:  了解呵和啊哪着么得的中长不了衣服了吗
-Render in variant 6 font:  了解呵和啊哪着么得的中长不了衣服了吗
+Render in variant 1 font:  呵和啊哪着么得的中长不了衣服了吗银行了解衣服
+Render in variant 2 font:  呵和啊哪着么得的中长不了衣服了吗银行了解衣服
+Render in variant 3 font:  呵和啊哪着么得的中长不了衣服了吗银行了解衣服
+Render in variant 4 font:  呵和啊哪着么得的中长不了衣服了吗银行了解衣服
+Render in variant 5 font:  呵和啊哪着么得的中长不了衣服了吗银行了解衣服
+Render in variant 6 font:  呵和啊哪着么得的中长不了衣服了吗银行了解衣服
 
 
 ## Multilingual Test Text (NanGuo Songti PinYin 1)

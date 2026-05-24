@@ -3,9 +3,9 @@ SOURCES  := sources
 FONTS_H  := fonts/Heiti/ttf
 FONTS_S  := fonts/Songti/ttf
 
-.PHONY: all fonts samples test clean
+.PHONY: all fonts samples tests clean
 
-all: fonts samples test
+all: fonts samples tests
 
 # ── Build TTF/TTC font files ─────────────────────────────────────────────────
 fonts:
@@ -34,8 +34,7 @@ fonts:
 	    ../$(FONTS_S)/NanGuoSongtiPinyin-1-Bold.ttf; do \
 	    $(PYTHON) scripts/add_ligatures.py \
 	        --font "$$F" \
-	        --data data/duoyinzi_pattern_one.txt \
-	        --heteronym data/heteronym_map.json \
+	        --combined data/duoyinzi_combined.json \
 	        --syllables data/syllable_inventory.json; \
 	done
 	@echo "=== Bundling TTC collections ==="
@@ -53,7 +52,7 @@ samples:
 	cd $(SOURCES) && $(PYTHON) scripts/build_poem_pdf.py
 
 # ── Run test suite ────────────────────────────────────────────────────────────
-test:
+tests:
 	@echo "=== Running tests ==="
 	$(PYTHON) tests/run_all.py
 

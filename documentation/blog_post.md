@@ -5,34 +5,67 @@ categories: [Tiện ích]
 tags: [tiếng Trung, Chinese, fonts]
 ---
 
+## Tải về
+
+- **NanGuo Heiti Pinyin (sans):**
+  [tải font](https://github.com/catusf/NanGuo-Fonts/releases/latest/download/NanGuoHeitiPinyin.ttc)
+
+- **NanGuo Songti Pinyin (serif):**
+  [tải font](https://github.com/catusf/NanGuo-Fonts/releases/latest/download/NanGuoSongtiPinyin.ttc)
+
+- **Mã nguồn:**
+  [github.com/catusf/NanGuo-Fonts](https://github.com/catusf/NanGuo-Fonts)
+
 ## Font chữ Hán có phiên âm
 
-Đây là bộ font chữ Hán giản thể đặc biệt: mỗi chữ Hán đã có sẵn phiên âm
-pinyin in nhỏ ở phía trên. Bạn chỉ cần gõ chữ
-Hán như bình thường — pinyin tự xuất hiện. Không cần viết thẻ HTML
-`<ruby>`, không cần phần mềm hỗ trợ.
+Đây là bộ font chữ Hán giản thể đặc biệt: mỗi chữ Hán đã có sẵn phiên âm pinyin in nhỏ ở phía trên. Bạn chỉ cần gõ chữ Hán như bình thường — pinyin tự xuất hiện. 
 
 Có hai bộ font:
 
 - **NanGuo Heiti Pinyin** — kiểu chữ vuông, không chân (sans).
 - **NanGuo Songti Pinyin** — kiểu chữ có chân, dáng truyền thống (serif).
 
-Cả hai đều dựa trên font Noto của Google nên hiển thị rất rõ trên mọi
-hệ điều hành.
+Cả hai đều dựa trên font Noto của Google nên hiển thị rõ trên mọi hệ điều hành.
 
-## Điểm mới: hỗ trợ chữ có nhiều cách đọc
+## Hình minh hoạ
+
+![Font NanGuo Heiti Pinyin](https://github.com/catusf/NanGuo-Fonts/raw/main/documentation/NanGuo_Demo_Heiti.png)
+
+![Font NanGuo Songti Pinyin](https://github.com/catusf/NanGuo-Fonts/raw/main/documentation/NanGuo_Demo_Songti.png)
+
+![Bài thơ Đường - Tương tư ](https://github.com/catusf/NanGuo-Fonts/raw/main/documentation/NanGuo_Poem_XiangSi.png)
+
+## Hỗ trợ chữ có nhiều cách đọc
 
 Trong tiếng Trung có rất nhiều **đa âm tự** — tức là chữ có nhiều hơn
 một cách đọc. Ví dụ chữ **行**: khi đọc là *xíng* nghĩa là "đi"; khi đọc
 là *háng* nghĩa là "hàng, dãy".
 
+Bộ font này cũng được tối ưu để những cách đọc nào phổ biến nhất (nhất là các chữ Hán trong danh sách từ của HSK 1-6) sẽ hiện trong phiên bản font đầu tiên, giảm thiểu số lần đổi font chữ.
+
 Mỗi bộ font có **6 phiên bản × 2 độ đậm (thường + đậm) = 12 file font**:
 
 - Phiên bản `-1`: ghi cách đọc phổ biến nhất.
 - Phiên bản `-2` đến `-6`: ghi các cách đọc khác.
+- Phiên bản `-6` sẽ chứa âm thanh nhẹ (轻声), nếu âm đó chưa có ở phiên bản `-1`
 
-Bạn có thể xếp các phiên bản trong CSS `font-family` để chuyển qua lại
-giữa các cách đọc, rất tiện cho việc học và dạy tiếng Trung.
+## Pinyin cho các từ ghép
+
+Hanzi trong các từ ghép có thể có cách đọc khác với cách đọc phổ biến nhất.
+
+  - 了解: le → liǎo
+  - 觉得: jiào → jué
+  - 高兴: xīng → xìng
+  - 银行: xíng → háng
+  - 差别: chà → chā
+  - 认为: wèi → wéi
+  - 便宜: biàn → pián
+
+## Luôn luôn miễn phí
+
+Bộ font này là mã nguồn mở, công bố toàn bộ nội dung trên GitHub. Các bạn luôn có thể download mà không phải đăng nhập hay trả phí. 
+
+Những người có khả năn kỹ thuật còn có thể tải về và chỉnh sửa theo ý mình.
 
 ## Một font — nhiều ngôn ngữ
 
@@ -49,23 +82,6 @@ văn bản pha trộn nhiều thứ tiếng mà **không cần đổi font giữ
 Nhờ vậy giáo viên ngoại ngữ có thể dùng cùng một font để soạn giáo trình
 song ngữ Trung – Việt, Trung – Anh, Trung – Nga… mà chữ vẫn đồng nhất
 về kiểu dáng và độ đậm.
-
-## Tải về
-
-- **NanGuo Heiti Pinyin (sans):**
-  [tải zip](https://github.com/catusf/NanGuo-Fonts/raw/main/release/NanGuoHeitiPinyin-GoogleFonts.zip)
-- **NanGuo Songti Pinyin (serif):**
-  [tải zip](https://github.com/catusf/NanGuo-Fonts/raw/main/release/NanGuoSongtiPinyin-GoogleFonts.zip)
-- **Mã nguồn:**
-  [github.com/catusf/NanGuo-Fonts](https://github.com/catusf/NanGuo-Fonts)
-
-## Hình minh hoạ
-
-<!-- Nhớ copy hai file PNG này từ samples/output/ vào thư mục assets của blog -->
-
-![NanGuo Pinyin — trang 1](/assets/img/posts/NanGuo_Demo_p1.png)
-
-![NanGuo Pinyin — trang 2](/assets/img/posts/NanGuo_Demo_p2.png)
 
 ## Ghi chú
 

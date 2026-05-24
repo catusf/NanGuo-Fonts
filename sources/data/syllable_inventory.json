@@ -4315,5 +4315,566 @@
   },
   "zui": {
     "pua": "E275"
+  },
+  "hun": {
+    "pua": "E277"
+  },
+  "jián": {
+    "pua": "E288"
+  },
+  "jiáng": {
+    "pua": "E28D"
+  },
+  "jiang": {
+    "pua": "E290"
+  },
+  "jiao": {
+    "pua": "E295"
+  },
+  "jín": {
+    "pua": "E29C"
+  },
+  "jin": {
+    "pua": "E29F"
+  },
+  "jíng": {
+    "pua": "E2A1"
+  },
+  "jíong": {
+    "pua": "E2A6"
+  },
+  "jiú": {
+    "pua": "E2AB"
+  },
+  "juán": {
+    "pua": "E2B5"
+  },
+  "juan": {
+    "pua": "E2B8"
+  },
+  "jun": {
+    "pua": "E2C2"
+  },
+  "kái": {
+    "pua": "E2C9"
+  },
+  "kai": {
+    "pua": "E2CC"
+  },
+  "kán": {
+    "pua": "E2CE"
+  },
+  "kan": {
+    "pua": "E2D1"
+  },
+  "kang": {
+    "pua": "E2D6"
+  },
+  "káo": {
+    "pua": "E2D8"
+  },
+  "kao": {
+    "pua": "E2DB"
+  },
+  "ken": {
+    "pua": "E2E5"
+  },
+  "kong": {
+    "pua": "E2EF"
+  },
+  "kóu": {
+    "pua": "E2F1"
+  },
+  "kú": {
+    "pua": "E2F6"
+  },
+  "ku": {
+    "pua": "E2F9"
+  },
+  "kuá": {
+    "pua": "E2FB"
+  },
+  "kua": {
+    "pua": "E2FE"
+  },
+  "kuán": {
+    "pua": "E305"
+  },
+  "kuang": {
+    "pua": "E30D"
+  },
+  "kui": {
+    "pua": "E312"
+  },
+  "kún": {
+    "pua": "E314"
+  },
+  "kun": {
+    "pua": "E317"
+  },
+  "kuo": {
+    "pua": "E31C"
+  },
+  "lǎi": {
+    "pua": "E324"
+  },
+  "lai": {
+    "pua": "E326"
+  },
+  "lan": {
+    "pua": "E32B"
+  },
+  "lang": {
+    "pua": "E330"
+  },
+  "lao": {
+    "pua": "E335"
+  },
+  "lian": {
+    "pua": "E34E"
+  },
+  "liao": {
+    "pua": "E358"
+  },
+  "lin": {
+    "pua": "E362"
+  },
+  "liu": {
+    "pua": "E36C"
+  },
+  "luan": {
+    "pua": "E386"
+  },
+  "lue": {
+    "pua": "E38B"
+  },
+  "lǔn": {
+    "pua": "E38E"
+  },
+  "lun": {
+    "pua": "E390"
+  },
+  "man": {
+    "pua": "E3A4"
+  },
+  "měn": {
+    "pua": "E3BB"
+  },
+  "meng": {
+    "pua": "E3C2"
+  },
+  "mi": {
+    "pua": "E3C7"
+  },
+  "miao": {
+    "pua": "E3D1"
+  },
+  "miu": {
+    "pua": "E3E5"
+  },
+  "mu": {
+    "pua": "E3F4"
+  },
+  "nei": {
+    "pua": "E417"
+  },
+  "nen": {
+    "pua": "E41C"
+  },
+  "ni": {
+    "pua": "E426"
+  },
+  "nian": {
+    "pua": "E42B"
+  },
+  "niǎng": {
+    "pua": "E42E"
+  },
+  "niang": {
+    "pua": "E430"
+  },
+  "niao": {
+    "pua": "E435"
+  },
+  "nie": {
+    "pua": "E43A"
+  },
+  "ning": {
+    "pua": "E444"
+  },
+  "nong": {
+    "pua": "E44E"
+  },
+  "nou": {
+    "pua": "E453"
+  },
+  "nu": {
+    "pua": "E458"
+  },
+  "nue": {
+    "pua": "E467"
+  },
+  "nǔo": {
+    "pua": "E46A"
+  },
+  "nuo": {
+    "pua": "E46C"
+  },
+  "óu": {
+    "pua": "E473"
+  },
+  "ou": {
+    "pua": "E476"
+  },
+  "pǎ": {
+    "pua": "E479"
+  },
+  "pa": {
+    "pua": "E47B"
+  },
+  "pai": {
+    "pua": "E480"
+  },
+  "pǎn": {
+    "pua": "E483"
+  },
+  "pang": {
+    "pua": "E48A"
+  },
+  "pao": {
+    "pua": "E48F"
+  },
+  "pěi": {
+    "pua": "E492"
+  },
+  "pei": {
+    "pua": "E494"
+  },
+  "pi": {
+    "pua": "E4A3"
+  },
+  "pian": {
+    "pua": "E4A8"
+  },
+  "piao": {
+    "pua": "E4AD"
+  },
+  "pié": {
+    "pua": "E4AF"
+  },
+  "pin": {
+    "pua": "E4B7"
+  },
+  "qia": {
+    "pua": "E4D5"
+  },
+  "qiang": {
+    "pua": "E4DF"
+  },
+  "qiao": {
+    "pua": "E4E4"
+  },
+  "qie": {
+    "pua": "E4E9"
+  },
+  "quan": {
+    "pua": "E507"
+  },
+  "quě": {
+    "pua": "E50A"
+  },
+  "que": {
+    "pua": "E50C"
+  },
+  "rang": {
+    "pua": "E51B"
+  },
+  "rao": {
+    "pua": "E520"
+  },
+  "re": {
+    "pua": "E525"
+  },
+  "ri": {
+    "pua": "E534"
+  },
+  "rou": {
+    "pua": "E53E"
+  },
+  "ru": {
+    "pua": "E543"
+  },
+  "rui": {
+    "pua": "E54D"
+  },
+  "run": {
+    "pua": "E552"
+  },
+  "ruo": {
+    "pua": "E557"
+  },
+  "sá": {
+    "pua": "E559"
+  },
+  "sa": {
+    "pua": "E55C"
+  },
+  "sai": {
+    "pua": "E561"
+  },
+  "sán": {
+    "pua": "E563"
+  },
+  "san": {
+    "pua": "E566"
+  },
+  "sang": {
+    "pua": "E568"
+  },
+  "sáo": {
+    "pua": "E56D"
+  },
+  "se": {
+    "pua": "E575"
+  },
+  "sha": {
+    "pua": "E584"
+  },
+  "shán": {
+    "pua": "E58B"
+  },
+  "sháng": {
+    "pua": "E590"
+  },
+  "she": {
+    "pua": "E59D"
+  },
+  "shuá": {
+    "pua": "E5B8"
+  },
+  "shuái": {
+    "pua": "E5BD"
+  },
+  "shuai": {
+    "pua": "E5C0"
+  },
+  "shuan": {
+    "pua": "E5C5"
+  },
+  "shuáng": {
+    "pua": "E5C7"
+  },
+  "shun": {
+    "pua": "E5D4"
+  },
+  "shuo": {
+    "pua": "E5D9"
+  },
+  "sí": {
+    "pua": "E5DB"
+  },
+  "song": {
+    "pua": "E5E3"
+  },
+  "sóu": {
+    "pua": "E5E5"
+  },
+  "sou": {
+    "pua": "E5E8"
+  },
+  "sǔ": {
+    "pua": "E5EB"
+  },
+  "su": {
+    "pua": "E5ED"
+  },
+  "sui": {
+    "pua": "E5F7"
+  },
+  "sún": {
+    "pua": "E5F9"
+  },
+  "súo": {
+    "pua": "E5FE"
+  },
+  "tá": {
+    "pua": "E603"
+  },
+  "tao": {
+    "pua": "E61A"
+  },
+  "te": {
+    "pua": "E61F"
+  },
+  "ti": {
+    "pua": "E629"
+  },
+  "tié": {
+    "pua": "E635"
+  },
+  "tu": {
+    "pua": "E64C"
+  },
+  "tuan": {
+    "pua": "E651"
+  },
+  "tui": {
+    "pua": "E65B"
+  },
+  "tuo": {
+    "pua": "E660"
+  },
+  "wái": {
+    "pua": "E667"
+  },
+  "wai": {
+    "pua": "E66A"
+  },
+  "wan": {
+    "pua": "E66F"
+  },
+  "wei": {
+    "pua": "E679"
+  },
+  "wéng": {
+    "pua": "E680"
+  },
+  "weng": {
+    "pua": "E683"
+  },
+  "wo": {
+    "pua": "E688"
+  },
+  "xiǎ": {
+    "pua": "E695"
+  },
+  "xiang": {
+    "pua": "E6A1"
+  },
+  "xiao": {
+    "pua": "E6A6"
+  },
+  "xiú": {
+    "pua": "E6BC"
+  },
+  "xuan": {
+    "pua": "E6C9"
+  },
+  "xue": {
+    "pua": "E6CE"
+  },
+  "xǔn": {
+    "pua": "E6D1"
+  },
+  "xun": {
+    "pua": "E6D3"
+  },
+  "yan": {
+    "pua": "E6DD"
+  },
+  "yang": {
+    "pua": "E6E2"
+  },
+  "yao": {
+    "pua": "E6E7"
+  },
+  "ye": {
+    "pua": "E6EC"
+  },
+  "yin": {
+    "pua": "E6F6"
+  },
+  "you": {
+    "pua": "E70A"
+  },
+  "yu": {
+    "pua": "E70F"
+  },
+  "yun": {
+    "pua": "E71E"
+  },
+  "zái": {
+    "pua": "E725"
+  },
+  "zai": {
+    "pua": "E728"
+  },
+  "záng": {
+    "pua": "E72F"
+  },
+  "zang": {
+    "pua": "E732"
+  },
+  "zao": {
+    "pua": "E737"
+  },
+  "zě": {
+    "pua": "E73A"
+  },
+  "ze": {
+    "pua": "E73C"
+  },
+  "zen": {
+    "pua": "E746"
+  },
+  "zeng": {
+    "pua": "E74B"
+  },
+  "zhai": {
+    "pua": "E755"
+  },
+  "zhán": {
+    "pua": "E757"
+  },
+  "zháng": {
+    "pua": "E75C"
+  },
+  "zhao": {
+    "pua": "E764"
+  },
+  "zhén": {
+    "pua": "E76C"
+  },
+  "zhen": {
+    "pua": "E76F"
+  },
+  "zhéng": {
+    "pua": "E771"
+  },
+  "zhou": {
+    "pua": "E783"
+  },
+  "zhu": {
+    "pua": "E788"
+  },
+  "zhuán": {
+    "pua": "E794"
+  },
+  "zhuan": {
+    "pua": "E797"
+  },
+  "zhuang": {
+    "pua": "E79C"
+  },
+  "zhui": {
+    "pua": "E7A1"
+  },
+  "zhún": {
+    "pua": "E7A3"
+  },
+  "zí": {
+    "pua": "E7AD"
+  },
+  "zóu": {
+    "pua": "E7B7"
+  },
+  "zou": {
+    "pua": "E7BA"
+  },
+  "zuán": {
+    "pua": "E7C1"
+  },
+  "zuan": {
+    "pua": "E7C4"
   }
 }

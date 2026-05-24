@@ -110,6 +110,9 @@ def build(out_path: pathlib.Path, style: str) -> None:
     pdf.set_auto_page_break(auto=True, margin=8)
     pdf.add_page()
 
+    # Enable text shaping for proper glyph rendering and ligature support
+    pdf.set_text_shaping(use_shaping_engine=True, features={"liga": True})
+
     loaded: set[str] = set()
 
     def load(md_name: str) -> str:
