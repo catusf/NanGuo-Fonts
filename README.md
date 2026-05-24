@@ -23,16 +23,19 @@ Each family ships six TTFs (`-1` through `-6`) plus Bold variants, for 12 files 
 
 ```bash
 pip install -r requirements.txt
-./build.sh
+make
 ```
 
 Built TTFs land in `fonts/Heiti/ttf/` and `fonts/Songti/ttf/`.
+
+And combined TTCs land in
+`fonts/Heiti/ttc/` and `fonts/Songti/ttc/`.
 
 ## Testing
 
 ```bash
 pip install -r requirements-test.txt
-python tests/run_all.py
+make tests
 ```
 
 ## Repository layout
