@@ -33,7 +33,7 @@ jobs:
         run: make samples
 
       - name: Run tests
-        run: make test
+        run: make tests
 
       - name: Zip Heiti TTFs
         run: zip -j NanGuo-Heiti-Fonts.zip fonts/Heiti/ttf/*.ttf
