@@ -8,8 +8,8 @@ ID cross-reference through FZKTPY01.
 
 Reads (inputs):
   data/FangZhengKaiTiPinYinZiKu-1.ttc       # 6 sub-fonts FZKTPY01..06
-  data/refdata_pua_syllable_map.json        # 1,216 PUA -> syllable (known)
-  data/refdata_cjk_composites.json          # 6,763 char codepoints to walk
+  data/fzktpy_pua_syllable_map.json        # 1,216 PUA -> syllable (known)
+  data/fzktpy_cjk_composites.json          # 6,763 char codepoints to walk
 
 Writes (outputs):
   data/heteronym_map.json                   # cp_hex -> [V1, V2, V3, V4, V5, V6]
@@ -126,16 +126,16 @@ def main() -> None:
     gid_to_fz1_name: dict[int, str] = {i: n for i, n in enumerate(fz1_order)}
 
     # Load known PUA -> syllable, normalize keys to 'uniEXXX' form.
-    raw_syl_map = json.loads((DATA / "refdata_pua_syllable_map.json").read_text(encoding="utf-8"))
+    raw_syl_map = json.loads((DATA / "fzktpy_pua_syllable_map.json").read_text(encoding="utf-8"))
     known_pua_to_syl: dict[str, str] = {}
     for k, meta in raw_syl_map.items():
         hexpart = _strip0x(k).upper()
         known_pua_to_syl[f"uni{hexpart}"] = meta["syllable"]
     print(f"  Loaded {len(known_pua_to_syl):,} known PUA->syllable entries")
 
-    comps0 = json.loads((DATA / "refdata_cjk_composites.json").read_text(encoding="utf-8"))["0"]
+    comps0 = json.loads((DATA / "fzktpy_cjk_composites.json").read_text(encoding="utf-8"))["0"]
     char_cps = [_strip0x(k).upper() for k in comps0]
-    print(f"  Loaded {len(char_cps):,} characters from refdata_cjk_composites.json")
+    print(f"  Loaded {len(char_cps):,} characters from fzktpy_cjk_composites.json")
 
     # First pass: walk every char × every sub-font, collect (cp, sub_idx) ->
     # FZKTPY01-anchored ruby PUA name.

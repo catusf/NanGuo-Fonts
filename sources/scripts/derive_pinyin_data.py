@@ -1,8 +1,8 @@
 """Derive the three JSONs that make_pinyin_font.py expects in data/.
 
 Reads:
-  data/refdata_cjk_composites.json     (sub-font 0 = primary reading per char)
-  data/refdata_pua_syllable_map.json   (PUA hex -> syllable)
+  data/fzktpy_cjk_composites.json     (sub-font 0 = primary reading per char)
+  data/fzktpy_pua_syllable_map.json   (PUA hex -> syllable)
 
 Writes:
   data/heteronym_map.json      cp_hex -> [primary, alt1, alt2, ...]
@@ -32,9 +32,9 @@ def _strip0x(h: str) -> str:
 
 def main() -> None:
     comps = json.loads(
-        (DATA / "refdata_cjk_composites.json").read_text(encoding="utf-8"))
+        (DATA / "fzktpy_cjk_composites.json").read_text(encoding="utf-8"))
     syl_map = json.loads(
-        (DATA / "refdata_pua_syllable_map.json").read_text(encoding="utf-8"))
+        (DATA / "fzktpy_pua_syllable_map.json").read_text(encoding="utf-8"))
 
     pua_to_syl: dict[str, str] = {
         _strip0x(k).upper(): v["syllable"] for k, v in syl_map.items()

@@ -235,12 +235,12 @@ No `traditional` field. `primary_reading` and `practical_reading` always have th
 ### Phase 3 — Refactor `add_ligatures.py`
 - [X] Replace `load_rules()` to consume the flat `simplified` / `primary_reading` / `practical_reading` schema
 - [X] Update `--combined` path to `all_ligatures.json` (in build.sh and docstring)
-- [ ] Run existing test suite; verify ligatures still apply correctly to variant-1 TTF
+- [X] Run existing test suite; verify ligatures still apply correctly to variant-1 TTF
 
 ### Phase 4 — Integration & cleanup
 - [X] Update build sequence: generate HSK → generate CCCEDICT → merge → add ligatures
-- [ ] Delete `duoyinzi_combined.json`, `duoyinzi_pattern_one.txt` (superseded — not present in repo)
-- [ ] Update `Backlog.md` and build docs to reflect new pipeline
+- [X] Delete `duoyinzi_combined.json`, `duoyinzi_pattern_one.txt` (superseded — not present in repo)
+- [X] Update `Backlog.md` and build docs to reflect new pipeline
 
 ---
 

@@ -89,7 +89,7 @@ ChangeLog
     0.96, so wide ruby is uniformly scaled to fit within the hanzi
     advance width
   - Build pipeline cleanup: pinyin_map.json removed entirely; the char
-    list now comes from refdata_cjk_composites.json, and slot-0 misses
+    list now comes from fzktpy_cjk_composites.json, and slot-0 misses
     in FZKTPY01 now fail loud instead of falling back
 
 2026-05-17  v1.0.1  Primary-reading corrections (HSK 3.0 alignment)

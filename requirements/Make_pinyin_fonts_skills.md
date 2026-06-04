@@ -75,7 +75,7 @@ output/
 |------|-------------|
 | `heteronym_map.json` | GB2312 chars → 6-slot reading array (slot 0 = primary, 1–5 = heteronym alternates) |
 | `syllable_inventory.json` | 1,349 unique syllables → PUA codepoints |
-| `refdata_pua_syllable_map.json` | FZKTPY PUA → syllable mapping (1,618 entries) |
+| `fzktpy_pua_syllable_map.json` | FZKTPY PUA → syllable mapping (1,618 entries) |
 
 ## Dependencies
 ```bash

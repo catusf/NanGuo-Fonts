@@ -11,7 +11,7 @@ This file lists the remaining issues/features need addressing. Whenever an issue
 
 - [X] In the Heiti variants, the pinyin overlaps with next character pinyins. Make sure pinyin width do not exceed 98% hanzi width. You can compress pinyins horizontally to fit. But keep vertical heights consistent.
 
-- [ ] Removes the references to refdata in filenames and text files
+- [X] Removes the references to refdata in filenames and text files
 
 - [X] Read all data from reference font data/FangZhengKaiTiPinYinZiKu-1.ttc so that in the following building process, it is no longer needed.
 

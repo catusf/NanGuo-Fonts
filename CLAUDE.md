@@ -12,7 +12,7 @@ here yet — they live wherever the skill is invoked from.
 
 | File | Purpose |
 |------|---------|
-| `data/FangZhengKaiTiPinYinZiKu-1.ttc` | Historical reference font. Used by `sources/scripts/extract_refdata.py` to regenerate the JSON caches in `sources/data/`, but **no longer read by the build pipeline** (`build.sh`). |
+| `data/FangZhengKaiTiPinYinZiKu-1.ttc` | Historical reference font. Used by `sources/scripts/extract_fzktpy_data.py` to regenerate the JSON caches in `sources/data/`, but **no longer read by the build pipeline** (`build.sh`). |
 | `data/NotoSansSC-Regular` | The input font file for glyphs. You need to put the pinyin on top of Chinese characters in this font, and create a new output font. |
 | `good/NanGuoPinyin-1.ttf` | The reference output file that works properly. You need to refer to its structure for reference. |
 | `requirements/Output_font_requirements.md` | **Authoritative structural spec** for output TTFs — derived from comparing FZKTPY01 with `good/NanGuoPinyin-1.ttf`. Consult this before changing `make_pinyin_font.py`. |

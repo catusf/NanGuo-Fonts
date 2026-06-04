@@ -26,7 +26,7 @@ TTC_PATH = ROOT / "data" / "FangZhengKaiTiPinYinZiKu-1.ttc"
 GOOD_PATH = ROOT / "good" / "NanGuoPinyin-1.ttf"
 
 
-def load_refdata_variant(idx: int = 0) -> TTFont:
+def load_fzktpy_variant(idx: int = 0) -> TTFont:
     coll = TTCollection(str(TTC_PATH))
     return coll.fonts[idx]
 
@@ -168,7 +168,7 @@ def main() -> int:
         print(f"missing: {GOOD_PATH}", file=sys.stderr)
         return 1
 
-    fzk = load_refdata_variant(0)
+    fzk = load_fzktpy_variant(0)
     good = TTFont(str(GOOD_PATH))
 
     header_block("FILES")
