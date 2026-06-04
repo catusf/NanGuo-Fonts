@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import unicodedata
 from pathlib import Path
@@ -122,6 +123,14 @@ def _cmp_normalize(syl_num: str) -> str:
     return unicodedata.normalize("NFC", s)
 
 
+_ERHUA_RE = re.compile(r"^r(\d?)$")
+
+
+def _normalize_erhua(syllables: list[str]) -> list[str]:
+    """Convert standalone erhua 'r'/'r5' syllable to 'er'/'er5'."""
+    return [_ERHUA_RE.sub(r"er\1", s) for s in syllables]
+
+
 def analyze_word(
     simplified: str,
     numbered_syllables: list[str],
@@ -186,10 +195,9 @@ def _flatten(chars: list[dict], simplified: str, traditional: str, hsk_level: in
     contextual_parts = [c["contextual_reading"] for c in chars]
     return {
         "simplified": simplified,
-        "traditional": traditional,
         "hsk_level": hsk_level,
         "primary_reading": " ".join(primary_parts),
-        "hsk_reading": " ".join(contextual_parts),
+        "practical_reading": " ".join(contextual_parts),
     }
 
 
@@ -216,7 +224,7 @@ def load_hsk_words(path: Path, primary_readings: dict[str, str]) -> list[dict]:
         traditional = forms[0].get("traditional", simplified)
         hsk_level = item.get("hsk_level", 0)
 
-        numbered = [s.lower() for s in numeric_str.strip().split()]
+        numbered = _normalize_erhua([s.lower() for s in numeric_str.strip().split()])
         chars = analyze_word(simplified, numbered, primary_readings)
         if chars is not None:
             entries.append(_flatten(chars, simplified, traditional, hsk_level))
@@ -252,7 +260,7 @@ def load_cccedict_words(
 
         traditional = entry.get("traditional", simplified)
 
-        numbered = [s.lower() for s in pinyin_str.strip().split()]
+        numbered = _normalize_erhua([s.lower() for s in pinyin_str.strip().split()])
         chars = analyze_word(simplified, numbered, primary_readings)
         if chars is not None:
             seen.add(simplified)

@@ -1,0 +1,5462 @@
+[
+  {
+    "simplified": "爸爸",
+    "hsk_level": 1,
+    "primary_reading": "bà bà",
+    "practical_reading": "bà ba"
+  },
+  {
+    "simplified": "包子",
+    "hsk_level": 1,
+    "primary_reading": "bāo zǐ",
+    "practical_reading": "bāo zi"
+  },
+  {
+    "simplified": "杯子",
+    "hsk_level": 1,
+    "primary_reading": "bēi zǐ",
+    "practical_reading": "bēi zi"
+  },
+  {
+    "simplified": "不客气",
+    "hsk_level": 1,
+    "primary_reading": "bù kè qì",
+    "practical_reading": "bù kè qi"
+  },
+  {
+    "simplified": "弟弟",
+    "hsk_level": 1,
+    "primary_reading": "dì dì",
+    "practical_reading": "dì di"
+  },
+  {
+    "simplified": "对不起",
+    "hsk_level": 1,
+    "primary_reading": "duì bù qǐ",
+    "practical_reading": "duì bu qǐ"
+  },
+  {
+    "simplified": "儿子",
+    "hsk_level": 1,
+    "primary_reading": "ér zǐ",
+    "practical_reading": "ér zi"
+  },
+  {
+    "simplified": "高兴",
+    "hsk_level": 1,
+    "primary_reading": "gāo xīng",
+    "practical_reading": "gāo xìng"
+  },
+  {
+    "simplified": "哥哥",
+    "hsk_level": 1,
+    "primary_reading": "gē gē",
+    "practical_reading": "gē ge"
+  },
+  {
+    "simplified": "孩子",
+    "hsk_level": 1,
+    "primary_reading": "hái zǐ",
+    "practical_reading": "hái zi"
+  },
+  {
+    "simplified": "好玩儿",
+    "hsk_level": 1,
+    "primary_reading": "hǎo wán ér",
+    "practical_reading": "hǎo wán er"
+  },
+  {
+    "simplified": "饺子",
+    "hsk_level": 1,
+    "primary_reading": "jiǎo zǐ",
+    "practical_reading": "jiǎo zi"
+  },
+  {
+    "simplified": "姐姐",
+    "hsk_level": 1,
+    "primary_reading": "jiě jiě",
+    "practical_reading": "jiě jie"
+  },
+  {
+    "simplified": "觉得",
+    "hsk_level": 1,
+    "primary_reading": "jiào dé",
+    "practical_reading": "jué de"
+  },
+  {
+    "simplified": "妈妈",
+    "hsk_level": 1,
+    "primary_reading": "mā mā",
+    "practical_reading": "mā ma"
+  },
+  {
+    "simplified": "没关系",
+    "hsk_level": 1,
+    "primary_reading": "méi guān xì",
+    "practical_reading": "méi guān xi"
+  },
+  {
+    "simplified": "妹妹",
+    "hsk_level": 1,
+    "primary_reading": "mèi mèi",
+    "practical_reading": "mèi mei"
+  },
+  {
+    "simplified": "面条儿",
+    "hsk_level": 1,
+    "primary_reading": "miàn tiáo ér",
+    "practical_reading": "miàn tiáo er"
+  },
+  {
+    "simplified": "名字",
+    "hsk_level": 1,
+    "primary_reading": "míng zì",
+    "practical_reading": "míng zi"
+  },
+  {
+    "simplified": "哪儿",
+    "hsk_level": 1,
+    "primary_reading": "nǎ ér",
+    "practical_reading": "nǎ er"
+  },
+  {
+    "simplified": "那边",
+    "hsk_level": 1,
+    "primary_reading": "nà biān",
+    "practical_reading": "nà bian"
+  },
+  {
+    "simplified": "那儿",
+    "hsk_level": 1,
+    "primary_reading": "nà ér",
+    "practical_reading": "nà er"
+  },
+  {
+    "simplified": "那里",
+    "hsk_level": 1,
+    "primary_reading": "nà lǐ",
+    "practical_reading": "nà li"
+  },
+  {
+    "simplified": "男朋友",
+    "hsk_level": 1,
+    "primary_reading": "nán péng yǒu",
+    "practical_reading": "nán péng you"
+  },
+  {
+    "simplified": "女朋友",
+    "hsk_level": 1,
+    "primary_reading": "nǚ péng yǒu",
+    "practical_reading": "nǚ péng you"
+  },
+  {
+    "simplified": "朋友",
+    "hsk_level": 1,
+    "primary_reading": "péng yǒu",
+    "practical_reading": "péng you"
+  },
+  {
+    "simplified": "漂亮",
+    "hsk_level": 1,
+    "primary_reading": "piāo liàng",
+    "practical_reading": "piào liang"
+  },
+  {
+    "simplified": "认识",
+    "hsk_level": 1,
+    "primary_reading": "rèn shí",
+    "practical_reading": "rèn shi"
+  },
+  {
+    "simplified": "时候",
+    "hsk_level": 1,
+    "primary_reading": "shí hòu",
+    "practical_reading": "shí hou"
+  },
+  {
+    "simplified": "外边",
+    "hsk_level": 1,
+    "primary_reading": "wài biān",
+    "practical_reading": "wài bian"
+  },
+  {
+    "simplified": "晚上",
+    "hsk_level": 1,
+    "primary_reading": "wǎn shàng",
+    "practical_reading": "wǎn shang"
+  },
+  {
+    "simplified": "喜欢",
+    "hsk_level": 1,
+    "primary_reading": "xǐ huān",
+    "practical_reading": "xǐ huan"
+  },
+  {
+    "simplified": "先生",
+    "hsk_level": 1,
+    "primary_reading": "xiān shēng",
+    "practical_reading": "xiān sheng"
+  },
+  {
+    "simplified": "谢谢",
+    "hsk_level": 1,
+    "primary_reading": "xiè xiè",
+    "practical_reading": "xiè xie"
+  },
+  {
+    "simplified": "休息",
+    "hsk_level": 1,
+    "primary_reading": "xiū xī",
+    "practical_reading": "xiū xi"
+  },
+  {
+    "simplified": "学生",
+    "hsk_level": 1,
+    "primary_reading": "xué shēng",
+    "practical_reading": "xué sheng"
+  },
+  {
+    "simplified": "一点儿",
+    "hsk_level": 1,
+    "primary_reading": "yī diǎn ér",
+    "practical_reading": "yī diǎn er"
+  },
+  {
+    "simplified": "衣服",
+    "hsk_level": 1,
+    "primary_reading": "yī fú",
+    "practical_reading": "yī fu"
+  },
+  {
+    "simplified": "椅子",
+    "hsk_level": 1,
+    "primary_reading": "yǐ zǐ",
+    "practical_reading": "yǐ zi"
+  },
+  {
+    "simplified": "有点儿",
+    "hsk_level": 1,
+    "primary_reading": "yǒu diǎn ér",
+    "practical_reading": "yǒu diǎn er"
+  },
+  {
+    "simplified": "早上",
+    "hsk_level": 1,
+    "primary_reading": "zǎo shàng",
+    "practical_reading": "zǎo shang"
+  },
+  {
+    "simplified": "这儿",
+    "hsk_level": 1,
+    "primary_reading": "zhè ér",
+    "practical_reading": "zhè er"
+  },
+  {
+    "simplified": "桌子",
+    "hsk_level": 1,
+    "primary_reading": "zhuō zǐ",
+    "practical_reading": "zhuō zi"
+  },
+  {
+    "simplified": "爱好",
+    "hsk_level": 2,
+    "primary_reading": "ài hǎo",
+    "practical_reading": "ài hào"
+  },
+  {
+    "simplified": "本子",
+    "hsk_level": 2,
+    "primary_reading": "běn zǐ",
+    "practical_reading": "běn zi"
+  },
+  {
+    "simplified": "不好意思",
+    "hsk_level": 2,
+    "primary_reading": "bù hǎo yì sī",
+    "practical_reading": "bù hǎo yì si"
+  },
+  {
+    "simplified": "个子",
+    "hsk_level": 2,
+    "primary_reading": "ge zǐ",
+    "practical_reading": "gè zi"
+  },
+  {
+    "simplified": "还是",
+    "hsk_level": 2,
+    "primary_reading": "hái shì",
+    "practical_reading": "hái shi"
+  },
+  {
+    "simplified": "后面",
+    "hsk_level": 2,
+    "primary_reading": "hòu miàn",
+    "practical_reading": "hòu mian"
+  },
+  {
+    "simplified": "回来",
+    "hsk_level": 2,
+    "primary_reading": "huí lái",
+    "practical_reading": "huí lai"
+  },
+  {
+    "simplified": "回去",
+    "hsk_level": 2,
+    "primary_reading": "huí qù",
+    "practical_reading": "huí qu"
+  },
+  {
+    "simplified": "记得",
+    "hsk_level": 2,
+    "primary_reading": "jì dé",
+    "practical_reading": "jì de"
+  },
+  {
+    "simplified": "教室",
+    "hsk_level": 2,
+    "primary_reading": "jiāo shì",
+    "practical_reading": "jiào shì"
+  },
+  {
+    "simplified": "裤子",
+    "hsk_level": 2,
+    "primary_reading": "kù zǐ",
+    "practical_reading": "kù zi"
+  },
+  {
+    "simplified": "路上",
+    "hsk_level": 2,
+    "primary_reading": "lù shàng",
+    "practical_reading": "lù shang"
+  },
+  {
+    "simplified": "没意思",
+    "hsk_level": 2,
+    "primary_reading": "méi yì sī",
+    "practical_reading": "méi yì si"
+  },
+  {
+    "simplified": "奶奶",
+    "hsk_level": 2,
+    "primary_reading": "nǎi nǎi",
+    "practical_reading": "nǎi nai"
+  },
+  {
+    "simplified": "男孩儿",
+    "hsk_level": 2,
+    "primary_reading": "nán hái ér",
+    "practical_reading": "nán hái er"
+  },
+  {
+    "simplified": "女孩儿",
+    "hsk_level": 2,
+    "primary_reading": "nǚ hái ér",
+    "practical_reading": "nǚ hái er"
+  },
+  {
+    "simplified": "起来",
+    "hsk_level": 2,
+    "primary_reading": "qǐ lái",
+    "practical_reading": "qǐ lai"
+  },
+  {
+    "simplified": "事情",
+    "hsk_level": 2,
+    "primary_reading": "shì qíng",
+    "practical_reading": "shì qing"
+  },
+  {
+    "simplified": "舒服",
+    "hsk_level": 2,
+    "primary_reading": "shū fú",
+    "practical_reading": "shū fu"
+  },
+  {
+    "simplified": "下来",
+    "hsk_level": 2,
+    "primary_reading": "xià lái",
+    "practical_reading": "xià lai"
+  },
+  {
+    "simplified": "小孩儿",
+    "hsk_level": 2,
+    "primary_reading": "xiǎo hái ér",
+    "practical_reading": "xiǎo hái er"
+  },
+  {
+    "simplified": "小时候",
+    "hsk_level": 2,
+    "primary_reading": "xiǎo shí hòu",
+    "practical_reading": "xiǎo shí hou"
+  },
+  {
+    "simplified": "眼睛",
+    "hsk_level": 2,
+    "primary_reading": "yǎn jīng",
+    "practical_reading": "yǎn jing"
+  },
+  {
+    "simplified": "爷爷",
+    "hsk_level": 2,
+    "primary_reading": "yé yé",
+    "practical_reading": "yé ye"
+  },
+  {
+    "simplified": "一会儿",
+    "hsk_level": 2,
+    "primary_reading": "yī huì ér",
+    "practical_reading": "yī huì er"
+  },
+  {
+    "simplified": "意思",
+    "hsk_level": 2,
+    "primary_reading": "yì sī",
+    "practical_reading": "yì si"
+  },
+  {
+    "simplified": "有意思",
+    "hsk_level": 2,
+    "primary_reading": "yǒu yì sī",
+    "practical_reading": "yǒu yì si"
+  },
+  {
+    "simplified": "右边",
+    "hsk_level": 2,
+    "primary_reading": "yòu biān",
+    "practical_reading": "yòu bian"
+  },
+  {
+    "simplified": "丈夫",
+    "hsk_level": 2,
+    "primary_reading": "zhàng fū",
+    "practical_reading": "zhàng fu"
+  },
+  {
+    "simplified": "左边",
+    "hsk_level": 2,
+    "primary_reading": "zuǒ biān",
+    "practical_reading": "zuǒ bian"
+  },
+  {
+    "simplified": "爱人",
+    "hsk_level": 3,
+    "primary_reading": "ài rén",
+    "practical_reading": "ài ren"
+  },
+  {
+    "simplified": "别人",
+    "hsk_level": 3,
+    "primary_reading": "bié rén",
+    "practical_reading": "bié ren"
+  },
+  {
+    "simplified": "差不多",
+    "hsk_level": 3,
+    "primary_reading": "chà bù duō",
+    "practical_reading": "chà bu duō"
+  },
+  {
+    "simplified": "聪明",
+    "hsk_level": 3,
+    "primary_reading": "cōng míng",
+    "practical_reading": "cōng ming"
+  },
+  {
+    "simplified": "大人",
+    "hsk_level": 3,
+    "primary_reading": "dà rén",
+    "practical_reading": "dà ren"
+  },
+  {
+    "simplified": "懂得",
+    "hsk_level": 3,
+    "primary_reading": "dǒng dé",
+    "practical_reading": "dǒng de"
+  },
+  {
+    "simplified": "耳朵",
+    "hsk_level": 3,
+    "primary_reading": "ěr duǒ",
+    "practical_reading": "ěr duo"
+  },
+  {
+    "simplified": "房子",
+    "hsk_level": 3,
+    "primary_reading": "fáng zǐ",
+    "practical_reading": "fáng zi"
+  },
+  {
+    "simplified": "放假",
+    "hsk_level": 3,
+    "primary_reading": "fàng jiǎ",
+    "practical_reading": "fàng jià"
+  },
+  {
+    "simplified": "感兴趣",
+    "hsk_level": 3,
+    "primary_reading": "gǎn xīng qù",
+    "practical_reading": "gǎn xìng qù"
+  },
+  {
+    "simplified": "刚刚",
+    "hsk_level": 3,
+    "primary_reading": "gāng gāng",
+    "practical_reading": "gāng gang"
+  },
+  {
+    "simplified": "关系",
+    "hsk_level": 3,
+    "primary_reading": "guān xì",
+    "practical_reading": "guān xi"
+  },
+  {
+    "simplified": "几乎",
+    "hsk_level": 3,
+    "primary_reading": "jǐ hū",
+    "practical_reading": "jī hū"
+  },
+  {
+    "simplified": "假期",
+    "hsk_level": 3,
+    "primary_reading": "jiǎ qī",
+    "practical_reading": "jià qī"
+  },
+  {
+    "simplified": "句子",
+    "hsk_level": 3,
+    "primary_reading": "jù zǐ",
+    "practical_reading": "jù zi"
+  },
+  {
+    "simplified": "看来",
+    "hsk_level": 3,
+    "primary_reading": "kàn lái",
+    "practical_reading": "kàn lai"
+  },
+  {
+    "simplified": "筷子",
+    "hsk_level": 3,
+    "primary_reading": "kuài zǐ",
+    "practical_reading": "kuài zi"
+  },
+  {
+    "simplified": "了解",
+    "hsk_level": 3,
+    "primary_reading": "le jiě",
+    "practical_reading": "liǎo jiě"
+  },
+  {
+    "simplified": "凉快",
+    "hsk_level": 3,
+    "primary_reading": "liáng kuài",
+    "practical_reading": "liáng kuai"
+  },
+  {
+    "simplified": "聊天儿",
+    "hsk_level": 3,
+    "primary_reading": "liáo tiān ér",
+    "practical_reading": "liáo tiān er"
+  },
+  {
+    "simplified": "明白",
+    "hsk_level": 3,
+    "primary_reading": "míng bái",
+    "practical_reading": "míng bai"
+  },
+  {
+    "simplified": "盘子",
+    "hsk_level": 3,
+    "primary_reading": "pán zǐ",
+    "practical_reading": "pán zi"
+  },
+  {
+    "simplified": "瓶子",
+    "hsk_level": 3,
+    "primary_reading": "píng zǐ",
+    "practical_reading": "píng zi"
+  },
+  {
+    "simplified": "清楚",
+    "hsk_level": 3,
+    "primary_reading": "qīng chǔ",
+    "practical_reading": "qīng chu"
+  },
+  {
+    "simplified": "请假",
+    "hsk_level": 3,
+    "primary_reading": "qǐng jiǎ",
+    "practical_reading": "qǐng jià"
+  },
+  {
+    "simplified": "裙子",
+    "hsk_level": 3,
+    "primary_reading": "qún zǐ",
+    "practical_reading": "qún zi"
+  },
+  {
+    "simplified": "认得",
+    "hsk_level": 3,
+    "primary_reading": "rèn dé",
+    "practical_reading": "rèn de"
+  },
+  {
+    "simplified": "认为",
+    "hsk_level": 3,
+    "primary_reading": "rèn wèi",
+    "practical_reading": "rèn wéi"
+  },
+  {
+    "simplified": "勺子",
+    "hsk_level": 3,
+    "primary_reading": "sháo zǐ",
+    "practical_reading": "sháo zi"
+  },
+  {
+    "simplified": "叔叔",
+    "hsk_level": 3,
+    "primary_reading": "shū shū",
+    "practical_reading": "shū shu"
+  },
+  {
+    "simplified": "数学",
+    "hsk_level": 3,
+    "primary_reading": "shǔ xué",
+    "practical_reading": "shù xué"
+  },
+  {
+    "simplified": "太阳",
+    "hsk_level": 3,
+    "primary_reading": "tài yáng",
+    "practical_reading": "tài yang"
+  },
+  {
+    "simplified": "头发",
+    "hsk_level": 3,
+    "primary_reading": "tóu fā",
+    "practical_reading": "tóu fa"
+  },
+  {
+    "simplified": "屋子",
+    "hsk_level": 3,
+    "primary_reading": "wū zǐ",
+    "practical_reading": "wū zi"
+  },
+  {
+    "simplified": "相机",
+    "hsk_level": 3,
+    "primary_reading": "xiāng jī",
+    "practical_reading": "xiàng jī"
+  },
+  {
+    "simplified": "箱子",
+    "hsk_level": 3,
+    "primary_reading": "xiāng zǐ",
+    "practical_reading": "xiāng zi"
+  },
+  {
+    "simplified": "心里",
+    "hsk_level": 3,
+    "primary_reading": "xīn lǐ",
+    "practical_reading": "xīn li"
+  },
+  {
+    "simplified": "行李",
+    "hsk_level": 3,
+    "primary_reading": "xíng lǐ",
+    "practical_reading": "xíng li"
+  },
+  {
+    "simplified": "兴趣",
+    "hsk_level": 3,
+    "primary_reading": "xīng qù",
+    "practical_reading": "xìng qù"
+  },
+  {
+    "simplified": "休假",
+    "hsk_level": 3,
+    "primary_reading": "xiū jiǎ",
+    "practical_reading": "xiū jià"
+  },
+  {
+    "simplified": "要求",
+    "hsk_level": 3,
+    "primary_reading": "yào qiú",
+    "practical_reading": "yāo qiú"
+  },
+  {
+    "simplified": "一块儿",
+    "hsk_level": 3,
+    "primary_reading": "yī kuài ér",
+    "practical_reading": "yī kuài er"
+  },
+  {
+    "simplified": "以为",
+    "hsk_level": 3,
+    "primary_reading": "yǐ wèi",
+    "practical_reading": "yǐ wéi"
+  },
+  {
+    "simplified": "音乐",
+    "hsk_level": 3,
+    "primary_reading": "yīn lè",
+    "practical_reading": "yīn yuè"
+  },
+  {
+    "simplified": "银行",
+    "hsk_level": 3,
+    "primary_reading": "yín xíng",
+    "practical_reading": "yín háng"
+  },
+  {
+    "simplified": "银行卡",
+    "hsk_level": 3,
+    "primary_reading": "yín xíng kǎ",
+    "practical_reading": "yín háng kǎ"
+  },
+  {
+    "simplified": "月亮",
+    "hsk_level": 3,
+    "primary_reading": "yuè liàng",
+    "practical_reading": "yuè liang"
+  },
+  {
+    "simplified": "照顾",
+    "hsk_level": 3,
+    "primary_reading": "zhào gù",
+    "practical_reading": "zhào gu"
+  },
+  {
+    "simplified": "照相",
+    "hsk_level": 3,
+    "primary_reading": "zhào xiāng",
+    "practical_reading": "zhào xiàng"
+  },
+  {
+    "simplified": "着急",
+    "hsk_level": 3,
+    "primary_reading": "zhe jí",
+    "practical_reading": "zháo jí"
+  },
+  {
+    "simplified": "背包",
+    "hsk_level": 4,
+    "primary_reading": "bèi bāo",
+    "practical_reading": "bēi bāo"
+  },
+  {
+    "simplified": "鼻子",
+    "hsk_level": 4,
+    "primary_reading": "bí zǐ",
+    "practical_reading": "bí zi"
+  },
+  {
+    "simplified": "部分",
+    "hsk_level": 4,
+    "primary_reading": "bù fēn",
+    "practical_reading": "bù fen"
+  },
+  {
+    "simplified": "差点儿",
+    "hsk_level": 4,
+    "primary_reading": "chà diǎn ér",
+    "practical_reading": "chà diǎn er"
+  },
+  {
+    "simplified": "成为",
+    "hsk_level": 4,
+    "primary_reading": "chéng wèi",
+    "practical_reading": "chéng wéi"
+  },
+  {
+    "simplified": "出差",
+    "hsk_level": 4,
+    "primary_reading": "chū chà",
+    "practical_reading": "chū chāi"
+  },
+  {
+    "simplified": "窗户",
+    "hsk_level": 4,
+    "primary_reading": "chuāng hù",
+    "practical_reading": "chuāng hu"
+  },
+  {
+    "simplified": "答应",
+    "hsk_level": 4,
+    "primary_reading": "dá yīng",
+    "practical_reading": "dā ying"
+  },
+  {
+    "simplified": "打招呼",
+    "hsk_level": 4,
+    "primary_reading": "dǎ zhāo hū",
+    "practical_reading": "dǎ zhāo hu"
+  },
+  {
+    "simplified": "底下",
+    "hsk_level": 4,
+    "primary_reading": "dǐ xià",
+    "practical_reading": "dǐ xia"
+  },
+  {
+    "simplified": "调查",
+    "hsk_level": 4,
+    "primary_reading": "tiáo chá",
+    "practical_reading": "diào chá"
+  },
+  {
+    "simplified": "肚子",
+    "hsk_level": 4,
+    "primary_reading": "dù zǐ",
+    "practical_reading": "dù zi"
+  },
+  {
+    "simplified": "度假",
+    "hsk_level": 4,
+    "primary_reading": "dù jiǎ",
+    "practical_reading": "dù jià"
+  },
+  {
+    "simplified": "多数",
+    "hsk_level": 4,
+    "primary_reading": "duō shǔ",
+    "practical_reading": "duō shù"
+  },
+  {
+    "simplified": "分数",
+    "hsk_level": 4,
+    "primary_reading": "fēn shǔ",
+    "practical_reading": "fēn shù"
+  },
+  {
+    "simplified": "分为",
+    "hsk_level": 4,
+    "primary_reading": "fēn wèi",
+    "practical_reading": "fēn wéi"
+  },
+  {
+    "simplified": "感觉",
+    "hsk_level": 4,
+    "primary_reading": "gǎn jiào",
+    "practical_reading": "gǎn jué"
+  },
+  {
+    "simplified": "干活儿",
+    "hsk_level": 4,
+    "primary_reading": "gān huó ér",
+    "practical_reading": "gàn huó er"
+  },
+  {
+    "simplified": "胳膊",
+    "hsk_level": 4,
+    "primary_reading": "gē bó",
+    "practical_reading": "gē bo"
+  },
+  {
+    "simplified": "各个",
+    "hsk_level": 4,
+    "primary_reading": "gè ge",
+    "practical_reading": "gè gè"
+  },
+  {
+    "simplified": "功夫",
+    "hsk_level": 4,
+    "primary_reading": "gōng fū",
+    "practical_reading": "gōng fu"
+  },
+  {
+    "simplified": "姑娘",
+    "hsk_level": 4,
+    "primary_reading": "gū niáng",
+    "practical_reading": "gū niang"
+  },
+  {
+    "simplified": "咳嗽",
+    "hsk_level": 4,
+    "primary_reading": "ké sòu",
+    "practical_reading": "ké sou"
+  },
+  {
+    "simplified": "寒假",
+    "hsk_level": 4,
+    "primary_reading": "hán jiǎ",
+    "practical_reading": "hán jià"
+  },
+  {
+    "simplified": "好处",
+    "hsk_level": 4,
+    "primary_reading": "hǎo chù",
+    "practical_reading": "hǎo chǔ"
+  },
+  {
+    "simplified": "盒子",
+    "hsk_level": 4,
+    "primary_reading": "hé zǐ",
+    "practical_reading": "hé zi"
+  },
+  {
+    "simplified": "护士",
+    "hsk_level": 4,
+    "primary_reading": "hù shì",
+    "practical_reading": "hù shi"
+  },
+  {
+    "simplified": "坏处",
+    "hsk_level": 4,
+    "primary_reading": "huài chù",
+    "practical_reading": "huài chu"
+  },
+  {
+    "simplified": "活泼",
+    "hsk_level": 4,
+    "primary_reading": "huó pō",
+    "practical_reading": "huó po"
+  },
+  {
+    "simplified": "积累",
+    "hsk_level": 4,
+    "primary_reading": "jī lèi",
+    "practical_reading": "jī lěi"
+  },
+  {
+    "simplified": "基本上",
+    "hsk_level": 4,
+    "primary_reading": "jī běn shàng",
+    "practical_reading": "jī běn shang"
+  },
+  {
+    "simplified": "假日",
+    "hsk_level": 4,
+    "primary_reading": "jiǎ rì",
+    "practical_reading": "jià rì"
+  },
+  {
+    "simplified": "价钱",
+    "hsk_level": 4,
+    "primary_reading": "jià qián",
+    "practical_reading": "jià qian"
+  },
+  {
+    "simplified": "教练",
+    "hsk_level": 4,
+    "primary_reading": "jiāo liàn",
+    "practical_reading": "jiào liàn"
+  },
+  {
+    "simplified": "教师",
+    "hsk_level": 4,
+    "primary_reading": "jiāo shī",
+    "practical_reading": "jiào shī"
+  },
+  {
+    "simplified": "教授",
+    "hsk_level": 4,
+    "primary_reading": "jiāo shòu",
+    "practical_reading": "jiào shòu"
+  },
+  {
+    "simplified": "教育",
+    "hsk_level": 4,
+    "primary_reading": "jiāo yù",
+    "practical_reading": "jiào yù"
+  },
+  {
+    "simplified": "节假日",
+    "hsk_level": 4,
+    "primary_reading": "jié jiǎ rì",
+    "practical_reading": "jié jià rì"
+  },
+  {
+    "simplified": "结果",
+    "hsk_level": 4,
+    "primary_reading": "jié guǒ",
+    "practical_reading": "jiē guǒ"
+  },
+  {
+    "simplified": "尽管",
+    "hsk_level": 4,
+    "primary_reading": "jìn guǎn",
+    "practical_reading": "jǐn guǎn"
+  },
+  {
+    "simplified": "镜子",
+    "hsk_level": 4,
+    "primary_reading": "jìng zǐ",
+    "practical_reading": "jìng zi"
+  },
+  {
+    "simplified": "客气",
+    "hsk_level": 4,
+    "primary_reading": "kè qì",
+    "practical_reading": "kè qi"
+  },
+  {
+    "simplified": "困难",
+    "hsk_level": 4,
+    "primary_reading": "kùn nán",
+    "practical_reading": "kùn nan"
+  },
+  {
+    "simplified": "来不及",
+    "hsk_level": 4,
+    "primary_reading": "lái bù jí",
+    "practical_reading": "lái bu jí"
+  },
+  {
+    "simplified": "来得及",
+    "hsk_level": 4,
+    "primary_reading": "lái dé jí",
+    "practical_reading": "lái de jí"
+  },
+  {
+    "simplified": "老是",
+    "hsk_level": 4,
+    "primary_reading": "lǎo shì",
+    "practical_reading": "lǎo shi"
+  },
+  {
+    "simplified": "理发",
+    "hsk_level": 4,
+    "primary_reading": "lǐ fā",
+    "practical_reading": "lǐ fà"
+  },
+  {
+    "simplified": "力气",
+    "hsk_level": 4,
+    "primary_reading": "lì qì",
+    "practical_reading": "lì qi"
+  },
+  {
+    "simplified": "厉害",
+    "hsk_level": 4,
+    "primary_reading": "lì hài",
+    "practical_reading": "lì hai"
+  },
+  {
+    "simplified": "例子",
+    "hsk_level": 4,
+    "primary_reading": "lì zǐ",
+    "practical_reading": "lì zi"
+  },
+  {
+    "simplified": "麻烦",
+    "hsk_level": 4,
+    "primary_reading": "má fán",
+    "practical_reading": "má fan"
+  },
+  {
+    "simplified": "馒头",
+    "hsk_level": 4,
+    "primary_reading": "mán tóu",
+    "practical_reading": "mán tou"
+  },
+  {
+    "simplified": "帽子",
+    "hsk_level": 4,
+    "primary_reading": "mào zǐ",
+    "practical_reading": "mào zi"
+  },
+  {
+    "simplified": "目的",
+    "hsk_level": 4,
+    "primary_reading": "mù de",
+    "practical_reading": "mù dì"
+  },
+  {
+    "simplified": "目的地",
+    "hsk_level": 4,
+    "primary_reading": "mù de dì",
+    "practical_reading": "mù dì dì"
+  },
+  {
+    "simplified": "暖和",
+    "hsk_level": 4,
+    "primary_reading": "nuǎn hé",
+    "practical_reading": "nuǎn huo"
+  },
+  {
+    "simplified": "牌子",
+    "hsk_level": 4,
+    "primary_reading": "pái zǐ",
+    "practical_reading": "pái zi"
+  },
+  {
+    "simplified": "脾气",
+    "hsk_level": 4,
+    "primary_reading": "pí qì",
+    "practical_reading": "pí qi"
+  },
+  {
+    "simplified": "葡萄",
+    "hsk_level": 4,
+    "primary_reading": "pú táo",
+    "practical_reading": "pú tao"
+  },
+  {
+    "simplified": "葡萄酒",
+    "hsk_level": 4,
+    "primary_reading": "pú táo jiǔ",
+    "practical_reading": "pú tao jiǔ"
+  },
+  {
+    "simplified": "亲戚",
+    "hsk_level": 4,
+    "primary_reading": "qīn qī",
+    "practical_reading": "qīn qi"
+  },
+  {
+    "simplified": "热闹",
+    "hsk_level": 4,
+    "primary_reading": "rè nào",
+    "practical_reading": "rè nao"
+  },
+  {
+    "simplified": "人数",
+    "hsk_level": 4,
+    "primary_reading": "rén shǔ",
+    "practical_reading": "rén shù"
+  },
+  {
+    "simplified": "任务",
+    "hsk_level": 4,
+    "primary_reading": "rèn wù",
+    "practical_reading": "rèn wu"
+  },
+  {
+    "simplified": "日子",
+    "hsk_level": 4,
+    "primary_reading": "rì zǐ",
+    "practical_reading": "rì zi"
+  },
+  {
+    "simplified": "商量",
+    "hsk_level": 4,
+    "primary_reading": "shāng liàng",
+    "practical_reading": "shāng liang"
+  },
+  {
+    "simplified": "少年",
+    "hsk_level": 4,
+    "primary_reading": "shǎo nián",
+    "practical_reading": "shào nián"
+  },
+  {
+    "simplified": "少数",
+    "hsk_level": 4,
+    "primary_reading": "shǎo shǔ",
+    "practical_reading": "shǎo shù"
+  },
+  {
+    "simplified": "师傅",
+    "hsk_level": 4,
+    "primary_reading": "shī fù",
+    "practical_reading": "shī fu"
+  },
+  {
+    "simplified": "适应",
+    "hsk_level": 4,
+    "primary_reading": "shì yīng",
+    "practical_reading": "shì yìng"
+  },
+  {
+    "simplified": "收拾",
+    "hsk_level": 4,
+    "primary_reading": "shōu shí",
+    "practical_reading": "shōu shi"
+  },
+  {
+    "simplified": "首都",
+    "hsk_level": 4,
+    "primary_reading": "shǒu dōu",
+    "practical_reading": "shǒu dū"
+  },
+  {
+    "simplified": "受不了",
+    "hsk_level": 4,
+    "primary_reading": "shòu bù le",
+    "practical_reading": "shòu bù liǎo"
+  },
+  {
+    "simplified": "暑假",
+    "hsk_level": 4,
+    "primary_reading": "shǔ jiǎ",
+    "practical_reading": "shǔ jià"
+  },
+  {
+    "simplified": "数量",
+    "hsk_level": 4,
+    "primary_reading": "shǔ liàng",
+    "practical_reading": "shù liàng"
+  },
+  {
+    "simplified": "数字",
+    "hsk_level": 4,
+    "primary_reading": "shǔ zì",
+    "practical_reading": "shù zì"
+  },
+  {
+    "simplified": "态度",
+    "hsk_level": 4,
+    "primary_reading": "tài dù",
+    "practical_reading": "tài du"
+  },
+  {
+    "simplified": "袜子",
+    "hsk_level": 4,
+    "primary_reading": "wà zǐ",
+    "practical_reading": "wà zi"
+  },
+  {
+    "simplified": "味道",
+    "hsk_level": 4,
+    "primary_reading": "wèi dào",
+    "practical_reading": "wèi dao"
+  },
+  {
+    "simplified": "消息",
+    "hsk_level": 4,
+    "primary_reading": "xiāo xī",
+    "practical_reading": "xiāo xi"
+  },
+  {
+    "simplified": "小伙子",
+    "hsk_level": 4,
+    "primary_reading": "xiǎo huǒ zǐ",
+    "practical_reading": "xiǎo huǒ zi"
+  },
+  {
+    "simplified": "笑话",
+    "hsk_level": 4,
+    "primary_reading": "xiào huà",
+    "practical_reading": "xiào hua"
+  },
+  {
+    "simplified": "星星",
+    "hsk_level": 4,
+    "primary_reading": "xīng xīng",
+    "practical_reading": "xīng xing"
+  },
+  {
+    "simplified": "样子",
+    "hsk_level": 4,
+    "primary_reading": "yàng zǐ",
+    "practical_reading": "yàng zi"
+  },
+  {
+    "simplified": "要是",
+    "hsk_level": 4,
+    "primary_reading": "yào shì",
+    "practical_reading": "yào shi"
+  },
+  {
+    "simplified": "钥匙",
+    "hsk_level": 4,
+    "primary_reading": "yào chí",
+    "practical_reading": "yào shi"
+  },
+  {
+    "simplified": "叶子",
+    "hsk_level": 4,
+    "primary_reading": "yè zǐ",
+    "practical_reading": "yè zi"
+  },
+  {
+    "simplified": "一切",
+    "hsk_level": 4,
+    "primary_reading": "yī qiē",
+    "practical_reading": "yī qiè"
+  },
+  {
+    "simplified": "应聘",
+    "hsk_level": 4,
+    "primary_reading": "yīng pìn",
+    "practical_reading": "yìng pìn"
+  },
+  {
+    "simplified": "院子",
+    "hsk_level": 4,
+    "primary_reading": "yuàn zǐ",
+    "practical_reading": "yuàn zi"
+  },
+  {
+    "simplified": "着火",
+    "hsk_level": 4,
+    "primary_reading": "zhe huǒ",
+    "practical_reading": "zháo huǒ"
+  },
+  {
+    "simplified": "整个",
+    "hsk_level": 4,
+    "primary_reading": "zhěng ge",
+    "practical_reading": "zhěng gè"
+  },
+  {
+    "simplified": "知识",
+    "hsk_level": 4,
+    "primary_reading": "zhī shí",
+    "practical_reading": "zhī shi"
+  },
+  {
+    "simplified": "值得",
+    "hsk_level": 4,
+    "primary_reading": "zhí dé",
+    "practical_reading": "zhí de"
+  },
+  {
+    "simplified": "重点",
+    "hsk_level": 4,
+    "primary_reading": "zhòng diǎn",
+    "practical_reading": "chóng diǎn"
+  },
+  {
+    "simplified": "重新",
+    "hsk_level": 4,
+    "primary_reading": "zhòng xīn",
+    "practical_reading": "chóng xīn"
+  },
+  {
+    "simplified": "主意",
+    "hsk_level": 4,
+    "primary_reading": "zhǔ yì",
+    "practical_reading": "zhǔ yi"
+  },
+  {
+    "simplified": "作为",
+    "hsk_level": 4,
+    "primary_reading": "zuò wèi",
+    "practical_reading": "zuò wéi"
+  },
+  {
+    "simplified": "哎呀",
+    "hsk_level": 5,
+    "primary_reading": "āi ya",
+    "practical_reading": "āi yā"
+  },
+  {
+    "simplified": "被子",
+    "hsk_level": 5,
+    "primary_reading": "bèi zǐ",
+    "practical_reading": "bèi zi"
+  },
+  {
+    "simplified": "玻璃",
+    "hsk_level": 5,
+    "primary_reading": "bō lí",
+    "practical_reading": "bō li"
+  },
+  {
+    "simplified": "不得了",
+    "hsk_level": 5,
+    "primary_reading": "bù dé le",
+    "practical_reading": "bù dé liǎo"
+  },
+  {
+    "simplified": "参与",
+    "hsk_level": 5,
+    "primary_reading": "cān yǔ",
+    "practical_reading": "cān yù"
+  },
+  {
+    "simplified": "叉子",
+    "hsk_level": 5,
+    "primary_reading": "chā zǐ",
+    "practical_reading": "chā zi"
+  },
+  {
+    "simplified": "差别",
+    "hsk_level": 5,
+    "primary_reading": "chà bié",
+    "practical_reading": "chā bié"
+  },
+  {
+    "simplified": "差距",
+    "hsk_level": 5,
+    "primary_reading": "chà jù",
+    "practical_reading": "chā jù"
+  },
+  {
+    "simplified": "称为",
+    "hsk_level": 5,
+    "primary_reading": "chēng wèi",
+    "practical_reading": "chēng wéi"
+  },
+  {
+    "simplified": "成分",
+    "hsk_level": 5,
+    "primary_reading": "chéng fēn",
+    "practical_reading": "chéng fèn"
+  },
+  {
+    "simplified": "尺子",
+    "hsk_level": 5,
+    "primary_reading": "chǐ zǐ",
+    "practical_reading": "chǐ zi"
+  },
+  {
+    "simplified": "充分",
+    "hsk_level": 5,
+    "primary_reading": "chōng fēn",
+    "practical_reading": "chōng fèn"
+  },
+  {
+    "simplified": "虫子",
+    "hsk_level": 5,
+    "primary_reading": "chóng zǐ",
+    "practical_reading": "chóng zi"
+  },
+  {
+    "simplified": "处理",
+    "hsk_level": 5,
+    "primary_reading": "chù lǐ",
+    "practical_reading": "chǔ lǐ"
+  },
+  {
+    "simplified": "处于",
+    "hsk_level": 5,
+    "primary_reading": "chù yú",
+    "practical_reading": "chǔ yú"
+  },
+  {
+    "simplified": "打扮",
+    "hsk_level": 5,
+    "primary_reading": "dǎ bàn",
+    "practical_reading": "dǎ ban"
+  },
+  {
+    "simplified": "打听",
+    "hsk_level": 5,
+    "primary_reading": "dǎ tīng",
+    "practical_reading": "dǎ ting"
+  },
+  {
+    "simplified": "当成",
+    "hsk_level": 5,
+    "primary_reading": "dāng chéng",
+    "practical_reading": "dàng chéng"
+  },
+  {
+    "simplified": "当作",
+    "hsk_level": 5,
+    "primary_reading": "dāng zuò",
+    "practical_reading": "dàng zuò"
+  },
+  {
+    "simplified": "道理",
+    "hsk_level": 5,
+    "primary_reading": "dào lǐ",
+    "practical_reading": "dào li"
+  },
+  {
+    "simplified": "的确",
+    "hsk_level": 5,
+    "primary_reading": "de què",
+    "practical_reading": "dí què"
+  },
+  {
+    "simplified": "点心",
+    "hsk_level": 5,
+    "primary_reading": "diǎn xīn",
+    "practical_reading": "diǎn xin"
+  },
+  {
+    "simplified": "调研",
+    "hsk_level": 5,
+    "primary_reading": "tiáo yán",
+    "practical_reading": "diào yán"
+  },
+  {
+    "simplified": "豆腐",
+    "hsk_level": 5,
+    "primary_reading": "dòu fǔ",
+    "practical_reading": "dòu fu"
+  },
+  {
+    "simplified": "番茄",
+    "hsk_level": 5,
+    "primary_reading": "fān gā",
+    "practical_reading": "fān qié"
+  },
+  {
+    "simplified": "反应",
+    "hsk_level": 5,
+    "primary_reading": "fǎn yīng",
+    "practical_reading": "fǎn yìng"
+  },
+  {
+    "simplified": "仿佛",
+    "hsk_level": 5,
+    "primary_reading": "fǎng fó",
+    "practical_reading": "fǎng fú"
+  },
+  {
+    "simplified": "个别",
+    "hsk_level": 5,
+    "primary_reading": "ge bié",
+    "practical_reading": "gè bié"
+  },
+  {
+    "simplified": "个人",
+    "hsk_level": 5,
+    "primary_reading": "ge rén",
+    "practical_reading": "gè rén"
+  },
+  {
+    "simplified": "个性",
+    "hsk_level": 5,
+    "primary_reading": "ge xìng",
+    "practical_reading": "gè xìng"
+  },
+  {
+    "simplified": "更换",
+    "hsk_level": 5,
+    "primary_reading": "gèng huàn",
+    "practical_reading": "gēng huàn"
+  },
+  {
+    "simplified": "更新",
+    "hsk_level": 5,
+    "primary_reading": "gèng xīn",
+    "practical_reading": "gēng xīn"
+  },
+  {
+    "simplified": "冠军",
+    "hsk_level": 5,
+    "primary_reading": "guān jūn",
+    "practical_reading": "guàn jūn"
+  },
+  {
+    "simplified": "柜子",
+    "hsk_level": 5,
+    "primary_reading": "guì zǐ",
+    "practical_reading": "guì zi"
+  },
+  {
+    "simplified": "过分",
+    "hsk_level": 5,
+    "primary_reading": "guò fēn",
+    "practical_reading": "guò fèn"
+  },
+  {
+    "simplified": "好奇",
+    "hsk_level": 5,
+    "primary_reading": "hǎo qí",
+    "practical_reading": "hào qí"
+  },
+  {
+    "simplified": "合同",
+    "hsk_level": 5,
+    "primary_reading": "hé tóng",
+    "practical_reading": "hé tong"
+  },
+  {
+    "simplified": "猴子",
+    "hsk_level": 5,
+    "primary_reading": "hóu zǐ",
+    "practical_reading": "hóu zi"
+  },
+  {
+    "simplified": "胡同",
+    "hsk_level": 5,
+    "primary_reading": "hú tóng",
+    "practical_reading": "hú tòng"
+  },
+  {
+    "simplified": "记载",
+    "hsk_level": 5,
+    "primary_reading": "jì zài",
+    "practical_reading": "jì zǎi"
+  },
+  {
+    "simplified": "讲究",
+    "hsk_level": 5,
+    "primary_reading": "jiǎng jiū",
+    "practical_reading": "jiǎng jiu"
+  },
+  {
+    "simplified": "角色",
+    "hsk_level": 5,
+    "primary_reading": "jiǎo sè",
+    "practical_reading": "jué sè"
+  },
+  {
+    "simplified": "教材",
+    "hsk_level": 5,
+    "primary_reading": "jiāo cái",
+    "practical_reading": "jiào cái"
+  },
+  {
+    "simplified": "尽快",
+    "hsk_level": 5,
+    "primary_reading": "jìn kuài",
+    "practical_reading": "jǐn kuài"
+  },
+  {
+    "simplified": "尽量",
+    "hsk_level": 5,
+    "primary_reading": "jìn liàng",
+    "practical_reading": "jǐn liàng"
+  },
+  {
+    "simplified": "酒吧",
+    "hsk_level": 5,
+    "primary_reading": "jiǔ ba",
+    "practical_reading": "jiǔ bā"
+  },
+  {
+    "simplified": "橘子",
+    "hsk_level": 5,
+    "primary_reading": "jú zǐ",
+    "practical_reading": "jú zi"
+  },
+  {
+    "simplified": "姥姥",
+    "hsk_level": 5,
+    "primary_reading": "mǔ mǔ",
+    "practical_reading": "lǎo lao"
+  },
+  {
+    "simplified": "姥爷",
+    "hsk_level": 5,
+    "primary_reading": "mǔ yé",
+    "practical_reading": "lǎo ye"
+  },
+  {
+    "simplified": "了不起",
+    "hsk_level": 5,
+    "primary_reading": "le bù qǐ",
+    "practical_reading": "liǎo bu qǐ"
+  },
+  {
+    "simplified": "里头",
+    "hsk_level": 5,
+    "primary_reading": "lǐ tóu",
+    "practical_reading": "lǐ tou"
+  },
+  {
+    "simplified": "力量",
+    "hsk_level": 5,
+    "primary_reading": "lì liàng",
+    "practical_reading": "lì liang"
+  },
+  {
+    "simplified": "粮食",
+    "hsk_level": 5,
+    "primary_reading": "liáng shí",
+    "practical_reading": "liáng shi"
+  },
+  {
+    "simplified": "逻辑",
+    "hsk_level": 5,
+    "primary_reading": "luó jí",
+    "practical_reading": "luó ji"
+  },
+  {
+    "simplified": "密切",
+    "hsk_level": 5,
+    "primary_reading": "mì qiē",
+    "practical_reading": "mì qiè"
+  },
+  {
+    "simplified": "模糊",
+    "hsk_level": 5,
+    "primary_reading": "mó hú",
+    "practical_reading": "mó hu"
+  },
+  {
+    "simplified": "木头",
+    "hsk_level": 5,
+    "primary_reading": "mù tóu",
+    "practical_reading": "mù tou"
+  },
+  {
+    "simplified": "能干",
+    "hsk_level": 5,
+    "primary_reading": "néng gān",
+    "practical_reading": "néng gàn"
+  },
+  {
+    "simplified": "牛仔裤",
+    "hsk_level": 5,
+    "primary_reading": "niú zǐ kù",
+    "practical_reading": "niú zǎi kù"
+  },
+  {
+    "simplified": "强调",
+    "hsk_level": 5,
+    "primary_reading": "qiáng tiáo",
+    "practical_reading": "qiáng diào"
+  },
+  {
+    "simplified": "悄悄",
+    "hsk_level": 5,
+    "primary_reading": "qiǎo qiǎo",
+    "practical_reading": "qiāo qiāo"
+  },
+  {
+    "simplified": "亲切",
+    "hsk_level": 5,
+    "primary_reading": "qīn qiē",
+    "practical_reading": "qīn qiè"
+  },
+  {
+    "simplified": "请教",
+    "hsk_level": 5,
+    "primary_reading": "qǐng jiāo",
+    "practical_reading": "qǐng jiào"
+  },
+  {
+    "simplified": "沙子",
+    "hsk_level": 5,
+    "primary_reading": "shā zǐ",
+    "practical_reading": "shā zi"
+  },
+  {
+    "simplified": "扇子",
+    "hsk_level": 5,
+    "primary_reading": "shàn zǐ",
+    "practical_reading": "shàn zi"
+  },
+  {
+    "simplified": "擅长",
+    "hsk_level": 5,
+    "primary_reading": "shàn zhǎng",
+    "practical_reading": "shàn cháng"
+  },
+  {
+    "simplified": "舍不得",
+    "hsk_level": 5,
+    "primary_reading": "shè bù dé",
+    "practical_reading": "shě bu de"
+  },
+  {
+    "simplified": "舍得",
+    "hsk_level": 5,
+    "primary_reading": "shè dé",
+    "practical_reading": "shě de"
+  },
+  {
+    "simplified": "石头",
+    "hsk_level": 5,
+    "primary_reading": "shí tóu",
+    "practical_reading": "shí tou"
+  },
+  {
+    "simplified": "时差",
+    "hsk_level": 5,
+    "primary_reading": "shí chà",
+    "practical_reading": "shí chā"
+  },
+  {
+    "simplified": "使得",
+    "hsk_level": 5,
+    "primary_reading": "shǐ dé",
+    "practical_reading": "shǐ de"
+  },
+  {
+    "simplified": "似的",
+    "hsk_level": 5,
+    "primary_reading": "sì de",
+    "practical_reading": "shì de"
+  },
+  {
+    "simplified": "视为",
+    "hsk_level": 5,
+    "primary_reading": "shì wèi",
+    "practical_reading": "shì wéi"
+  },
+  {
+    "simplified": "适当",
+    "hsk_level": 5,
+    "primary_reading": "shì dāng",
+    "practical_reading": "shì dàng"
+  },
+  {
+    "simplified": "数据",
+    "hsk_level": 5,
+    "primary_reading": "shǔ jù",
+    "practical_reading": "shù jù"
+  },
+  {
+    "simplified": "水分",
+    "hsk_level": 5,
+    "primary_reading": "shuǐ fēn",
+    "practical_reading": "shuǐ fèn"
+  },
+  {
+    "simplified": "说不定",
+    "hsk_level": 5,
+    "primary_reading": "shuō bù dìng",
+    "practical_reading": "shuō bu dìng"
+  },
+  {
+    "simplified": "太太",
+    "hsk_level": 5,
+    "primary_reading": "tài tài",
+    "practical_reading": "tài tai"
+  },
+  {
+    "simplified": "挑战",
+    "hsk_level": 5,
+    "primary_reading": "tiāo zhàn",
+    "practical_reading": "tiǎo zhàn"
+  },
+  {
+    "simplified": "兔子",
+    "hsk_level": 5,
+    "primary_reading": "tù zǐ",
+    "practical_reading": "tù zi"
+  },
+  {
+    "simplified": "尾巴",
+    "hsk_level": 5,
+    "primary_reading": "wěi bā",
+    "practical_reading": "wěi ba"
+  },
+  {
+    "simplified": "位置",
+    "hsk_level": 5,
+    "primary_reading": "wèi zhì",
+    "practical_reading": "wèi zhi"
+  },
+  {
+    "simplified": "无数",
+    "hsk_level": 5,
+    "primary_reading": "wú shǔ",
+    "practical_reading": "wú shù"
+  },
+  {
+    "simplified": "下载",
+    "hsk_level": 5,
+    "primary_reading": "xià zài",
+    "practical_reading": "xià zǎi"
+  },
+  {
+    "simplified": "显得",
+    "hsk_level": 5,
+    "primary_reading": "xiǎn dé",
+    "practical_reading": "xiǎn de"
+  },
+  {
+    "simplified": "相处",
+    "hsk_level": 5,
+    "primary_reading": "xiāng chù",
+    "practical_reading": "xiāng chǔ"
+  },
+  {
+    "simplified": "小姐",
+    "hsk_level": 5,
+    "primary_reading": "xiǎo jiě",
+    "practical_reading": "xiǎo jie"
+  },
+  {
+    "simplified": "行为",
+    "hsk_level": 5,
+    "primary_reading": "xíng wèi",
+    "practical_reading": "xíng wéi"
+  },
+  {
+    "simplified": "行业",
+    "hsk_level": 5,
+    "primary_reading": "xíng yè",
+    "practical_reading": "háng yè"
+  },
+  {
+    "simplified": "鸭子",
+    "hsk_level": 5,
+    "primary_reading": "yā zǐ",
+    "practical_reading": "yā zi"
+  },
+  {
+    "simplified": "延长",
+    "hsk_level": 5,
+    "primary_reading": "yán zhǎng",
+    "practical_reading": "yán cháng"
+  },
+  {
+    "simplified": "要不是",
+    "hsk_level": 5,
+    "primary_reading": "yào bù shì",
+    "practical_reading": "yào bu shì"
+  },
+  {
+    "simplified": "应对",
+    "hsk_level": 5,
+    "primary_reading": "yīng duì",
+    "practical_reading": "yìng duì"
+  },
+  {
+    "simplified": "应用",
+    "hsk_level": 5,
+    "primary_reading": "yīng yòng",
+    "practical_reading": "yìng yòng"
+  },
+  {
+    "simplified": "运气",
+    "hsk_level": 5,
+    "primary_reading": "yùn qì",
+    "practical_reading": "yùn qi"
+  },
+  {
+    "simplified": "在乎",
+    "hsk_level": 5,
+    "primary_reading": "zài hū",
+    "practical_reading": "zài hu"
+  },
+  {
+    "simplified": "长处",
+    "hsk_level": 5,
+    "primary_reading": "zhǎng chù",
+    "practical_reading": "cháng chù"
+  },
+  {
+    "simplified": "长度",
+    "hsk_level": 5,
+    "primary_reading": "zhǎng dù",
+    "practical_reading": "cháng dù"
+  },
+  {
+    "simplified": "长久",
+    "hsk_level": 5,
+    "primary_reading": "zhǎng jiǔ",
+    "practical_reading": "cháng jiǔ"
+  },
+  {
+    "simplified": "长期",
+    "hsk_level": 5,
+    "primary_reading": "zhǎng qī",
+    "practical_reading": "cháng qī"
+  },
+  {
+    "simplified": "长途",
+    "hsk_level": 5,
+    "primary_reading": "zhǎng tú",
+    "practical_reading": "cháng tú"
+  },
+  {
+    "simplified": "长远",
+    "hsk_level": 5,
+    "primary_reading": "zhǎng yuǎn",
+    "practical_reading": "cháng yuǎn"
+  },
+  {
+    "simplified": "着凉",
+    "hsk_level": 5,
+    "primary_reading": "zhe liáng",
+    "practical_reading": "zháo liáng"
+  },
+  {
+    "simplified": "种植",
+    "hsk_level": 5,
+    "primary_reading": "zhǒng zhí",
+    "practical_reading": "zhòng zhí"
+  },
+  {
+    "simplified": "种子",
+    "hsk_level": 5,
+    "primary_reading": "zhǒng zǐ",
+    "practical_reading": "zhǒng zi"
+  },
+  {
+    "simplified": "重复",
+    "hsk_level": 5,
+    "primary_reading": "zhòng fù",
+    "practical_reading": "chóng fù"
+  },
+  {
+    "simplified": "竹子",
+    "hsk_level": 5,
+    "primary_reading": "zhú zǐ",
+    "practical_reading": "zhú zi"
+  },
+  {
+    "simplified": "自觉",
+    "hsk_level": 5,
+    "primary_reading": "zì jiào",
+    "practical_reading": "zì jué"
+  },
+  {
+    "simplified": "总数",
+    "hsk_level": 5,
+    "primary_reading": "zǒng shǔ",
+    "practical_reading": "zǒng shù"
+  },
+  {
+    "simplified": "嘴巴",
+    "hsk_level": 5,
+    "primary_reading": "zuǐ bā",
+    "practical_reading": "zuǐ ba"
+  },
+  {
+    "simplified": "薄弱",
+    "hsk_level": 6,
+    "primary_reading": "báo ruò",
+    "practical_reading": "bó ruò"
+  },
+  {
+    "simplified": "奔跑",
+    "hsk_level": 6,
+    "primary_reading": "bèn pǎo",
+    "practical_reading": "bēn pǎo"
+  },
+  {
+    "simplified": "比方",
+    "hsk_level": 6,
+    "primary_reading": "bǐ fāng",
+    "practical_reading": "bǐ fang"
+  },
+  {
+    "simplified": "脖子",
+    "hsk_level": 6,
+    "primary_reading": "bó zǐ",
+    "practical_reading": "bó zi"
+  },
+  {
+    "simplified": "不禁",
+    "hsk_level": 6,
+    "primary_reading": "bù jìn",
+    "practical_reading": "bù jīn"
+  },
+  {
+    "simplified": "测量",
+    "hsk_level": 6,
+    "primary_reading": "cè liàng",
+    "practical_reading": "cè liáng"
+  },
+  {
+    "simplified": "差异",
+    "hsk_level": 6,
+    "primary_reading": "chà yì",
+    "practical_reading": "chā yì"
+  },
+  {
+    "simplified": "称呼",
+    "hsk_level": 6,
+    "primary_reading": "chēng hū",
+    "practical_reading": "chēng hu"
+  },
+  {
+    "simplified": "尺寸",
+    "hsk_level": 6,
+    "primary_reading": "chǐ cùn",
+    "practical_reading": "chǐ cun"
+  },
+  {
+    "simplified": "处罚",
+    "hsk_level": 6,
+    "primary_reading": "chù fá",
+    "practical_reading": "chǔ fá"
+  },
+  {
+    "simplified": "船只",
+    "hsk_level": 6,
+    "primary_reading": "chuán zhǐ",
+    "practical_reading": "chuán zhī"
+  },
+  {
+    "simplified": "次数",
+    "hsk_level": 6,
+    "primary_reading": "cì shǔ",
+    "practical_reading": "cì shù"
+  },
+  {
+    "simplified": "大都",
+    "hsk_level": 6,
+    "primary_reading": "dà dōu",
+    "practical_reading": "dà dū"
+  },
+  {
+    "simplified": "大伙儿",
+    "hsk_level": 6,
+    "primary_reading": "dà huǒ ér",
+    "practical_reading": "dà huǒ er"
+  },
+  {
+    "simplified": "单调",
+    "hsk_level": 6,
+    "primary_reading": "dān tiáo",
+    "practical_reading": "dān diào"
+  },
+  {
+    "simplified": "耽误",
+    "hsk_level": 6,
+    "primary_reading": "dān wù",
+    "practical_reading": "dān wu"
+  },
+  {
+    "simplified": "倒是",
+    "hsk_level": 6,
+    "primary_reading": "dǎo shì",
+    "practical_reading": "dào shi"
+  },
+  {
+    "simplified": "调动",
+    "hsk_level": 6,
+    "primary_reading": "tiáo dòng",
+    "practical_reading": "diào dòng"
+  },
+  {
+    "simplified": "都市",
+    "hsk_level": 6,
+    "primary_reading": "dōu shì",
+    "practical_reading": "dū shì"
+  },
+  {
+    "simplified": "对称",
+    "hsk_level": 6,
+    "primary_reading": "duì chēng",
+    "practical_reading": "duì chèn"
+  },
+  {
+    "simplified": "对应",
+    "hsk_level": 6,
+    "primary_reading": "duì yīng",
+    "practical_reading": "duì yìng"
+  },
+  {
+    "simplified": "恶心",
+    "hsk_level": 6,
+    "primary_reading": "è xīn",
+    "practical_reading": "ě xīn"
+  },
+  {
+    "simplified": "夫人",
+    "hsk_level": 6,
+    "primary_reading": "fū rén",
+    "practical_reading": "fū ren"
+  },
+  {
+    "simplified": "稿子",
+    "hsk_level": 6,
+    "primary_reading": "gǎo zǐ",
+    "practical_reading": "gǎo zi"
+  },
+  {
+    "simplified": "个体",
+    "hsk_level": 6,
+    "primary_reading": "ge tǐ",
+    "practical_reading": "gè tǐ"
+  },
+  {
+    "simplified": "给予",
+    "hsk_level": 6,
+    "primary_reading": "gěi yǔ",
+    "practical_reading": "jǐ yǔ"
+  },
+  {
+    "simplified": "供给",
+    "hsk_level": 6,
+    "primary_reading": "gōng gěi",
+    "practical_reading": "gōng jǐ"
+  },
+  {
+    "simplified": "供应",
+    "hsk_level": 6,
+    "primary_reading": "gōng yīng",
+    "practical_reading": "gōng yìng"
+  },
+  {
+    "simplified": "姑姑",
+    "hsk_level": 6,
+    "primary_reading": "gū gū",
+    "practical_reading": "gū gu"
+  },
+  {
+    "simplified": "骨头",
+    "hsk_level": 6,
+    "primary_reading": "gǔ tóu",
+    "practical_reading": "gǔ tou"
+  },
+  {
+    "simplified": "归还",
+    "hsk_level": 6,
+    "primary_reading": "guī hái",
+    "practical_reading": "guī huán"
+  },
+  {
+    "simplified": "规矩",
+    "hsk_level": 6,
+    "primary_reading": "guī jǔ",
+    "practical_reading": "guī ju"
+  },
+  {
+    "simplified": "还原",
+    "hsk_level": 6,
+    "primary_reading": "hái yuán",
+    "practical_reading": "huán yuán"
+  },
+  {
+    "simplified": "好客",
+    "hsk_level": 6,
+    "primary_reading": "hǎo kè",
+    "practical_reading": "hào kè"
+  },
+  {
+    "simplified": "衡量",
+    "hsk_level": 6,
+    "primary_reading": "héng liàng",
+    "practical_reading": "héng liáng"
+  },
+  {
+    "simplified": "胡子",
+    "hsk_level": 6,
+    "primary_reading": "hú zǐ",
+    "practical_reading": "hú zi"
+  },
+  {
+    "simplified": "会计",
+    "hsk_level": 6,
+    "primary_reading": "huì jì",
+    "practical_reading": "kuài jì"
+  },
+  {
+    "simplified": "极为",
+    "hsk_level": 6,
+    "primary_reading": "jí wèi",
+    "practical_reading": "jí wéi"
+  },
+  {
+    "simplified": "急切",
+    "hsk_level": 6,
+    "primary_reading": "jí qiē",
+    "practical_reading": "jí qiè"
+  },
+  {
+    "simplified": "间隔",
+    "hsk_level": 6,
+    "primary_reading": "jiān gé",
+    "practical_reading": "jiàn gé"
+  },
+  {
+    "simplified": "间接",
+    "hsk_level": 6,
+    "primary_reading": "jiān jiē",
+    "practical_reading": "jiàn jiē"
+  },
+  {
+    "simplified": "教训",
+    "hsk_level": 6,
+    "primary_reading": "jiāo xùn",
+    "practical_reading": "jiào xun"
+  },
+  {
+    "simplified": "结实",
+    "hsk_level": 6,
+    "primary_reading": "jié shí",
+    "practical_reading": "jiē shí"
+  },
+  {
+    "simplified": "戒指",
+    "hsk_level": 6,
+    "primary_reading": "jiè zhǐ",
+    "practical_reading": "jiè zhi"
+  },
+  {
+    "simplified": "舅舅",
+    "hsk_level": 6,
+    "primary_reading": "jiù jiù",
+    "practical_reading": "jiù jiu"
+  },
+  {
+    "simplified": "看不起",
+    "hsk_level": 6,
+    "primary_reading": "kàn bù qǐ",
+    "practical_reading": "kàn bu qǐ"
+  },
+  {
+    "simplified": "看得起",
+    "hsk_level": 6,
+    "primary_reading": "kàn dé qǐ",
+    "practical_reading": "kàn de qǐ"
+  },
+  {
+    "simplified": "看好",
+    "hsk_level": 6,
+    "primary_reading": "kàn hǎo",
+    "practical_reading": "kān hǎo"
+  },
+  {
+    "simplified": "看中",
+    "hsk_level": 6,
+    "primary_reading": "kàn zhōng",
+    "practical_reading": "kàn zhòng"
+  },
+  {
+    "simplified": "空闲",
+    "hsk_level": 6,
+    "primary_reading": "kōng xián",
+    "practical_reading": "kòng xián"
+  },
+  {
+    "simplified": "老实",
+    "hsk_level": 6,
+    "primary_reading": "lǎo shí",
+    "practical_reading": "lǎo shi"
+  },
+  {
+    "simplified": "老太太",
+    "hsk_level": 6,
+    "primary_reading": "lǎo tài tài",
+    "practical_reading": "lǎo tài tai"
+  },
+  {
+    "simplified": "乐器",
+    "hsk_level": 6,
+    "primary_reading": "lè qì",
+    "practical_reading": "yuè qì"
+  },
+  {
+    "simplified": "乐曲",
+    "hsk_level": 6,
+    "primary_reading": "lè qǔ",
+    "practical_reading": "yuè qǔ"
+  },
+  {
+    "simplified": "率领",
+    "hsk_level": 6,
+    "primary_reading": "lǜ lǐng",
+    "practical_reading": "shuài lǐng"
+  },
+  {
+    "simplified": "率先",
+    "hsk_level": 6,
+    "primary_reading": "lǜ xiān",
+    "practical_reading": "shuài xiān"
+  },
+  {
+    "simplified": "轮子",
+    "hsk_level": 6,
+    "primary_reading": "lún zǐ",
+    "practical_reading": "lún zi"
+  },
+  {
+    "simplified": "马虎",
+    "hsk_level": 6,
+    "primary_reading": "mǎ hǔ",
+    "practical_reading": "mǎ hu"
+  },
+  {
+    "simplified": "漫长",
+    "hsk_level": 6,
+    "primary_reading": "màn zhǎng",
+    "practical_reading": "màn cháng"
+  },
+  {
+    "simplified": "眉毛",
+    "hsk_level": 6,
+    "primary_reading": "méi máo",
+    "practical_reading": "méi mao"
+  },
+  {
+    "simplified": "勉强",
+    "hsk_level": 6,
+    "primary_reading": "miǎn qiáng",
+    "practical_reading": "miǎn qiǎng"
+  },
+  {
+    "simplified": "面子",
+    "hsk_level": 6,
+    "primary_reading": "miàn zǐ",
+    "practical_reading": "miàn zi"
+  },
+  {
+    "simplified": "模特儿",
+    "hsk_level": 6,
+    "primary_reading": "mó tè ér",
+    "practical_reading": "mó tè er"
+  },
+  {
+    "simplified": "模样",
+    "hsk_level": 6,
+    "primary_reading": "mó yàng",
+    "practical_reading": "mú yàng"
+  },
+  {
+    "simplified": "脑袋",
+    "hsk_level": 6,
+    "primary_reading": "nǎo dài",
+    "practical_reading": "nǎo dai"
+  },
+  {
+    "simplified": "脑子",
+    "hsk_level": 6,
+    "primary_reading": "nǎo zǐ",
+    "practical_reading": "nǎo zi"
+  },
+  {
+    "simplified": "骗子",
+    "hsk_level": 6,
+    "primary_reading": "piàn zǐ",
+    "practical_reading": "piàn zi"
+  },
+  {
+    "simplified": "迫切",
+    "hsk_level": 6,
+    "primary_reading": "pò qiē",
+    "practical_reading": "pò qiè"
+  },
+  {
+    "simplified": "恰当",
+    "hsk_level": 6,
+    "primary_reading": "qià dāng",
+    "practical_reading": "qià dàng"
+  },
+  {
+    "simplified": "强迫",
+    "hsk_level": 6,
+    "primary_reading": "qiáng pò",
+    "practical_reading": "qiǎng pò"
+  },
+  {
+    "simplified": "切实",
+    "hsk_level": 6,
+    "primary_reading": "qiē shí",
+    "practical_reading": "qiè shí"
+  },
+  {
+    "simplified": "情形",
+    "hsk_level": 6,
+    "primary_reading": "qíng xíng",
+    "practical_reading": "qíng xing"
+  },
+  {
+    "simplified": "人为",
+    "hsk_level": 6,
+    "primary_reading": "rén wèi",
+    "practical_reading": "rén wéi"
+  },
+  {
+    "simplified": "散文",
+    "hsk_level": 6,
+    "primary_reading": "sàn wén",
+    "practical_reading": "sǎn wén"
+  },
+  {
+    "simplified": "嗓子",
+    "hsk_level": 6,
+    "primary_reading": "sǎng zǐ",
+    "practical_reading": "sǎng zi"
+  },
+  {
+    "simplified": "上当",
+    "hsk_level": 6,
+    "primary_reading": "shàng dāng",
+    "practical_reading": "shàng dàng"
+  },
+  {
+    "simplified": "少儿",
+    "hsk_level": 6,
+    "primary_reading": "shǎo ér",
+    "practical_reading": "shào ér"
+  },
+  {
+    "simplified": "舌头",
+    "hsk_level": 6,
+    "primary_reading": "shé tóu",
+    "practical_reading": "shé tou"
+  },
+  {
+    "simplified": "声调",
+    "hsk_level": 6,
+    "primary_reading": "shēng tiáo",
+    "practical_reading": "shēng diào"
+  },
+  {
+    "simplified": "师父",
+    "hsk_level": 6,
+    "primary_reading": "shī fù",
+    "practical_reading": "shī fu"
+  },
+  {
+    "simplified": "势力",
+    "hsk_level": 6,
+    "primary_reading": "shì lì",
+    "practical_reading": "shì li"
+  },
+  {
+    "simplified": "视觉",
+    "hsk_level": 6,
+    "primary_reading": "shì jiào",
+    "practical_reading": "shì jué"
+  },
+  {
+    "simplified": "数目",
+    "hsk_level": 6,
+    "primary_reading": "shǔ mù",
+    "practical_reading": "shù mù"
+  },
+  {
+    "simplified": "岁数",
+    "hsk_level": 6,
+    "primary_reading": "suì shǔ",
+    "practical_reading": "suì shu"
+  },
+  {
+    "simplified": "踏实",
+    "hsk_level": 6,
+    "primary_reading": "tà shí",
+    "practical_reading": "tā shi"
+  },
+  {
+    "simplified": "特长",
+    "hsk_level": 6,
+    "primary_reading": "tè zhǎng",
+    "practical_reading": "tè cháng"
+  },
+  {
+    "simplified": "同行",
+    "hsk_level": 6,
+    "primary_reading": "tóng xíng",
+    "practical_reading": "tóng háng"
+  },
+  {
+    "simplified": "娃娃",
+    "hsk_level": 6,
+    "primary_reading": "wá wá",
+    "practical_reading": "wá wa"
+  },
+  {
+    "simplified": "弯曲",
+    "hsk_level": 6,
+    "primary_reading": "wān qǔ",
+    "practical_reading": "wān qū"
+  },
+  {
+    "simplified": "委屈",
+    "hsk_level": 6,
+    "primary_reading": "wěi qū",
+    "practical_reading": "wěi qu"
+  },
+  {
+    "simplified": "为难",
+    "hsk_level": 6,
+    "primary_reading": "wèi nán",
+    "practical_reading": "wéi nán"
+  },
+  {
+    "simplified": "为期",
+    "hsk_level": 6,
+    "primary_reading": "wèi qī",
+    "practical_reading": "wéi qī"
+  },
+  {
+    "simplified": "为止",
+    "hsk_level": 6,
+    "primary_reading": "wèi zhǐ",
+    "practical_reading": "wéi zhǐ"
+  },
+  {
+    "simplified": "下功夫",
+    "hsk_level": 6,
+    "primary_reading": "xià gōng fū",
+    "practical_reading": "xià gōng fu"
+  },
+  {
+    "simplified": "相声",
+    "hsk_level": 6,
+    "primary_reading": "xiāng shēng",
+    "practical_reading": "xiàng sheng"
+  },
+  {
+    "simplified": "相应",
+    "hsk_level": 6,
+    "primary_reading": "xiāng yīng",
+    "practical_reading": "xiāng yìng"
+  },
+  {
+    "simplified": "小偷儿",
+    "hsk_level": 6,
+    "primary_reading": "xiǎo tōu ér",
+    "practical_reading": "xiǎo tōu er"
+  },
+  {
+    "simplified": "效应",
+    "hsk_level": 6,
+    "primary_reading": "xiào yīng",
+    "practical_reading": "xiào yìng"
+  },
+  {
+    "simplified": "心脏",
+    "hsk_level": 6,
+    "primary_reading": "xīn zāng",
+    "practical_reading": "xīn zàng"
+  },
+  {
+    "simplified": "血管",
+    "hsk_level": 6,
+    "primary_reading": "xiě guǎn",
+    "practical_reading": "xuè guǎn"
+  },
+  {
+    "simplified": "血压",
+    "hsk_level": 6,
+    "primary_reading": "xiě yā",
+    "practical_reading": "xuè yā"
+  },
+  {
+    "simplified": "血液",
+    "hsk_level": 6,
+    "primary_reading": "xiě yè",
+    "practical_reading": "xuè yè"
+  },
+  {
+    "simplified": "淹没",
+    "hsk_level": 6,
+    "primary_reading": "yān méi",
+    "practical_reading": "yān mò"
+  },
+  {
+    "simplified": "一辈子",
+    "hsk_level": 6,
+    "primary_reading": "yī bèi zǐ",
+    "practical_reading": "yī bèi zi"
+  },
+  {
+    "simplified": "一模一样",
+    "hsk_level": 6,
+    "primary_reading": "yī mó yī yàng",
+    "practical_reading": "yī mú yī yàng"
+  },
+  {
+    "simplified": "益处",
+    "hsk_level": 6,
+    "primary_reading": "yì chù",
+    "practical_reading": "yì chu"
+  },
+  {
+    "simplified": "影子",
+    "hsk_level": 6,
+    "primary_reading": "yǐng zǐ",
+    "practical_reading": "yǐng zi"
+  },
+  {
+    "simplified": "用处",
+    "hsk_level": 6,
+    "primary_reading": "yòng chù",
+    "practical_reading": "yòng chu"
+  },
+  {
+    "simplified": "晕车",
+    "hsk_level": 6,
+    "primary_reading": "yūn chē",
+    "practical_reading": "yùn chē"
+  },
+  {
+    "simplified": "灾难",
+    "hsk_level": 6,
+    "primary_reading": "zāi nán",
+    "practical_reading": "zāi nàn"
+  },
+  {
+    "simplified": "长短",
+    "hsk_level": 6,
+    "primary_reading": "zhǎng duǎn",
+    "practical_reading": "cháng duǎn"
+  },
+  {
+    "simplified": "长寿",
+    "hsk_level": 6,
+    "primary_reading": "zhǎng shòu",
+    "practical_reading": "cháng shòu"
+  },
+  {
+    "simplified": "真相",
+    "hsk_level": 6,
+    "primary_reading": "zhēn xiāng",
+    "practical_reading": "zhēn xiàng"
+  },
+  {
+    "simplified": "枕头",
+    "hsk_level": 6,
+    "primary_reading": "zhěn tóu",
+    "practical_reading": "zhěn tou"
+  },
+  {
+    "simplified": "中毒",
+    "hsk_level": 6,
+    "primary_reading": "zhōng dú",
+    "practical_reading": "zhòng dú"
+  },
+  {
+    "simplified": "中奖",
+    "hsk_level": 6,
+    "primary_reading": "zhōng jiǎng",
+    "practical_reading": "zhòng jiǎng"
+  },
+  {
+    "simplified": "重建",
+    "hsk_level": 6,
+    "primary_reading": "zhòng jiàn",
+    "practical_reading": "chóng jiàn"
+  },
+  {
+    "simplified": "主角",
+    "hsk_level": 6,
+    "primary_reading": "zhǔ jiǎo",
+    "practical_reading": "zhǔ jué"
+  },
+  {
+    "simplified": "庄稼",
+    "hsk_level": 6,
+    "primary_reading": "zhuāng jià",
+    "practical_reading": "zhuāng jia"
+  },
+  {
+    "simplified": "粽子",
+    "hsk_level": 6,
+    "primary_reading": "zòng zǐ",
+    "practical_reading": "zòng zi"
+  },
+  {
+    "simplified": "呵护",
+    "hsk_level": 7,
+    "primary_reading": "ā hù",
+    "practical_reading": "hē hù"
+  },
+  {
+    "simplified": "挨家挨户",
+    "hsk_level": 7,
+    "primary_reading": "ái jiā ái hù",
+    "practical_reading": "āi jiā āi hù"
+  },
+  {
+    "simplified": "暗地里",
+    "hsk_level": 7,
+    "primary_reading": "àn dì lǐ",
+    "practical_reading": "àn dì li"
+  },
+  {
+    "simplified": "靶子",
+    "hsk_level": 7,
+    "primary_reading": "bǎ zǐ",
+    "practical_reading": "bǎ zi"
+  },
+  {
+    "simplified": "巴不得",
+    "hsk_level": 7,
+    "primary_reading": "bā bù dé",
+    "practical_reading": "bā bu de"
+  },
+  {
+    "simplified": "巴结",
+    "hsk_level": 7,
+    "primary_reading": "bā jié",
+    "practical_reading": "bā jie"
+  },
+  {
+    "simplified": "半数",
+    "hsk_level": 7,
+    "primary_reading": "bàn shǔ",
+    "practical_reading": "bàn shù"
+  },
+  {
+    "simplified": "包袱",
+    "hsk_level": 7,
+    "primary_reading": "bāo fú",
+    "practical_reading": "bāo fu"
+  },
+  {
+    "simplified": "包扎",
+    "hsk_level": 7,
+    "primary_reading": "bāo zhā",
+    "practical_reading": "bāo zā"
+  },
+  {
+    "simplified": "宝藏",
+    "hsk_level": 7,
+    "primary_reading": "bǎo cáng",
+    "practical_reading": "bǎo zàng"
+  },
+  {
+    "simplified": "饱经沧桑",
+    "hsk_level": 7,
+    "primary_reading": "bǎo jīng cāng sàng",
+    "practical_reading": "bǎo jīng cāng sāng"
+  },
+  {
+    "simplified": "报酬",
+    "hsk_level": 7,
+    "primary_reading": "bào chóu",
+    "practical_reading": "bào chou"
+  },
+  {
+    "simplified": "奔波",
+    "hsk_level": 7,
+    "primary_reading": "bèn bō",
+    "practical_reading": "bēn bō"
+  },
+  {
+    "simplified": "奔驰",
+    "hsk_level": 7,
+    "primary_reading": "bèn chí",
+    "practical_reading": "bēn chí"
+  },
+  {
+    "simplified": "奔赴",
+    "hsk_level": 7,
+    "primary_reading": "bèn fù",
+    "practical_reading": "bēn fù"
+  },
+  {
+    "simplified": "本分",
+    "hsk_level": 7,
+    "primary_reading": "běn fēn",
+    "practical_reading": "běn fèn"
+  },
+  {
+    "simplified": "避难",
+    "hsk_level": 7,
+    "primary_reading": "bì nán",
+    "practical_reading": "bì nàn"
+  },
+  {
+    "simplified": "变更",
+    "hsk_level": 7,
+    "primary_reading": "biàn gèng",
+    "practical_reading": "biàn gēng"
+  },
+  {
+    "simplified": "辫子",
+    "hsk_level": 7,
+    "primary_reading": "biàn zǐ",
+    "practical_reading": "biàn zi"
+  },
+  {
+    "simplified": "表率",
+    "hsk_level": 7,
+    "primary_reading": "biǎo lǜ",
+    "practical_reading": "biǎo shuài"
+  },
+  {
+    "simplified": "别扭",
+    "hsk_level": 7,
+    "primary_reading": "bié niǔ",
+    "practical_reading": "biè niu"
+  },
+  {
+    "simplified": "冰棍儿",
+    "hsk_level": 7,
+    "primary_reading": "bīng gùn ér",
+    "practical_reading": "bīng gùn er"
+  },
+  {
+    "simplified": "剥夺",
+    "hsk_level": 7,
+    "primary_reading": "bāo duó",
+    "practical_reading": "bō duó"
+  },
+  {
+    "simplified": "剥削",
+    "hsk_level": 7,
+    "primary_reading": "bāo xiāo",
+    "practical_reading": "bō xuē"
+  },
+  {
+    "simplified": "伯伯",
+    "hsk_level": 7,
+    "primary_reading": "bó bó",
+    "practical_reading": "bó bo"
+  },
+  {
+    "simplified": "补给",
+    "hsk_level": 7,
+    "primary_reading": "bǔ gěi",
+    "practical_reading": "bǔ jǐ"
+  },
+  {
+    "simplified": "不见得",
+    "hsk_level": 7,
+    "primary_reading": "bù jiàn dé",
+    "practical_reading": "bù jiàn de"
+  },
+  {
+    "simplified": "不了了之",
+    "hsk_level": 7,
+    "primary_reading": "bù le le zhī",
+    "practical_reading": "bù liǎo liǎo zhī"
+  },
+  {
+    "simplified": "不以为然",
+    "hsk_level": 7,
+    "primary_reading": "bù yǐ wèi rán",
+    "practical_reading": "bù yǐ wéi rán"
+  },
+  {
+    "simplified": "不由得",
+    "hsk_level": 7,
+    "primary_reading": "bù yóu dé",
+    "practical_reading": "bù yóu de"
+  },
+  {
+    "simplified": "不知不觉",
+    "hsk_level": 7,
+    "primary_reading": "bù zhī bù jiào",
+    "practical_reading": "bù zhī bù jué"
+  },
+  {
+    "simplified": "才干",
+    "hsk_level": 7,
+    "primary_reading": "cái gān",
+    "practical_reading": "cái gàn"
+  },
+  {
+    "simplified": "沧桑",
+    "hsk_level": 7,
+    "primary_reading": "cāng sàng",
+    "practical_reading": "cāng sāng"
+  },
+  {
+    "simplified": "苍蝇",
+    "hsk_level": 7,
+    "primary_reading": "cāng yíng",
+    "practical_reading": "cāng ying"
+  },
+  {
+    "simplified": "草率",
+    "hsk_level": 7,
+    "primary_reading": "cǎo lǜ",
+    "practical_reading": "cǎo shuài"
+  },
+  {
+    "simplified": "查处",
+    "hsk_level": 7,
+    "primary_reading": "chá chù",
+    "practical_reading": "chá chǔ"
+  },
+  {
+    "simplified": "察觉",
+    "hsk_level": 7,
+    "primary_reading": "chá jiào",
+    "practical_reading": "chá jué"
+  },
+  {
+    "simplified": "差错",
+    "hsk_level": 7,
+    "primary_reading": "chà cuò",
+    "practical_reading": "chā cuò"
+  },
+  {
+    "simplified": "差额",
+    "hsk_level": 7,
+    "primary_reading": "chà é",
+    "practical_reading": "chā é"
+  },
+  {
+    "simplified": "昌盛",
+    "hsk_level": 7,
+    "primary_reading": "chāng chéng",
+    "practical_reading": "chāng shèng"
+  },
+  {
+    "simplified": "偿还",
+    "hsk_level": 7,
+    "primary_reading": "cháng hái",
+    "practical_reading": "cháng huán"
+  },
+  {
+    "simplified": "朝气蓬勃",
+    "hsk_level": 7,
+    "primary_reading": "cháo qì péng bó",
+    "practical_reading": "zhāo qì péng bó"
+  },
+  {
+    "simplified": "朝三暮四",
+    "hsk_level": 7,
+    "primary_reading": "cháo sān mù sì",
+    "practical_reading": "zhāo sān mù sì"
+  },
+  {
+    "simplified": "朝夕相处",
+    "hsk_level": 7,
+    "primary_reading": "cháo xī xiāng chù",
+    "practical_reading": "zhāo xī xiāng chǔ"
+  },
+  {
+    "simplified": "沉着",
+    "hsk_level": 7,
+    "primary_reading": "chén zhe",
+    "practical_reading": "chén zhuó"
+  },
+  {
+    "simplified": "称心如意",
+    "hsk_level": 7,
+    "primary_reading": "chēng xīn rú yì",
+    "practical_reading": "chèn xīn rú yì"
+  },
+  {
+    "simplified": "抽屉",
+    "hsk_level": 7,
+    "primary_reading": "chōu tì",
+    "practical_reading": "chōu ti"
+  },
+  {
+    "simplified": "处方",
+    "hsk_level": 7,
+    "primary_reading": "chù fāng",
+    "practical_reading": "chǔ fāng"
+  },
+  {
+    "simplified": "处分",
+    "hsk_level": 7,
+    "primary_reading": "chù fēn",
+    "practical_reading": "chǔ fèn"
+  },
+  {
+    "simplified": "处境",
+    "hsk_level": 7,
+    "primary_reading": "chù jìng",
+    "practical_reading": "chǔ jìng"
+  },
+  {
+    "simplified": "处置",
+    "hsk_level": 7,
+    "primary_reading": "chù zhì",
+    "practical_reading": "chǔ zhì"
+  },
+  {
+    "simplified": "触觉",
+    "hsk_level": 7,
+    "primary_reading": "chù jiào",
+    "practical_reading": "chù jué"
+  },
+  {
+    "simplified": "揣测",
+    "hsk_level": 7,
+    "primary_reading": "chuāi cè",
+    "practical_reading": "chuǎi cè"
+  },
+  {
+    "simplified": "揣摩",
+    "hsk_level": 7,
+    "primary_reading": "chuāi mó",
+    "practical_reading": "chuǎi mó"
+  },
+  {
+    "simplified": "穿着",
+    "hsk_level": 7,
+    "primary_reading": "chuān zhe",
+    "practical_reading": "chuān zhuó"
+  },
+  {
+    "simplified": "传记",
+    "hsk_level": 7,
+    "primary_reading": "chuán jì",
+    "practical_reading": "zhuàn jì"
+  },
+  {
+    "simplified": "创伤",
+    "hsk_level": 7,
+    "primary_reading": "chuàng shāng",
+    "practical_reading": "chuāng shāng"
+  },
+  {
+    "simplified": "伺候",
+    "hsk_level": 7,
+    "primary_reading": "sì hòu",
+    "practical_reading": "cì hou"
+  },
+  {
+    "simplified": "赐教",
+    "hsk_level": 7,
+    "primary_reading": "cì jiāo",
+    "practical_reading": "cì jiào"
+  },
+  {
+    "simplified": "凑合",
+    "hsk_level": 7,
+    "primary_reading": "còu hé",
+    "practical_reading": "còu he"
+  },
+  {
+    "simplified": "错觉",
+    "hsk_level": 7,
+    "primary_reading": "cuò jiào",
+    "practical_reading": "cuò jué"
+  },
+  {
+    "simplified": "打盹儿",
+    "hsk_level": 7,
+    "primary_reading": "dǎ dǔn ér",
+    "practical_reading": "dǎ dǔn er"
+  },
+  {
+    "simplified": "打发",
+    "hsk_level": 7,
+    "primary_reading": "dǎ fā",
+    "practical_reading": "dǎ fa"
+  },
+  {
+    "simplified": "打量",
+    "hsk_level": 7,
+    "primary_reading": "dǎ liàng",
+    "practical_reading": "dǎ liang"
+  },
+  {
+    "simplified": "大不了",
+    "hsk_level": 7,
+    "primary_reading": "dà bù le",
+    "practical_reading": "dà bù liǎo"
+  },
+  {
+    "simplified": "大大咧咧",
+    "hsk_level": 7,
+    "primary_reading": "dà dà liě liě",
+    "practical_reading": "dà dà liē liē"
+  },
+  {
+    "simplified": "大数据",
+    "hsk_level": 7,
+    "primary_reading": "dà shǔ jù",
+    "practical_reading": "dà shù jù"
+  },
+  {
+    "simplified": "大有可为",
+    "hsk_level": 7,
+    "primary_reading": "dà yǒu kě wèi",
+    "practical_reading": "dà yǒu kě wéi"
+  },
+  {
+    "simplified": "逮捕",
+    "hsk_level": 7,
+    "primary_reading": "dǎi bǔ",
+    "practical_reading": "dài bǔ"
+  },
+  {
+    "simplified": "单薄",
+    "hsk_level": 7,
+    "primary_reading": "dān báo",
+    "practical_reading": "dān bó"
+  },
+  {
+    "simplified": "担子",
+    "hsk_level": 7,
+    "primary_reading": "dān zǐ",
+    "practical_reading": "dàn zi"
+  },
+  {
+    "simplified": "耽搁",
+    "hsk_level": 7,
+    "primary_reading": "dān gē",
+    "practical_reading": "dān ge"
+  },
+  {
+    "simplified": "当真",
+    "hsk_level": 7,
+    "primary_reading": "dāng zhēn",
+    "practical_reading": "dàng zhēn"
+  },
+  {
+    "simplified": "导弹",
+    "hsk_level": 7,
+    "primary_reading": "dǎo tán",
+    "practical_reading": "dǎo dàn"
+  },
+  {
+    "simplified": "倒计时",
+    "hsk_level": 7,
+    "primary_reading": "dǎo jì shí",
+    "practical_reading": "dào jì shí"
+  },
+  {
+    "simplified": "倒数",
+    "hsk_level": 7,
+    "primary_reading": "dǎo shǔ",
+    "practical_reading": "dào shǔ"
+  },
+  {
+    "simplified": "得当",
+    "hsk_level": 7,
+    "primary_reading": "dé dāng",
+    "practical_reading": "dé dàng"
+  },
+  {
+    "simplified": "凳子",
+    "hsk_level": 7,
+    "primary_reading": "dèng zǐ",
+    "practical_reading": "dèng zi"
+  },
+  {
+    "simplified": "低调",
+    "hsk_level": 7,
+    "primary_reading": "dī tiáo",
+    "practical_reading": "dī diào"
+  },
+  {
+    "simplified": "笛子",
+    "hsk_level": 7,
+    "primary_reading": "dí zǐ",
+    "practical_reading": "dí zi"
+  },
+  {
+    "simplified": "底子",
+    "hsk_level": 7,
+    "primary_reading": "dǐ zǐ",
+    "practical_reading": "dǐ zi"
+  },
+  {
+    "simplified": "点子",
+    "hsk_level": 7,
+    "primary_reading": "diǎn zǐ",
+    "practical_reading": "diǎn zi"
+  },
+  {
+    "simplified": "垫子",
+    "hsk_level": 7,
+    "primary_reading": "diàn zǐ",
+    "practical_reading": "diàn zi"
+  },
+  {
+    "simplified": "刁难",
+    "hsk_level": 7,
+    "primary_reading": "diāo nán",
+    "practical_reading": "diāo nàn"
+  },
+  {
+    "simplified": "调度",
+    "hsk_level": 7,
+    "primary_reading": "tiáo dù",
+    "practical_reading": "diào dù"
+  },
+  {
+    "simplified": "钉子",
+    "hsk_level": 7,
+    "primary_reading": "dìng zǐ",
+    "practical_reading": "dīng zi"
+  },
+  {
+    "simplified": "丢三落四",
+    "hsk_level": 7,
+    "primary_reading": "diū sān luò sì",
+    "practical_reading": "diū sān là sì"
+  },
+  {
+    "simplified": "东奔西走",
+    "hsk_level": 7,
+    "primary_reading": "dōng bèn xī zǒu",
+    "practical_reading": "dōng bēn xī zǒu"
+  },
+  {
+    "simplified": "动不动",
+    "hsk_level": 7,
+    "primary_reading": "dòng bù dòng",
+    "practical_reading": "dòng bu dòng"
+  },
+  {
+    "simplified": "动弹",
+    "hsk_level": 7,
+    "primary_reading": "dòng tán",
+    "practical_reading": "dòng tan"
+  },
+  {
+    "simplified": "都会",
+    "hsk_level": 7,
+    "primary_reading": "dōu huì",
+    "practical_reading": "dū huì"
+  },
+  {
+    "simplified": "豆子",
+    "hsk_level": 7,
+    "primary_reading": "dòu zǐ",
+    "practical_reading": "dòu zi"
+  },
+  {
+    "simplified": "堵塞",
+    "hsk_level": 7,
+    "primary_reading": "dǔ sāi",
+    "practical_reading": "dǔ sè"
+  },
+  {
+    "simplified": "对得起",
+    "hsk_level": 7,
+    "primary_reading": "duì dé qǐ",
+    "practical_reading": "duì de qǐ"
+  },
+  {
+    "simplified": "对付",
+    "hsk_level": 7,
+    "primary_reading": "duì fù",
+    "practical_reading": "duì fu"
+  },
+  {
+    "simplified": "夺冠",
+    "hsk_level": 7,
+    "primary_reading": "duó guān",
+    "practical_reading": "duó guàn"
+  },
+  {
+    "simplified": "发觉",
+    "hsk_level": 7,
+    "primary_reading": "fā jiào",
+    "practical_reading": "fā jué"
+  },
+  {
+    "simplified": "发型",
+    "hsk_level": 7,
+    "primary_reading": "fā xíng",
+    "practical_reading": "fà xíng"
+  },
+  {
+    "simplified": "反差",
+    "hsk_level": 7,
+    "primary_reading": "fǎn chà",
+    "practical_reading": "fǎn chā"
+  },
+  {
+    "simplified": "反倒",
+    "hsk_level": 7,
+    "primary_reading": "fǎn dǎo",
+    "practical_reading": "fǎn dào"
+  },
+  {
+    "simplified": "反省",
+    "hsk_level": 7,
+    "primary_reading": "fǎn shěng",
+    "practical_reading": "fǎn xǐng"
+  },
+  {
+    "simplified": "返还",
+    "hsk_level": 7,
+    "primary_reading": "fǎn hái",
+    "practical_reading": "fǎn huán"
+  },
+  {
+    "simplified": "非得",
+    "hsk_level": 7,
+    "primary_reading": "fēi dé",
+    "practical_reading": "fēi děi"
+  },
+  {
+    "simplified": "分寸",
+    "hsk_level": 7,
+    "primary_reading": "fēn cùn",
+    "practical_reading": "fēn cun"
+  },
+  {
+    "simplified": "分外",
+    "hsk_level": 7,
+    "primary_reading": "fēn wài",
+    "practical_reading": "fèn wài"
+  },
+  {
+    "simplified": "丰盛",
+    "hsk_level": 7,
+    "primary_reading": "fēng chéng",
+    "practical_reading": "fēng shèng"
+  },
+  {
+    "simplified": "疯子",
+    "hsk_level": 7,
+    "primary_reading": "fēng zǐ",
+    "practical_reading": "fēng zi"
+  },
+  {
+    "simplified": "福气",
+    "hsk_level": 7,
+    "primary_reading": "fú qì",
+    "practical_reading": "fú qi"
+  },
+  {
+    "simplified": "斧子",
+    "hsk_level": 7,
+    "primary_reading": "fǔ zǐ",
+    "practical_reading": "fǔ zi"
+  },
+  {
+    "simplified": "附和",
+    "hsk_level": 7,
+    "primary_reading": "fù hé",
+    "practical_reading": "fù hè"
+  },
+  {
+    "simplified": "干部",
+    "hsk_level": 7,
+    "primary_reading": "gān bù",
+    "practical_reading": "gàn bù"
+  },
+  {
+    "simplified": "干劲",
+    "hsk_level": 7,
+    "primary_reading": "gān jìn",
+    "practical_reading": "gàn jìn"
+  },
+  {
+    "simplified": "干事",
+    "hsk_level": 7,
+    "primary_reading": "gān shì",
+    "practical_reading": "gàn shi"
+  },
+  {
+    "simplified": "杠杆",
+    "hsk_level": 7,
+    "primary_reading": "gāng gǎn",
+    "practical_reading": "gàng gǎn"
+  },
+  {
+    "simplified": "高调",
+    "hsk_level": 7,
+    "primary_reading": "gāo tiáo",
+    "practical_reading": "gāo diào"
+  },
+  {
+    "simplified": "高血压",
+    "hsk_level": 7,
+    "primary_reading": "gāo xiě yā",
+    "practical_reading": "gāo xuè yā"
+  },
+  {
+    "simplified": "告示",
+    "hsk_level": 7,
+    "primary_reading": "gào shì",
+    "practical_reading": "gào shi"
+  },
+  {
+    "simplified": "疙瘩",
+    "hsk_level": 7,
+    "primary_reading": "gē dá",
+    "practical_reading": "gē da"
+  },
+  {
+    "simplified": "鸽子",
+    "hsk_level": 7,
+    "primary_reading": "gē zǐ",
+    "practical_reading": "gē zi"
+  },
+  {
+    "simplified": "个案",
+    "hsk_level": 7,
+    "primary_reading": "ge àn",
+    "practical_reading": "gè àn"
+  },
+  {
+    "simplified": "个头儿",
+    "hsk_level": 7,
+    "primary_reading": "ge tóu ér",
+    "practical_reading": "gè tóu er"
+  },
+  {
+    "simplified": "更改",
+    "hsk_level": 7,
+    "primary_reading": "gèng gǎi",
+    "practical_reading": "gēng gǎi"
+  },
+  {
+    "simplified": "更衣室",
+    "hsk_level": 7,
+    "primary_reading": "gèng yī shì",
+    "practical_reading": "gēng yī shì"
+  },
+  {
+    "simplified": "更正",
+    "hsk_level": 7,
+    "primary_reading": "gèng zhèng",
+    "practical_reading": "gēng zhèng"
+  },
+  {
+    "simplified": "公仆",
+    "hsk_level": 7,
+    "primary_reading": "gōng pū",
+    "practical_reading": "gōng pú"
+  },
+  {
+    "simplified": "供不应求",
+    "hsk_level": 7,
+    "primary_reading": "gōng bù yīng qiú",
+    "practical_reading": "gōng bù yìng qiú"
+  },
+  {
+    "simplified": "供奉",
+    "hsk_level": 7,
+    "primary_reading": "gōng fèng",
+    "practical_reading": "gòng fèng"
+  },
+  {
+    "simplified": "恭维",
+    "hsk_level": 7,
+    "primary_reading": "gōng wéi",
+    "practical_reading": "gōng wei"
+  },
+  {
+    "simplified": "够呛",
+    "hsk_level": 7,
+    "primary_reading": "gòu qiāng",
+    "practical_reading": "gòu qiàng"
+  },
+  {
+    "simplified": "骨干",
+    "hsk_level": 7,
+    "primary_reading": "gǔ gān",
+    "practical_reading": "gǔ gàn"
+  },
+  {
+    "simplified": "寡妇",
+    "hsk_level": 7,
+    "primary_reading": "guǎ fù",
+    "practical_reading": "guǎ fu"
+  },
+  {
+    "simplified": "怪不得",
+    "hsk_level": 7,
+    "primary_reading": "guài bù dé",
+    "practical_reading": "guài bu de"
+  },
+  {
+    "simplified": "怪物",
+    "hsk_level": 7,
+    "primary_reading": "guài wù",
+    "practical_reading": "guài wu"
+  },
+  {
+    "simplified": "官司",
+    "hsk_level": 7,
+    "primary_reading": "guān sī",
+    "practical_reading": "guān si"
+  },
+  {
+    "simplified": "棺材",
+    "hsk_level": 7,
+    "primary_reading": "guān cái",
+    "practical_reading": "guān cai"
+  },
+  {
+    "simplified": "管教",
+    "hsk_level": 7,
+    "primary_reading": "guǎn jiāo",
+    "practical_reading": "guǎn jiào"
+  },
+  {
+    "simplified": "罐头",
+    "hsk_level": 7,
+    "primary_reading": "guàn tóu",
+    "practical_reading": "guàn tou"
+  },
+  {
+    "simplified": "闺女",
+    "hsk_level": 7,
+    "primary_reading": "guī nǚ",
+    "practical_reading": "guī nü"
+  },
+  {
+    "simplified": "过不去",
+    "hsk_level": 7,
+    "primary_reading": "guò bù qù",
+    "practical_reading": "guò bu qù"
+  },
+  {
+    "simplified": "含糊",
+    "hsk_level": 7,
+    "primary_reading": "hán hú",
+    "practical_reading": "hán hu"
+  },
+  {
+    "simplified": "喝彩",
+    "hsk_level": 7,
+    "primary_reading": "hē cǎi",
+    "practical_reading": "hè cǎi"
+  },
+  {
+    "simplified": "和平共处",
+    "hsk_level": 7,
+    "primary_reading": "hé píng gòng chù",
+    "practical_reading": "hé píng gòng chǔ"
+  },
+  {
+    "simplified": "和气",
+    "hsk_level": 7,
+    "primary_reading": "hé qì",
+    "practical_reading": "hé qi"
+  },
+  {
+    "simplified": "和尚",
+    "hsk_level": 7,
+    "primary_reading": "hé shàng",
+    "practical_reading": "hé shang"
+  },
+  {
+    "simplified": "核桃",
+    "hsk_level": 7,
+    "primary_reading": "hé táo",
+    "practical_reading": "hé tao"
+  },
+  {
+    "simplified": "恨不得",
+    "hsk_level": 7,
+    "primary_reading": "hèn bù dé",
+    "practical_reading": "hèn bu de"
+  },
+  {
+    "simplified": "厚道",
+    "hsk_level": 7,
+    "primary_reading": "hòu dào",
+    "practical_reading": "hòu dao"
+  },
+  {
+    "simplified": "呼吁",
+    "hsk_level": 7,
+    "primary_reading": "hū xū",
+    "practical_reading": "hū yù"
+  },
+  {
+    "simplified": "呼应",
+    "hsk_level": 7,
+    "primary_reading": "hū yīng",
+    "practical_reading": "hū yìng"
+  },
+  {
+    "simplified": "忽悠",
+    "hsk_level": 7,
+    "primary_reading": "hū yōu",
+    "practical_reading": "hū you"
+  },
+  {
+    "simplified": "湖泊",
+    "hsk_level": 7,
+    "primary_reading": "hú bó",
+    "practical_reading": "hú pō"
+  },
+  {
+    "simplified": "糊涂",
+    "hsk_level": 7,
+    "primary_reading": "hú tú",
+    "practical_reading": "hú tu"
+  },
+  {
+    "simplified": "化险为夷",
+    "hsk_level": 7,
+    "primary_reading": "huà xiǎn wèi yí",
+    "practical_reading": "huà xiǎn wéi yí"
+  },
+  {
+    "simplified": "划算",
+    "hsk_level": 7,
+    "primary_reading": "huà suàn",
+    "practical_reading": "huá suàn"
+  },
+  {
+    "simplified": "幻觉",
+    "hsk_level": 7,
+    "primary_reading": "huàn jiào",
+    "practical_reading": "huàn jué"
+  },
+  {
+    "simplified": "皇上",
+    "hsk_level": 7,
+    "primary_reading": "huáng shàng",
+    "practical_reading": "huáng shang"
+  },
+  {
+    "simplified": "晃荡",
+    "hsk_level": 7,
+    "primary_reading": "huǎng dàng",
+    "practical_reading": "huàng dang"
+  },
+  {
+    "simplified": "回应",
+    "hsk_level": 7,
+    "primary_reading": "huí yīng",
+    "practical_reading": "huí yìng"
+  },
+  {
+    "simplified": "豁出去",
+    "hsk_level": 7,
+    "primary_reading": "huō chū qù",
+    "practical_reading": "huō chu qu"
+  },
+  {
+    "simplified": "豁达",
+    "hsk_level": 7,
+    "primary_reading": "huō dá",
+    "practical_reading": "huò dá"
+  },
+  {
+    "simplified": "火候",
+    "hsk_level": 7,
+    "primary_reading": "huǒ hòu",
+    "practical_reading": "huǒ hou"
+  },
+  {
+    "simplified": "机灵",
+    "hsk_level": 7,
+    "primary_reading": "jī líng",
+    "practical_reading": "jī ling"
+  },
+  {
+    "simplified": "记号",
+    "hsk_level": 7,
+    "primary_reading": "jì hào",
+    "practical_reading": "jì hao"
+  },
+  {
+    "simplified": "记性",
+    "hsk_level": 7,
+    "primary_reading": "jì xìng",
+    "practical_reading": "jì xing"
+  },
+  {
+    "simplified": "夹子",
+    "hsk_level": 7,
+    "primary_reading": "jiā zǐ",
+    "practical_reading": "jiā zi"
+  },
+  {
+    "simplified": "家伙",
+    "hsk_level": 7,
+    "primary_reading": "jiā huǒ",
+    "practical_reading": "jiā huo"
+  },
+  {
+    "simplified": "家教",
+    "hsk_level": 7,
+    "primary_reading": "jiā jiāo",
+    "practical_reading": "jiā jiào"
+  },
+  {
+    "simplified": "架势",
+    "hsk_level": 7,
+    "primary_reading": "jià shì",
+    "practical_reading": "jià shi"
+  },
+  {
+    "simplified": "架子",
+    "hsk_level": 7,
+    "primary_reading": "jià zǐ",
+    "practical_reading": "jià zi"
+  },
+  {
+    "simplified": "嫁妆",
+    "hsk_level": 7,
+    "primary_reading": "jià zhuāng",
+    "practical_reading": "jià zhuang"
+  },
+  {
+    "simplified": "间谍",
+    "hsk_level": 7,
+    "primary_reading": "jiān dié",
+    "practical_reading": "jiàn dié"
+  },
+  {
+    "simplified": "间断",
+    "hsk_level": 7,
+    "primary_reading": "jiān duàn",
+    "practical_reading": "jiàn duàn"
+  },
+  {
+    "simplified": "间隙",
+    "hsk_level": 7,
+    "primary_reading": "jiān xì",
+    "practical_reading": "jiàn xì"
+  },
+  {
+    "simplified": "见识",
+    "hsk_level": 7,
+    "primary_reading": "jiàn shí",
+    "practical_reading": "jiàn shi"
+  },
+  {
+    "simplified": "见义勇为",
+    "hsk_level": 7,
+    "primary_reading": "jiàn yì yǒng wèi",
+    "practical_reading": "jiàn yì yǒng wéi"
+  },
+  {
+    "simplified": "交情",
+    "hsk_level": 7,
+    "primary_reading": "jiāo qíng",
+    "practical_reading": "jiāo qing"
+  },
+  {
+    "simplified": "交响乐",
+    "hsk_level": 7,
+    "primary_reading": "jiāo xiǎng lè",
+    "practical_reading": "jiāo xiǎng yuè"
+  },
+  {
+    "simplified": "角逐",
+    "hsk_level": 7,
+    "primary_reading": "jiǎo zhú",
+    "practical_reading": "jué zhú"
+  },
+  {
+    "simplified": "教科书",
+    "hsk_level": 7,
+    "primary_reading": "jiāo kē shū",
+    "practical_reading": "jiào kē shū"
+  },
+  {
+    "simplified": "教条",
+    "hsk_level": 7,
+    "primary_reading": "jiāo tiáo",
+    "practical_reading": "jiào tiáo"
+  },
+  {
+    "simplified": "教养",
+    "hsk_level": 7,
+    "primary_reading": "jiāo yǎng",
+    "practical_reading": "jiào yǎng"
+  },
+  {
+    "simplified": "节气",
+    "hsk_level": 7,
+    "primary_reading": "jié qì",
+    "practical_reading": "jié qi"
+  },
+  {
+    "simplified": "尽早",
+    "hsk_level": 7,
+    "primary_reading": "jìn zǎo",
+    "practical_reading": "jǐn zǎo"
+  },
+  {
+    "simplified": "禁不住",
+    "hsk_level": 7,
+    "primary_reading": "jìn bù zhù",
+    "practical_reading": "jīn bu zhù"
+  },
+  {
+    "simplified": "咀嚼",
+    "hsk_level": 7,
+    "primary_reading": "jǔ jiáo",
+    "practical_reading": "jǔ jué"
+  },
+  {
+    "simplified": "卷入",
+    "hsk_level": 7,
+    "primary_reading": "juàn rù",
+    "practical_reading": "juǎn rù"
+  },
+  {
+    "simplified": "觉悟",
+    "hsk_level": 7,
+    "primary_reading": "jiào wù",
+    "practical_reading": "jué wù"
+  },
+  {
+    "simplified": "觉醒",
+    "hsk_level": 7,
+    "primary_reading": "jiào xǐng",
+    "practical_reading": "jué xǐng"
+  },
+  {
+    "simplified": "倔强",
+    "hsk_level": 7,
+    "primary_reading": "juè qiáng",
+    "practical_reading": "jué jiàng"
+  },
+  {
+    "simplified": "开辟",
+    "hsk_level": 7,
+    "primary_reading": "kāi bì",
+    "practical_reading": "kāi pì"
+  },
+  {
+    "simplified": "开天辟地",
+    "hsk_level": 7,
+    "primary_reading": "kāi tiān bì dì",
+    "practical_reading": "kāi tiān pì dì"
+  },
+  {
+    "simplified": "看管",
+    "hsk_level": 7,
+    "primary_reading": "kàn guǎn",
+    "practical_reading": "kān guǎn"
+  },
+  {
+    "simplified": "看护",
+    "hsk_level": 7,
+    "primary_reading": "kàn hù",
+    "practical_reading": "kān hù"
+  },
+  {
+    "simplified": "考量",
+    "hsk_level": 7,
+    "primary_reading": "kǎo liàng",
+    "practical_reading": "kǎo liáng"
+  },
+  {
+    "simplified": "可不是",
+    "hsk_level": 7,
+    "primary_reading": "kě bù shì",
+    "practical_reading": "kě bu shì"
+  },
+  {
+    "simplified": "可恶",
+    "hsk_level": 7,
+    "primary_reading": "kě è",
+    "practical_reading": "kě wù"
+  },
+  {
+    "simplified": "恳切",
+    "hsk_level": 7,
+    "primary_reading": "kěn qiē",
+    "practical_reading": "kěn qiè"
+  },
+  {
+    "simplified": "空白",
+    "hsk_level": 7,
+    "primary_reading": "kōng bái",
+    "practical_reading": "kòng bái"
+  },
+  {
+    "simplified": "空难",
+    "hsk_level": 7,
+    "primary_reading": "kōng nán",
+    "practical_reading": "kōng nàn"
+  },
+  {
+    "simplified": "空隙",
+    "hsk_level": 7,
+    "primary_reading": "kōng xì",
+    "practical_reading": "kòng xì"
+  },
+  {
+    "simplified": "恐吓",
+    "hsk_level": 7,
+    "primary_reading": "kǒng xià",
+    "practical_reading": "kǒng hè"
+  },
+  {
+    "simplified": "口子",
+    "hsk_level": 7,
+    "primary_reading": "kǒu zǐ",
+    "practical_reading": "kǒu zi"
+  },
+  {
+    "simplified": "窟窿",
+    "hsk_level": 7,
+    "primary_reading": "kū lóng",
+    "practical_reading": "kū long"
+  },
+  {
+    "simplified": "苦难",
+    "hsk_level": 7,
+    "primary_reading": "kǔ nán",
+    "practical_reading": "kǔ nàn"
+  },
+  {
+    "simplified": "快活",
+    "hsk_level": 7,
+    "primary_reading": "kuài huó",
+    "practical_reading": "kuài huo"
+  },
+  {
+    "simplified": "宽敞",
+    "hsk_level": 7,
+    "primary_reading": "kuān chǎng",
+    "practical_reading": "kuān chang"
+  },
+  {
+    "simplified": "喇叭",
+    "hsk_level": 7,
+    "primary_reading": "lǎ bā",
+    "practical_reading": "lǎ ba"
+  },
+  {
+    "simplified": "啦啦队",
+    "hsk_level": 7,
+    "primary_reading": "la la duì",
+    "practical_reading": "lā lā duì"
+  },
+  {
+    "simplified": "栏杆",
+    "hsk_level": 7,
+    "primary_reading": "lán gǎn",
+    "practical_reading": "lán gān"
+  },
+  {
+    "simplified": "唠叨",
+    "hsk_level": 7,
+    "primary_reading": "lào tāo",
+    "practical_reading": "láo dao"
+  },
+  {
+    "simplified": "老伴儿",
+    "hsk_level": 7,
+    "primary_reading": "lǎo bàn ér",
+    "practical_reading": "lǎo bàn er"
+  },
+  {
+    "simplified": "潦草",
+    "hsk_level": 7,
+    "primary_reading": "lǎo cǎo",
+    "practical_reading": "liáo cǎo"
+  },
+  {
+    "simplified": "乐队",
+    "hsk_level": 7,
+    "primary_reading": "lè duì",
+    "practical_reading": "yuè duì"
+  },
+  {
+    "simplified": "乐谱",
+    "hsk_level": 7,
+    "primary_reading": "lè pǔ",
+    "practical_reading": "yuè pǔ"
+  },
+  {
+    "simplified": "了结",
+    "hsk_level": 7,
+    "primary_reading": "le jié",
+    "practical_reading": "liǎo jié"
+  },
+  {
+    "simplified": "累积",
+    "hsk_level": 7,
+    "primary_reading": "lèi jī",
+    "practical_reading": "lěi jī"
+  },
+  {
+    "simplified": "累计",
+    "hsk_level": 7,
+    "primary_reading": "lèi jì",
+    "practical_reading": "lěi jì"
+  },
+  {
+    "simplified": "离谱儿",
+    "hsk_level": 7,
+    "primary_reading": "lí pǔ ér",
+    "practical_reading": "lí pǔ er"
+  },
+  {
+    "simplified": "利索",
+    "hsk_level": 7,
+    "primary_reading": "lì suǒ",
+    "practical_reading": "lì suo"
+  },
+  {
+    "simplified": "帘子",
+    "hsk_level": 7,
+    "primary_reading": "lián zǐ",
+    "practical_reading": "lián zi"
+  },
+  {
+    "simplified": "恋恋不舍",
+    "hsk_level": 7,
+    "primary_reading": "liàn liàn bù shè",
+    "practical_reading": "liàn liàn bù shě"
+  },
+  {
+    "simplified": "两口子",
+    "hsk_level": 7,
+    "primary_reading": "liǎng kǒu zǐ",
+    "practical_reading": "liǎng kǒu zi"
+  },
+  {
+    "simplified": "亮相",
+    "hsk_level": 7,
+    "primary_reading": "liàng xiāng",
+    "practical_reading": "liàng xiàng"
+  },
+  {
+    "simplified": "裂缝",
+    "hsk_level": 7,
+    "primary_reading": "liè féng",
+    "practical_reading": "liè fèng"
+  },
+  {
+    "simplified": "溜达",
+    "hsk_level": 7,
+    "primary_reading": "liū dá",
+    "practical_reading": "liū da"
+  },
+  {
+    "simplified": "流血",
+    "hsk_level": 7,
+    "primary_reading": "liú xiě",
+    "practical_reading": "liú xuè"
+  },
+  {
+    "simplified": "笼统",
+    "hsk_level": 7,
+    "primary_reading": "lóng tǒng",
+    "practical_reading": "lǒng tǒng"
+  },
+  {
+    "simplified": "笼罩",
+    "hsk_level": 7,
+    "primary_reading": "lóng zhào",
+    "practical_reading": "lǒng zhào"
+  },
+  {
+    "simplified": "笼子",
+    "hsk_level": 7,
+    "primary_reading": "lóng zǐ",
+    "practical_reading": "lóng zi"
+  },
+  {
+    "simplified": "炉子",
+    "hsk_level": 7,
+    "primary_reading": "lú zǐ",
+    "practical_reading": "lú zi"
+  },
+  {
+    "simplified": "路子",
+    "hsk_level": 7,
+    "primary_reading": "lù zǐ",
+    "practical_reading": "lù zi"
+  },
+  {
+    "simplified": "露面",
+    "hsk_level": 7,
+    "primary_reading": "lù miàn",
+    "practical_reading": "lòu miàn"
+  },
+  {
+    "simplified": "萝卜",
+    "hsk_level": 7,
+    "primary_reading": "luó bǔ",
+    "practical_reading": "luó bo"
+  },
+  {
+    "simplified": "落差",
+    "hsk_level": 7,
+    "primary_reading": "luò chà",
+    "practical_reading": "luò chā"
+  },
+  {
+    "simplified": "麻将",
+    "hsk_level": 7,
+    "primary_reading": "má jiāng",
+    "practical_reading": "má jiàng"
+  },
+  {
+    "simplified": "埋没",
+    "hsk_level": 7,
+    "primary_reading": "mái méi",
+    "practical_reading": "mái mò"
+  },
+  {
+    "simplified": "埋怨",
+    "hsk_level": 7,
+    "primary_reading": "mái yuàn",
+    "practical_reading": "mán yuàn"
+  },
+  {
+    "simplified": "蔓延",
+    "hsk_level": 7,
+    "primary_reading": "wàn yán",
+    "practical_reading": "màn yán"
+  },
+  {
+    "simplified": "忙活",
+    "hsk_level": 7,
+    "primary_reading": "máng huó",
+    "practical_reading": "máng huo"
+  },
+  {
+    "simplified": "茂盛",
+    "hsk_level": 7,
+    "primary_reading": "mào chéng",
+    "practical_reading": "mào shèng"
+  },
+  {
+    "simplified": "没落",
+    "hsk_level": 7,
+    "primary_reading": "méi luò",
+    "practical_reading": "mò luò"
+  },
+  {
+    "simplified": "没收",
+    "hsk_level": 7,
+    "primary_reading": "méi shōu",
+    "practical_reading": "mò shōu"
+  },
+  {
+    "simplified": "没完没了",
+    "hsk_level": 7,
+    "primary_reading": "méi wán méi le",
+    "practical_reading": "méi wán méi liǎo"
+  },
+  {
+    "simplified": "没准儿",
+    "hsk_level": 7,
+    "primary_reading": "méi zhǔn ér",
+    "practical_reading": "méi zhǔn er"
+  },
+  {
+    "simplified": "迷惑",
+    "hsk_level": 7,
+    "primary_reading": "mí huò",
+    "practical_reading": "mí huo"
+  },
+  {
+    "simplified": "棉花",
+    "hsk_level": 7,
+    "primary_reading": "mián huā",
+    "practical_reading": "mián hua"
+  },
+  {
+    "simplified": "免不了",
+    "hsk_level": 7,
+    "primary_reading": "miǎn bù le",
+    "practical_reading": "miǎn bù liǎo"
+  },
+  {
+    "simplified": "免得",
+    "hsk_level": 7,
+    "primary_reading": "miǎn dé",
+    "practical_reading": "miǎn de"
+  },
+  {
+    "simplified": "苗条",
+    "hsk_level": 7,
+    "primary_reading": "miáo tiáo",
+    "practical_reading": "miáo tiao"
+  },
+  {
+    "simplified": "苗头",
+    "hsk_level": 7,
+    "primary_reading": "miáo tóu",
+    "practical_reading": "miáo tou"
+  },
+  {
+    "simplified": "摸索",
+    "hsk_level": 7,
+    "primary_reading": "mō suǒ",
+    "practical_reading": "mō suo"
+  },
+  {
+    "simplified": "磨难",
+    "hsk_level": 7,
+    "primary_reading": "mó nán",
+    "practical_reading": "mó nàn"
+  },
+  {
+    "simplified": "蘑菇",
+    "hsk_level": 7,
+    "primary_reading": "mó gū",
+    "practical_reading": "mó gu"
+  },
+  {
+    "simplified": "牡丹",
+    "hsk_level": 7,
+    "primary_reading": "mǔ dān",
+    "practical_reading": "mǔ dan"
+  },
+  {
+    "simplified": "纳闷儿",
+    "hsk_level": 7,
+    "primary_reading": "nà mèn ér",
+    "practical_reading": "nà mèn er"
+  },
+  {
+    "simplified": "难处",
+    "hsk_level": 7,
+    "primary_reading": "nán chù",
+    "practical_reading": "nán chu"
+  },
+  {
+    "simplified": "难为情",
+    "hsk_level": 7,
+    "primary_reading": "nán wèi qíng",
+    "practical_reading": "nán wéi qíng"
+  },
+  {
+    "simplified": "内行",
+    "hsk_level": 7,
+    "primary_reading": "nèi xíng",
+    "practical_reading": "nèi háng"
+  },
+  {
+    "simplified": "念头",
+    "hsk_level": 7,
+    "primary_reading": "niàn tóu",
+    "practical_reading": "niàn tou"
+  },
+  {
+    "simplified": "宁可",
+    "hsk_level": 7,
+    "primary_reading": "níng kě",
+    "practical_reading": "nìng kě"
+  },
+  {
+    "simplified": "宁愿",
+    "hsk_level": 7,
+    "primary_reading": "níng yuàn",
+    "practical_reading": "nìng yuàn"
+  },
+  {
+    "simplified": "扭曲",
+    "hsk_level": 7,
+    "primary_reading": "niǔ qǔ",
+    "practical_reading": "niǔ qū"
+  },
+  {
+    "simplified": "女婿",
+    "hsk_level": 7,
+    "primary_reading": "nǚ xù",
+    "practical_reading": "nǚ xu"
+  },
+  {
+    "simplified": "呕吐",
+    "hsk_level": 7,
+    "primary_reading": "ǒu tǔ",
+    "practical_reading": "ǒu tù"
+  },
+  {
+    "simplified": "排行榜",
+    "hsk_level": 7,
+    "primary_reading": "pái xíng bǎng",
+    "practical_reading": "pái háng bǎng"
+  },
+  {
+    "simplified": "判处",
+    "hsk_level": 7,
+    "primary_reading": "pàn chù",
+    "practical_reading": "pàn chǔ"
+  },
+  {
+    "simplified": "碰钉子",
+    "hsk_level": 7,
+    "primary_reading": "pèng dìng zǐ",
+    "practical_reading": "pèng dīng zi"
+  },
+  {
+    "simplified": "屁股",
+    "hsk_level": 7,
+    "primary_reading": "pì gǔ",
+    "practical_reading": "pì gu"
+  },
+  {
+    "simplified": "偏差",
+    "hsk_level": 7,
+    "primary_reading": "piān chà",
+    "practical_reading": "piān chā"
+  },
+  {
+    "simplified": "篇幅",
+    "hsk_level": 7,
+    "primary_reading": "piān fú",
+    "practical_reading": "piān fu"
+  },
+  {
+    "simplified": "片子",
+    "hsk_level": 7,
+    "primary_reading": "piàn zǐ",
+    "practical_reading": "piān zi"
+  },
+  {
+    "simplified": "曝光",
+    "hsk_level": 7,
+    "primary_reading": "pù guāng",
+    "practical_reading": "bào guāng"
+  },
+  {
+    "simplified": "欺负",
+    "hsk_level": 7,
+    "primary_reading": "qī fù",
+    "practical_reading": "qī fu"
+  },
+  {
+    "simplified": "起哄",
+    "hsk_level": 7,
+    "primary_reading": "qǐ hōng",
+    "practical_reading": "qǐ hòng"
+  },
+  {
+    "simplified": "恰如其分",
+    "hsk_level": 7,
+    "primary_reading": "qià rú qí fēn",
+    "practical_reading": "qià rú qí fèn"
+  },
+  {
+    "simplified": "千钧一发",
+    "hsk_level": 7,
+    "primary_reading": "qiān jūn yī fā",
+    "practical_reading": "qiān jūn yī fà"
+  },
+  {
+    "simplified": "强劲",
+    "hsk_level": 7,
+    "primary_reading": "qiáng jìn",
+    "practical_reading": "qiáng jìng"
+  },
+  {
+    "simplified": "切身",
+    "hsk_level": 7,
+    "primary_reading": "qiē shēn",
+    "practical_reading": "qiè shēn"
+  },
+  {
+    "simplified": "锲而不舍",
+    "hsk_level": 7,
+    "primary_reading": "qiè ér bù shè",
+    "practical_reading": "qiè ér bù shě"
+  },
+  {
+    "simplified": "情不自禁",
+    "hsk_level": 7,
+    "primary_reading": "qíng bù zì jìn",
+    "practical_reading": "qíng bù zì jīn"
+  },
+  {
+    "simplified": "情调",
+    "hsk_level": 7,
+    "primary_reading": "qíng tiáo",
+    "practical_reading": "qíng diào"
+  },
+  {
+    "simplified": "请帖",
+    "hsk_level": 7,
+    "primary_reading": "qǐng tiē",
+    "practical_reading": "qǐng tiě"
+  },
+  {
+    "simplified": "曲线",
+    "hsk_level": 7,
+    "primary_reading": "qǔ xiàn",
+    "practical_reading": "qū xiàn"
+  },
+  {
+    "simplified": "曲折",
+    "hsk_level": 7,
+    "primary_reading": "qǔ zhé",
+    "practical_reading": "qū zhé"
+  },
+  {
+    "simplified": "圈子",
+    "hsk_level": 7,
+    "primary_reading": "quān zǐ",
+    "practical_reading": "quān zi"
+  },
+  {
+    "simplified": "拳头",
+    "hsk_level": 7,
+    "primary_reading": "quán tóu",
+    "practical_reading": "quán tou"
+  },
+  {
+    "simplified": "确切",
+    "hsk_level": 7,
+    "primary_reading": "què qiē",
+    "practical_reading": "què qiè"
+  },
+  {
+    "simplified": "人缘儿",
+    "hsk_level": 7,
+    "primary_reading": "rén yuán ér",
+    "practical_reading": "rén yuán er"
+  },
+  {
+    "simplified": "冗长",
+    "hsk_level": 7,
+    "primary_reading": "rǒng zhǎng",
+    "practical_reading": "rǒng cháng"
+  },
+  {
+    "simplified": "桑拿",
+    "hsk_level": 7,
+    "primary_reading": "sàng ná",
+    "practical_reading": "sāng ná"
+  },
+  {
+    "simplified": "扫兴",
+    "hsk_level": 7,
+    "primary_reading": "sǎo xīng",
+    "practical_reading": "sǎo xìng"
+  },
+  {
+    "simplified": "嫂子",
+    "hsk_level": 7,
+    "primary_reading": "sǎo zǐ",
+    "practical_reading": "sǎo zi"
+  },
+  {
+    "simplified": "刹那",
+    "hsk_level": 7,
+    "primary_reading": "shā nà",
+    "practical_reading": "chà nà"
+  },
+  {
+    "simplified": "商贾",
+    "hsk_level": 7,
+    "primary_reading": "shāng jiǎ",
+    "practical_reading": "shāng gǔ"
+  },
+  {
+    "simplified": "上司",
+    "hsk_level": 7,
+    "primary_reading": "shàng sī",
+    "practical_reading": "shàng si"
+  },
+  {
+    "simplified": "少不了",
+    "hsk_level": 7,
+    "primary_reading": "shǎo bù le",
+    "practical_reading": "shǎo bu liǎo"
+  },
+  {
+    "simplified": "少女",
+    "hsk_level": 7,
+    "primary_reading": "shǎo nǚ",
+    "practical_reading": "shào nǚ"
+  },
+  {
+    "simplified": "身子",
+    "hsk_level": 7,
+    "primary_reading": "shēn zǐ",
+    "practical_reading": "shēn zi"
+  },
+  {
+    "simplified": "深切",
+    "hsk_level": 7,
+    "primary_reading": "shēn qiē",
+    "practical_reading": "shēn qiè"
+  },
+  {
+    "simplified": "牲畜",
+    "hsk_level": 7,
+    "primary_reading": "shēng xù",
+    "practical_reading": "shēng chù"
+  },
+  {
+    "simplified": "绳子",
+    "hsk_level": 7,
+    "primary_reading": "shéng zǐ",
+    "practical_reading": "shéng zi"
+  },
+  {
+    "simplified": "盛产",
+    "hsk_level": 7,
+    "primary_reading": "chéng chǎn",
+    "practical_reading": "shèng chǎn"
+  },
+  {
+    "simplified": "盛大",
+    "hsk_level": 7,
+    "primary_reading": "chéng dà",
+    "practical_reading": "shèng dà"
+  },
+  {
+    "simplified": "盛会",
+    "hsk_level": 7,
+    "primary_reading": "chéng huì",
+    "practical_reading": "shèng huì"
+  },
+  {
+    "simplified": "盛开",
+    "hsk_level": 7,
+    "primary_reading": "chéng kāi",
+    "practical_reading": "shèng kāi"
+  },
+  {
+    "simplified": "盛气凌人",
+    "hsk_level": 7,
+    "primary_reading": "chéng qì líng rén",
+    "practical_reading": "shèng qì líng rén"
+  },
+  {
+    "simplified": "盛情",
+    "hsk_level": 7,
+    "primary_reading": "chéng qíng",
+    "practical_reading": "shèng qíng"
+  },
+  {
+    "simplified": "盛行",
+    "hsk_level": 7,
+    "primary_reading": "chéng xíng",
+    "practical_reading": "shèng xíng"
+  },
+  {
+    "simplified": "使唤",
+    "hsk_level": 7,
+    "primary_reading": "shǐ huàn",
+    "practical_reading": "shǐ huan"
+  },
+  {
+    "simplified": "柿子",
+    "hsk_level": 7,
+    "primary_reading": "shì zǐ",
+    "practical_reading": "shì zi"
+  },
+  {
+    "simplified": "嗜好",
+    "hsk_level": 7,
+    "primary_reading": "shì hǎo",
+    "practical_reading": "shì hào"
+  },
+  {
+    "simplified": "书记",
+    "hsk_level": 7,
+    "primary_reading": "shū jì",
+    "practical_reading": "shū ji"
+  },
+  {
+    "simplified": "梳子",
+    "hsk_level": 7,
+    "primary_reading": "shū zǐ",
+    "practical_reading": "shū zi"
+  },
+  {
+    "simplified": "疏忽",
+    "hsk_level": 7,
+    "primary_reading": "shū hū",
+    "practical_reading": "shū hu"
+  },
+  {
+    "simplified": "输血",
+    "hsk_level": 7,
+    "primary_reading": "shū xiě",
+    "practical_reading": "shū xuè"
+  },
+  {
+    "simplified": "树荫",
+    "hsk_level": 7,
+    "primary_reading": "shù yìn",
+    "practical_reading": "shù yīn"
+  },
+  {
+    "simplified": "数额",
+    "hsk_level": 7,
+    "primary_reading": "shǔ é",
+    "practical_reading": "shù é"
+  },
+  {
+    "simplified": "数据库",
+    "hsk_level": 7,
+    "primary_reading": "shǔ jù kù",
+    "practical_reading": "shù jù kù"
+  },
+  {
+    "simplified": "数码",
+    "hsk_level": 7,
+    "primary_reading": "shǔ mǎ",
+    "practical_reading": "shù mǎ"
+  },
+  {
+    "simplified": "双重",
+    "hsk_level": 7,
+    "primary_reading": "shuāng zhòng",
+    "practical_reading": "shuāng chóng"
+  },
+  {
+    "simplified": "爽快",
+    "hsk_level": 7,
+    "primary_reading": "shuǎng kuài",
+    "practical_reading": "shuǎng kuai"
+  },
+  {
+    "simplified": "顺差",
+    "hsk_level": 7,
+    "primary_reading": "shùn chà",
+    "practical_reading": "shùn chā"
+  },
+  {
+    "simplified": "顺应",
+    "hsk_level": 7,
+    "primary_reading": "shùn yīng",
+    "practical_reading": "shùn yìng"
+  },
+  {
+    "simplified": "说不上",
+    "hsk_level": 7,
+    "primary_reading": "shuō bù shàng",
+    "practical_reading": "shuō bu shàng"
+  },
+  {
+    "simplified": "算计",
+    "hsk_level": 7,
+    "primary_reading": "suàn jì",
+    "practical_reading": "suàn ji"
+  },
+  {
+    "simplified": "算数",
+    "hsk_level": 7,
+    "primary_reading": "suàn shǔ",
+    "practical_reading": "suàn shù"
+  },
+  {
+    "simplified": "所作所为",
+    "hsk_level": 7,
+    "primary_reading": "suǒ zuò suǒ wèi",
+    "practical_reading": "suǒ zuò suǒ wéi"
+  },
+  {
+    "simplified": "泰斗",
+    "hsk_level": 7,
+    "primary_reading": "tài dòu",
+    "practical_reading": "tài dǒu"
+  },
+  {
+    "simplified": "坦率",
+    "hsk_level": 7,
+    "primary_reading": "tǎn lǜ",
+    "practical_reading": "tǎn shuài"
+  },
+  {
+    "simplified": "毯子",
+    "hsk_level": 7,
+    "primary_reading": "tǎn zǐ",
+    "practical_reading": "tǎn zi"
+  },
+  {
+    "simplified": "讨价还价",
+    "hsk_level": 7,
+    "primary_reading": "tǎo jià hái jià",
+    "practical_reading": "tǎo jià huán jià"
+  },
+  {
+    "simplified": "梯子",
+    "hsk_level": 7,
+    "primary_reading": "tī zǐ",
+    "practical_reading": "tī zi"
+  },
+  {
+    "simplified": "提防",
+    "hsk_level": 7,
+    "primary_reading": "tí fáng",
+    "practical_reading": "dī fang"
+  },
+  {
+    "simplified": "天分",
+    "hsk_level": 7,
+    "primary_reading": "tiān fēn",
+    "practical_reading": "tiān fèn"
+  },
+  {
+    "simplified": "天长地久",
+    "hsk_level": 7,
+    "primary_reading": "tiān zhǎng dì jiǔ",
+    "practical_reading": "tiān cháng dì jiǔ"
+  },
+  {
+    "simplified": "挑拨",
+    "hsk_level": 7,
+    "primary_reading": "tiāo bō",
+    "practical_reading": "tiǎo bō"
+  },
+  {
+    "simplified": "挑剔",
+    "hsk_level": 7,
+    "primary_reading": "tiāo tī",
+    "practical_reading": "tiāo ti"
+  },
+  {
+    "simplified": "挑衅",
+    "hsk_level": 7,
+    "primary_reading": "tiāo xìn",
+    "practical_reading": "tiǎo xìn"
+  },
+  {
+    "simplified": "帖子",
+    "hsk_level": 7,
+    "primary_reading": "tiē zǐ",
+    "practical_reading": "tiě zi"
+  },
+  {
+    "simplified": "贴切",
+    "hsk_level": 7,
+    "primary_reading": "tiē qiē",
+    "practical_reading": "tiē qiè"
+  },
+  {
+    "simplified": "亭子",
+    "hsk_level": 7,
+    "primary_reading": "tíng zǐ",
+    "practical_reading": "tíng zi"
+  },
+  {
+    "simplified": "投降",
+    "hsk_level": 7,
+    "primary_reading": "tóu jiàng",
+    "practical_reading": "tóu xiáng"
+  },
+  {
+    "simplified": "拖累",
+    "hsk_level": 7,
+    "primary_reading": "tuō lèi",
+    "practical_reading": "tuō lěi"
+  },
+  {
+    "simplified": "妥当",
+    "hsk_level": 7,
+    "primary_reading": "tuǒ dāng",
+    "practical_reading": "tuǒ dang"
+  },
+  {
+    "simplified": "歪曲",
+    "hsk_level": 7,
+    "primary_reading": "wāi qǔ",
+    "practical_reading": "wāi qū"
+  },
+  {
+    "simplified": "外行",
+    "hsk_level": 7,
+    "primary_reading": "wài xíng",
+    "practical_reading": "wài háng"
+  },
+  {
+    "simplified": "玩意儿",
+    "hsk_level": 7,
+    "primary_reading": "wán yì ér",
+    "practical_reading": "wán yì er"
+  },
+  {
+    "simplified": "旺盛",
+    "hsk_level": 7,
+    "primary_reading": "wàng chéng",
+    "practical_reading": "wàng shèng"
+  },
+  {
+    "simplified": "为人",
+    "hsk_level": 7,
+    "primary_reading": "wèi rén",
+    "practical_reading": "wéi rén"
+  },
+  {
+    "simplified": "未知数",
+    "hsk_level": 7,
+    "primary_reading": "wèi zhī shǔ",
+    "practical_reading": "wèi zhī shù"
+  },
+  {
+    "simplified": "位子",
+    "hsk_level": 7,
+    "primary_reading": "wèi zǐ",
+    "practical_reading": "wèi zi"
+  },
+  {
+    "simplified": "蚊子",
+    "hsk_level": 7,
+    "primary_reading": "wén zǐ",
+    "practical_reading": "wén zi"
+  },
+  {
+    "simplified": "卧铺",
+    "hsk_level": 7,
+    "primary_reading": "wò pū",
+    "practical_reading": "wò pù"
+  },
+  {
+    "simplified": "呜咽",
+    "hsk_level": 7,
+    "primary_reading": "wū yàn",
+    "practical_reading": "wū yè"
+  },
+  {
+    "simplified": "无能为力",
+    "hsk_level": 7,
+    "primary_reading": "wú néng wèi lì",
+    "practical_reading": "wú néng wéi lì"
+  },
+  {
+    "simplified": "无所作为",
+    "hsk_level": 7,
+    "primary_reading": "wú suǒ zuò wèi",
+    "practical_reading": "wú suǒ zuò wéi"
+  },
+  {
+    "simplified": "误差",
+    "hsk_level": 7,
+    "primary_reading": "wù chà",
+    "practical_reading": "wù chā"
+  },
+  {
+    "simplified": "稀罕",
+    "hsk_level": 7,
+    "primary_reading": "xī hǎn",
+    "practical_reading": "xī han"
+  },
+  {
+    "simplified": "喜好",
+    "hsk_level": 7,
+    "primary_reading": "xǐ hǎo",
+    "practical_reading": "xǐ hào"
+  },
+  {
+    "simplified": "下调",
+    "hsk_level": 7,
+    "primary_reading": "xià tiáo",
+    "practical_reading": "xià diào"
+  },
+  {
+    "simplified": "吓唬",
+    "hsk_level": 7,
+    "primary_reading": "xià hǔ",
+    "practical_reading": "xià hu"
+  },
+  {
+    "simplified": "鲜血",
+    "hsk_level": 7,
+    "primary_reading": "xiān xiě",
+    "practical_reading": "xiān xuè"
+  },
+  {
+    "simplified": "乡下",
+    "hsk_level": 7,
+    "primary_reading": "xiāng xià",
+    "practical_reading": "xiāng xia"
+  },
+  {
+    "simplified": "响应",
+    "hsk_level": 7,
+    "primary_reading": "xiǎng yīng",
+    "practical_reading": "xiǎng yìng"
+  },
+  {
+    "simplified": "心思",
+    "hsk_level": 7,
+    "primary_reading": "xīn sī",
+    "practical_reading": "xīn si"
+  },
+  {
+    "simplified": "心血",
+    "hsk_level": 7,
+    "primary_reading": "xīn xiě",
+    "practical_reading": "xīn xuè"
+  },
+  {
+    "simplified": "心眼儿",
+    "hsk_level": 7,
+    "primary_reading": "xīn yǎn ér",
+    "practical_reading": "xīn yǎn er"
+  },
+  {
+    "simplified": "猩猩",
+    "hsk_level": 7,
+    "primary_reading": "xīng xīng",
+    "practical_reading": "xīng xing"
+  },
+  {
+    "simplified": "行家",
+    "hsk_level": 7,
+    "primary_reading": "xíng jiā",
+    "practical_reading": "háng jiā"
+  },
+  {
+    "simplified": "行列",
+    "hsk_level": 7,
+    "primary_reading": "xíng liè",
+    "practical_reading": "háng liè"
+  },
+  {
+    "simplified": "行情",
+    "hsk_level": 7,
+    "primary_reading": "xíng qíng",
+    "practical_reading": "háng qíng"
+  },
+  {
+    "simplified": "兴高采烈",
+    "hsk_level": 7,
+    "primary_reading": "xīng gāo cǎi liè",
+    "practical_reading": "xìng gāo cǎi liè"
+  },
+  {
+    "simplified": "兴致",
+    "hsk_level": 7,
+    "primary_reading": "xīng zhì",
+    "practical_reading": "xìng zhì"
+  },
+  {
+    "simplified": "修长",
+    "hsk_level": 7,
+    "primary_reading": "xiū zhǎng",
+    "practical_reading": "xiū cháng"
+  },
+  {
+    "simplified": "嗅觉",
+    "hsk_level": 7,
+    "primary_reading": "xiù jiào",
+    "practical_reading": "xiù jué"
+  },
+  {
+    "simplified": "絮叨",
+    "hsk_level": 7,
+    "primary_reading": "xù tāo",
+    "practical_reading": "xù dao"
+  },
+  {
+    "simplified": "削弱",
+    "hsk_level": 7,
+    "primary_reading": "xiāo ruò",
+    "practical_reading": "xuē ruò"
+  },
+  {
+    "simplified": "靴子",
+    "hsk_level": 7,
+    "primary_reading": "xuē zǐ",
+    "practical_reading": "xuē zi"
+  },
+  {
+    "simplified": "血脉",
+    "hsk_level": 7,
+    "primary_reading": "xiě mài",
+    "practical_reading": "xuè mài"
+  },
+  {
+    "simplified": "血缘",
+    "hsk_level": 7,
+    "primary_reading": "xiě yuán",
+    "practical_reading": "xuè yuán"
+  },
+  {
+    "simplified": "丫头",
+    "hsk_level": 7,
+    "primary_reading": "yā tóu",
+    "practical_reading": "yā tou"
+  },
+  {
+    "simplified": "延误",
+    "hsk_level": 7,
+    "primary_reading": "yán wù",
+    "practical_reading": "yán wu"
+  },
+  {
+    "simplified": "厌恶",
+    "hsk_level": 7,
+    "primary_reading": "yàn è",
+    "practical_reading": "yàn wù"
+  },
+  {
+    "simplified": "咽喉",
+    "hsk_level": 7,
+    "primary_reading": "yàn hóu",
+    "practical_reading": "yān hóu"
+  },
+  {
+    "simplified": "燕子",
+    "hsk_level": 7,
+    "primary_reading": "yàn zǐ",
+    "practical_reading": "yàn zi"
+  },
+  {
+    "simplified": "秧歌",
+    "hsk_level": 7,
+    "primary_reading": "yāng gē",
+    "practical_reading": "yāng ge"
+  },
+  {
+    "simplified": "养活",
+    "hsk_level": 7,
+    "primary_reading": "yǎng huó",
+    "practical_reading": "yǎng huo"
+  },
+  {
+    "simplified": "摇晃",
+    "hsk_level": 7,
+    "primary_reading": "yáo huǎng",
+    "practical_reading": "yáo huàng"
+  },
+  {
+    "simplified": "椰子",
+    "hsk_level": 7,
+    "primary_reading": "yē zǐ",
+    "practical_reading": "yē zi"
+  },
+  {
+    "simplified": "一技之长",
+    "hsk_level": 7,
+    "primary_reading": "yī jì zhī zhǎng",
+    "practical_reading": "yī jì zhī cháng"
+  },
+  {
+    "simplified": "一揽子",
+    "hsk_level": 7,
+    "primary_reading": "yī lǎn zǐ",
+    "practical_reading": "yī lǎn zi"
+  },
+  {
+    "simplified": "一目了然",
+    "hsk_level": 7,
+    "primary_reading": "yī mù le rán",
+    "practical_reading": "yī mù liǎo rán"
+  },
+  {
+    "simplified": "一声不吭",
+    "hsk_level": 7,
+    "primary_reading": "yī shēng bù háng",
+    "practical_reading": "yī shēng bù kēng"
+  },
+  {
+    "simplified": "一塌糊涂",
+    "hsk_level": 7,
+    "primary_reading": "yī tā hú tú",
+    "practical_reading": "yī tā hú tu"
+  },
+  {
+    "simplified": "衣裳",
+    "hsk_level": 7,
+    "primary_reading": "yī cháng",
+    "practical_reading": "yī shang"
+  },
+  {
+    "simplified": "依依不舍",
+    "hsk_level": 7,
+    "primary_reading": "yī yī bù shè",
+    "practical_reading": "yī yī bù shě"
+  },
+  {
+    "simplified": "应酬",
+    "hsk_level": 7,
+    "primary_reading": "yīng chóu",
+    "practical_reading": "yìng chou"
+  },
+  {
+    "simplified": "应付",
+    "hsk_level": 7,
+    "primary_reading": "yīng fù",
+    "practical_reading": "yìng fu"
+  },
+  {
+    "simplified": "应急",
+    "hsk_level": 7,
+    "primary_reading": "yīng jí",
+    "practical_reading": "yìng jí"
+  },
+  {
+    "simplified": "应邀",
+    "hsk_level": 7,
+    "primary_reading": "yīng yāo",
+    "practical_reading": "yìng yāo"
+  },
+  {
+    "simplified": "尤为",
+    "hsk_level": 7,
+    "primary_reading": "yóu wèi",
+    "practical_reading": "yóu wéi"
+  },
+  {
+    "simplified": "有朝一日",
+    "hsk_level": 7,
+    "primary_reading": "yǒu cháo yī rì",
+    "practical_reading": "yǒu zhāo yī rì"
+  },
+  {
+    "simplified": "有的放矢",
+    "hsk_level": 7,
+    "primary_reading": "yǒu de fàng shǐ",
+    "practical_reading": "yǒu dì fàng shǐ"
+  },
+  {
+    "simplified": "遇难",
+    "hsk_level": 7,
+    "primary_reading": "yù nán",
+    "practical_reading": "yù nàn"
+  },
+  {
+    "simplified": "冤枉",
+    "hsk_level": 7,
+    "primary_reading": "yuān wǎng",
+    "practical_reading": "yuān wang"
+  },
+  {
+    "simplified": "缘分",
+    "hsk_level": 7,
+    "primary_reading": "yuán fēn",
+    "practical_reading": "yuán fèn"
+  },
+  {
+    "simplified": "扎实",
+    "hsk_level": 7,
+    "primary_reading": "zhā shí",
+    "practical_reading": "zhā shi"
+  },
+  {
+    "simplified": "炸弹",
+    "hsk_level": 7,
+    "primary_reading": "zhà tán",
+    "practical_reading": "zhà dàn"
+  },
+  {
+    "simplified": "斩钉截铁",
+    "hsk_level": 7,
+    "primary_reading": "zhǎn dìng jié tiě",
+    "practical_reading": "zhǎn dīng jié tiě"
+  },
+  {
+    "simplified": "占卜",
+    "hsk_level": 7,
+    "primary_reading": "zhàn bǔ",
+    "practical_reading": "zhān bǔ"
+  },
+  {
+    "simplified": "长期以来",
+    "hsk_level": 7,
+    "primary_reading": "zhǎng qī yǐ lái",
+    "practical_reading": "cháng qī yǐ lái"
+  },
+  {
+    "simplified": "长相",
+    "hsk_level": 7,
+    "primary_reading": "zhǎng xiāng",
+    "practical_reading": "zhǎng xiàng"
+  },
+  {
+    "simplified": "长效",
+    "hsk_level": 7,
+    "primary_reading": "zhǎng xiào",
+    "practical_reading": "cháng xiào"
+  },
+  {
+    "simplified": "长征",
+    "hsk_level": 7,
+    "primary_reading": "zhǎng zhēng",
+    "practical_reading": "cháng zhēng"
+  },
+  {
+    "simplified": "长足",
+    "hsk_level": 7,
+    "primary_reading": "zhǎng zú",
+    "practical_reading": "cháng zú"
+  },
+  {
+    "simplified": "帐篷",
+    "hsk_level": 7,
+    "primary_reading": "zhàng péng",
+    "practical_reading": "zhàng peng"
+  },
+  {
+    "simplified": "招牌",
+    "hsk_level": 7,
+    "primary_reading": "zhāo pái",
+    "practical_reading": "zhāo pai"
+  },
+  {
+    "simplified": "招数",
+    "hsk_level": 7,
+    "primary_reading": "zhāo shǔ",
+    "practical_reading": "zhāo shù"
+  },
+  {
+    "simplified": "爪子",
+    "hsk_level": 7,
+    "primary_reading": "zhǎo zǐ",
+    "practical_reading": "zhuǎ zi"
+  },
+  {
+    "simplified": "兆头",
+    "hsk_level": 7,
+    "primary_reading": "zhào tóu",
+    "practical_reading": "zhào tou"
+  },
+  {
+    "simplified": "折腾",
+    "hsk_level": 7,
+    "primary_reading": "zhé téng",
+    "practical_reading": "zhē teng"
+  },
+  {
+    "simplified": "着力",
+    "hsk_level": 7,
+    "primary_reading": "zhe lì",
+    "practical_reading": "zhuó lì"
+  },
+  {
+    "simplified": "着落",
+    "hsk_level": 7,
+    "primary_reading": "zhe luò",
+    "practical_reading": "zhuó luò"
+  },
+  {
+    "simplified": "着迷",
+    "hsk_level": 7,
+    "primary_reading": "zhe mí",
+    "practical_reading": "zháo mí"
+  },
+  {
+    "simplified": "着实",
+    "hsk_level": 7,
+    "primary_reading": "zhe shí",
+    "practical_reading": "zhuó shí"
+  },
+  {
+    "simplified": "着手",
+    "hsk_level": 7,
+    "primary_reading": "zhe shǒu",
+    "practical_reading": "zhuó shǒu"
+  },
+  {
+    "simplified": "着想",
+    "hsk_level": 7,
+    "primary_reading": "zhe xiǎng",
+    "practical_reading": "zhuó xiǎng"
+  },
+  {
+    "simplified": "着眼",
+    "hsk_level": 7,
+    "primary_reading": "zhe yǎn",
+    "practical_reading": "zhuó yǎn"
+  },
+  {
+    "simplified": "着重",
+    "hsk_level": 7,
+    "primary_reading": "zhe zhòng",
+    "practical_reading": "zhuó zhòng"
+  },
+  {
+    "simplified": "挣扎",
+    "hsk_level": 7,
+    "primary_reading": "zhèng zhā",
+    "practical_reading": "zhēng zhá"
+  },
+  {
+    "simplified": "整数",
+    "hsk_level": 7,
+    "primary_reading": "zhěng shǔ",
+    "practical_reading": "zhěng shù"
+  },
+  {
+    "simplified": "正月",
+    "hsk_level": 7,
+    "primary_reading": "zhèng yuè",
+    "practical_reading": "zhēng yuè"
+  },
+  {
+    "simplified": "症结",
+    "hsk_level": 7,
+    "primary_reading": "zhèng jié",
+    "practical_reading": "zhēng jié"
+  },
+  {
+    "simplified": "芝麻",
+    "hsk_level": 7,
+    "primary_reading": "zhī má",
+    "practical_reading": "zhī ma"
+  },
+  {
+    "simplified": "知觉",
+    "hsk_level": 7,
+    "primary_reading": "zhī jiào",
+    "practical_reading": "zhī jué"
+  },
+  {
+    "simplified": "知识分子",
+    "hsk_level": 7,
+    "primary_reading": "zhī shí fēn zǐ",
+    "practical_reading": "zhī shi fèn zǐ"
+  },
+  {
+    "simplified": "执着",
+    "hsk_level": 7,
+    "primary_reading": "zhí zhe",
+    "practical_reading": "zhí zhuó"
+  },
+  {
+    "simplified": "直觉",
+    "hsk_level": 7,
+    "primary_reading": "zhí jiào",
+    "practical_reading": "zhí jué"
+  },
+  {
+    "simplified": "指甲",
+    "hsk_level": 7,
+    "primary_reading": "zhǐ jiǎ",
+    "practical_reading": "zhǐ jia"
+  },
+  {
+    "simplified": "指教",
+    "hsk_level": 7,
+    "primary_reading": "zhǐ jiāo",
+    "practical_reading": "zhǐ jiào"
+  },
+  {
+    "simplified": "指数",
+    "hsk_level": 7,
+    "primary_reading": "zhǐ shǔ",
+    "practical_reading": "zhǐ shù"
+  },
+  {
+    "simplified": "重创",
+    "hsk_level": 7,
+    "primary_reading": "zhòng chuàng",
+    "practical_reading": "zhòng chuāng"
+  },
+  {
+    "simplified": "重叠",
+    "hsk_level": 7,
+    "primary_reading": "zhòng dié",
+    "practical_reading": "chóng dié"
+  },
+  {
+    "simplified": "重返",
+    "hsk_level": 7,
+    "primary_reading": "zhòng fǎn",
+    "practical_reading": "chóng fǎn"
+  },
+  {
+    "simplified": "重合",
+    "hsk_level": 7,
+    "primary_reading": "zhòng hé",
+    "practical_reading": "chóng hé"
+  },
+  {
+    "simplified": "重申",
+    "hsk_level": 7,
+    "primary_reading": "zhòng shēn",
+    "practical_reading": "chóng shēn"
+  },
+  {
+    "simplified": "重现",
+    "hsk_level": 7,
+    "primary_reading": "zhòng xiàn",
+    "practical_reading": "chóng xiàn"
+  },
+  {
+    "simplified": "重组",
+    "hsk_level": 7,
+    "primary_reading": "zhòng zǔ",
+    "practical_reading": "chóng zǔ"
+  },
+  {
+    "simplified": "柱子",
+    "hsk_level": 7,
+    "primary_reading": "zhù zǐ",
+    "practical_reading": "zhù zi"
+  },
+  {
+    "simplified": "专长",
+    "hsk_level": 7,
+    "primary_reading": "zhuān zhǎng",
+    "practical_reading": "zhuān cháng"
+  },
+  {
+    "simplified": "转悠",
+    "hsk_level": 7,
+    "primary_reading": "zhuǎn yōu",
+    "practical_reading": "zhuàn you"
+  },
+  {
+    "simplified": "转载",
+    "hsk_level": 7,
+    "primary_reading": "zhuǎn zài",
+    "practical_reading": "zhuǎn zǎi"
+  },
+  {
+    "simplified": "自力更生",
+    "hsk_level": 7,
+    "primary_reading": "zì lì gèng shēng",
+    "practical_reading": "zì lì gēng shēng"
+  },
+  {
+    "simplified": "自以为是",
+    "hsk_level": 7,
+    "primary_reading": "zì yǐ wèi shì",
+    "practical_reading": "zì yǐ wéi shì"
+  },
+  {
+    "simplified": "自在",
+    "hsk_level": 7,
+    "primary_reading": "zì zài",
+    "practical_reading": "zì zai"
+  },
+  {
+    "simplified": "子弹",
+    "hsk_level": 7,
+    "primary_reading": "zǐ tán",
+    "practical_reading": "zǐ dàn"
+  },
+  {
+    "simplified": "宗教",
+    "hsk_level": 7,
+    "primary_reading": "zōng jiāo",
+    "practical_reading": "zōng jiào"
+  },
+  {
+    "simplified": "钻空子",
+    "hsk_level": 7,
+    "primary_reading": "zuān kōng zǐ",
+    "practical_reading": "zuān kòng zi"
+  },
+  {
+    "simplified": "钻石",
+    "hsk_level": 7,
+    "primary_reading": "zuān shí",
+    "practical_reading": "zuàn shí"
+  }
+]

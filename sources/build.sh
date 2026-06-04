@@ -42,6 +42,20 @@ python scripts/make_pinyin_font_v2.py \
     --url    "https://catusf.github.io" \
     --out    "../fonts/Songti/ttf"
 
+echo "=== Generating ligature data ==="
+python scripts/generate_hsk_ligatures.py \
+    --hsk       "data/hsk_words.json" \
+    --heteronym "data/heteronym_map.json" \
+    --output    "data/hsk-ligatures.json"
+python scripts/generate_cccedict_ligatures.py \
+    --heteronym "data/heteronym_map.json" \
+    --hsk       "data/hsk_words.json" \
+    --output    "data/cccedict-ligatures.json"
+python scripts/merge_ligatures.py \
+    --hsk       "data/hsk-ligatures.json" \
+    --cccedict  "data/cccedict-ligatures.json" \
+    --output    "data/all_ligatures.json"
+
 echo "=== Adding contextual reading ligatures to variant-1 fonts ==="
 for FONT in \
     "../fonts/Heiti/ttf/NanGuoHeitiPinyin-1.ttf" \
@@ -50,7 +64,7 @@ for FONT in \
     "../fonts/Songti/ttf/NanGuoSongtiPinyin-1-Bold.ttf"; do
     python scripts/add_ligatures.py \
         --font      "$FONT" \
-        --combined  "data/duoyinzi_combined.json" \
+        --combined  "data/all_ligatures.json" \
         --syllables "data/syllable_inventory.json"
 done
 

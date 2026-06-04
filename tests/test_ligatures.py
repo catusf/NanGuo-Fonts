@@ -3,7 +3,7 @@
 Checks two representative words:
   了解 (liǎo jiě) — 了 is le in variant-1 by default; the liga lookup must
       substitute [了, 解] with a composite glyph that carries the liǎo PUA ruby.
-  北京 (běi jīng)  — neither character is in duoyinzi_combined.json, so no
+  北京 (běi jīng)  — neither character is in all_ligatures.json, so no
       ligature rule should ever be generated for this pair.
 """
 from __future__ import annotations
@@ -35,6 +35,8 @@ def _our_liga_subtable(font: TTFont):
     """Return the LigatureSubst subtable added by add_ligatures.py.
 
     Our lookup is the last Type-4 lookup referenced by the 'liga' feature.
+    fontTools may wrap large Type-4 lookups in Type-7 Extension containers
+    on save; this helper unwraps those transparently.
     Returns None if the font has no such lookup.
     """
     gsub = font["GSUB"].table
@@ -47,6 +49,14 @@ def _our_liga_subtable(font: TTFont):
                 st = lk.SubTable[0]
                 st.ensureDecompiled()
                 return st
+            if lk.LookupType == 7:
+                # Extension lookup — check if it wraps Type-4 subtables
+                for st in lk.SubTable:
+                    st.ensureDecompiled()
+                    inner = st.ExtSubTable
+                    inner.ensureDecompiled()
+                    if inner.LookupType == 4:
+                        return inner
     return None
 
 
@@ -125,7 +135,7 @@ def test_北京_chars_in_cmap(v1_font: TTFont) -> None:
 
 
 def test_北京_no_spurious_ligature(v1_font: TTFont) -> None:
-    """北京 — neither char is in duoyinzi_combined; no liga rule should exist."""
+    """北京 — neither char is in all_ligatures; no liga rule should exist."""
     best = v1_font["cmap"].getBestCmap()
     bei_glyph = best.get(0x5317)   # 北
     jing_glyph = best.get(0x4EAC)  # 京

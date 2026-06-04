@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """add_ligatures.py — Add GSUB Type 4 ligature substitutions to variant-1 fonts.
 
-Reads duoyinzi_combined.json. For each character whose contextual reading
-(from Mengshen patterns or HSK word evidence) differs from the variant-1
-primary reading, this script:
+Reads all_ligatures.json. For each multi-character word whose contextual
+reading differs from the variant-1 primary reading at any character position,
+this script:
 
   1. Creates a wide composite ligature glyph showing all characters in the
-     sequence, with the target character rendered using the correct reading's
+     word, with the target character rendered using the correct reading's
      ruby above it.
   2. Adds a GSUB Lookup Type 4 (Ligature Substitution) rule so renderers
      that enable the 'liga' feature automatically display the correct reading.
 
 Usage:
     python add_ligatures.py --font <variant-1.ttf>
-                            --combined sources/data/duoyinzi_combined.json
+                            --combined sources/data/all_ligatures.json
                             --syllables sources/data/syllable_inventory.json
                             [--dry-run]
 """
@@ -37,59 +37,43 @@ COMP_FLAGS = ROUND_XY_TO_GRID | ARGS_ARE_XY_VALUES
 # ── Data loading ──────────────────────────────────────────────────────────────
 
 def load_rules(combined_path: Path) -> list[dict]:
-    """Parse duoyinzi_combined.json into a flat list of rule records.
+    """Parse all_ligatures.json into a flat list of rule records.
 
     Each record:
         char      : the single hanzi (str)
         char_cp   : its codepoint (int)
-        v1        : tone-numbered variant-1 reading, e.g. 'cha4'
-        reading   : tone-numbered contextual reading, e.g. 'cha1'
-        marked    : tone-marked contextual reading, e.g. 'chā'  (syllable_inventory key)
-        sequences : list of codepoint lists (target char's position is char_cp)
+        char_idx  : position of this char within the word sequence
+        v1        : tone-marked primary reading (syllable_inventory key)
+        reading   : tone-marked contextual reading
+        marked    : same as reading (tone-marked, for syllable_inventory lookup)
+        sequences : single-element list containing the word's codepoint list
     """
-    data: dict = json.loads(combined_path.read_text(encoding="utf-8"))
+    data: list[dict] = json.loads(combined_path.read_text(encoding="utf-8"))
     rules: list[dict] = []
 
-    for hex_cp, entry in data.items():
-        char = entry["char"]
-        char_cp = int(hex_cp, 16)
-        v1 = entry["v1"]
+    for entry in data:
+        chars = list(entry["simplified"])
+        primary_tokens = entry["primary_reading"].split()
+        practical_tokens = entry["practical_reading"].split()
 
-        for reading_num, rdata in entry["readings"].items():
-            if reading_num == v1:
-                continue  # already correct in variant-1
-            marked = rdata.get("marked")
-            if marked is None:
-                continue  # no tone-marked form (Mengshen-only edge case without marked field)
+        if len(chars) != len(primary_tokens) or len(chars) != len(practical_tokens):
+            continue
 
-            sequences: list[list[int]] = []
+        seq = [ord(c) for c in chars]
 
-            # ── From Mengshen contextual patterns ─────────────────────────────
-            for pat in rdata.get("mengshen_patterns", []):
-                if "~" not in pat:
-                    continue
-                tilde = pat.index("~")
-                prefix = [ord(c) for c in pat[:tilde]]
-                suffix = [ord(c) for c in pat[tilde + 1:]]
-                seq = prefix + [char_cp] + suffix
-                if len(seq) >= 2:
-                    sequences.append(seq)
-
-            # ── From HSK word evidence ────────────────────────────────────────
-            for word, _pos in rdata.get("hsk_words", []):
-                seq = [ord(c) for c in word]
-                if len(seq) >= 2 and seq not in sequences:
-                    sequences.append(seq)
-
-            if sequences:
-                rules.append({
-                    "char": char,
-                    "char_cp": char_cp,
-                    "v1": v1,
-                    "reading": reading_num,
-                    "marked": marked,
-                    "sequences": sequences,
-                })
+        for i, (primary, practical) in enumerate(zip(primary_tokens, practical_tokens)):
+            if primary == practical:
+                continue
+            rules.append({
+                "char": chars[i],
+                "char_cp": ord(chars[i]),
+                "char_idx": i,
+                "v1": primary,
+                "reading": practical,
+                "marked": practical,
+                "sequences": [seq],
+            })
+            break  # one ligature glyph per word; first differing position wins
 
     return rules
 
@@ -272,7 +256,6 @@ def run(font_path: str, combined_path: str, syllable_path: str,
         char_gname = best_cmap[rule["char_cp"]]
         pua_name = rule["pua_name"]
         base_gname = _get_base_component(font, char_gname)
-        char_idx = rule["sequences"][0].index(rule["char_cp"])  # position in seq
 
         for seq in rule["sequences"]:
             seq_key = tuple(seq)
@@ -280,7 +263,7 @@ def run(font_path: str, combined_path: str, syllable_path: str,
                 continue
             seen_seqs.add(seq_key)
 
-            char_idx = seq.index(rule["char_cp"])
+            char_idx = rule.get("char_idx", seq.index(rule["char_cp"]))
             comps: list[tuple[str, int]] = []
             x = 0
             for i, cp in enumerate(seq):

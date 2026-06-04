@@ -226,17 +226,9 @@ def generate_hsk_ligatures(
         # This word qualifies for ligature
         ligature_entry = {
             "simplified": simplified,
-            "traditional": traditional,
             "hsk_level": hsk_level,
-            "characters": [
-                {
-                    "char": ci.char,
-                    "codepoint": ci.codepoint,
-                    "primary_reading": ci.primary_reading,
-                    "hsk_reading": ci.hsk_reading,
-                }
-                for ci in characters_info
-            ],
+            "primary_reading": " ".join(ci.primary_reading for ci in characters_info),
+            "practical_reading": " ".join(ci.hsk_reading for ci in characters_info),
         }
         ligatures.append(ligature_entry)
     
