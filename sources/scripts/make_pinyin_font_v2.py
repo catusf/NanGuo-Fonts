@@ -786,7 +786,7 @@ def main():
     )
 
     print(f"\n{'=' * 58}")
-    print(f" {a.name} {sf['subfamily']} Font Builder (v2)")
+    print(f" {a.name} {sf['subfamily']} Font Builder")
     print(f"{'=' * 58}")
 
     print("[1] Detecting font metrics...")

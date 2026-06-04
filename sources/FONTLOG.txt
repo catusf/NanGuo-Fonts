@@ -48,6 +48,15 @@ Technical Notes
 
 ChangeLog
 ---------
+2026-06-04  v1.0.4  Neutral-tone ligature fallback
+  - add_ligatures.py: when a bare (neutral-tone) syllable such as "hou" or
+    "duo" fails the syllable_inventory lookup, the script now strips diacritics
+    from all inventory keys and resolves to the nearest toned variant's PUA
+    glyph instead of skipping the ligature entirely. Result: no-pua skips
+    dropped from 112 to 1 (séi for 谁 — a non-standard reading with no PUA);
+    kept ligatures rose from 11,659 to 11,769.
+
+
 2026-05-21  v1.0.3  Bare-hanzi fallback + neutral-tone alternates
   - Variants whose Hanzi Pinyin slot is null now render the bare hanzi
     (the source font's unaltered character outline) instead of mapping

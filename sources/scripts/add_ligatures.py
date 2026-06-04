@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import unicodedata
 from pathlib import Path
 
 from fontTools.ttLib.tables import otTables
@@ -30,6 +31,8 @@ from fontTools.ttLib import TTFont
 from fontTools.ttLib.tables._g_l_y_f import (
     ARGS_ARE_XY_VALUES, ROUND_XY_TO_GRID, Glyph, GlyphComponent,
 )
+from fontTools.pens.ttGlyphPen import TTGlyphPen
+from fontTools.pens.transformPen import TransformPen
 
 COMP_FLAGS = ROUND_XY_TO_GRID | ARGS_ARE_XY_VALUES
 
@@ -37,16 +40,16 @@ COMP_FLAGS = ROUND_XY_TO_GRID | ARGS_ARE_XY_VALUES
 # ── Data loading ──────────────────────────────────────────────────────────────
 
 def load_rules(combined_path: Path) -> list[dict]:
-    """Parse all_ligatures.json into a flat list of rule records.
+    """Parse all_ligatures.json into one record per word.
 
     Each record:
-        char      : the single hanzi (str)
-        char_cp   : its codepoint (int)
-        char_idx  : position of this char within the word sequence
-        v1        : tone-marked primary reading (syllable_inventory key)
-        reading   : tone-marked contextual reading
-        marked    : same as reading (tone-marked, for syllable_inventory lookup)
-        sequences : single-element list containing the word's codepoint list
+        seq      : list of codepoints for the full word
+        sequences: [seq] (single-element list for compat)
+        changes  : list of {char_idx, char, char_cp, v1, marked} for every
+                   position whose practical reading differs from primary.
+                   All positions are captured so a single ligature composite
+                   can show every corrected ruby in the word (e.g. 觉得:
+                   both 觉 jiào→jué AND 得 dé→de in one glyph).
     """
     data: list[dict] = json.loads(combined_path.read_text(encoding="utf-8"))
     rules: list[dict] = []
@@ -60,20 +63,14 @@ def load_rules(combined_path: Path) -> list[dict]:
             continue
 
         seq = [ord(c) for c in chars]
-
-        for i, (primary, practical) in enumerate(zip(primary_tokens, practical_tokens)):
-            if primary == practical:
-                continue
-            rules.append({
-                "char": chars[i],
-                "char_cp": ord(chars[i]),
-                "char_idx": i,
-                "v1": primary,
-                "reading": practical,
-                "marked": practical,
-                "sequences": [seq],
-            })
-            break  # one ligature glyph per word; first differing position wins
+        changes = [
+            {"char_idx": i, "char": chars[i], "char_cp": ord(chars[i]),
+             "v1": primary, "marked": practical}
+            for i, (primary, practical) in enumerate(zip(primary_tokens, practical_tokens))
+            if primary != practical
+        ]
+        if changes:
+            rules.append({"seq": seq, "sequences": [seq], "changes": changes})
 
     return rules
 
@@ -101,6 +98,67 @@ def _make_ligature_glyph(components: list[tuple[str, int]]) -> Glyph:
         c.y = 0
         g.components.append(c)
     return g
+
+
+# ── Neutral-tone ruby synthesis ───────────────────────────────────────────────
+
+# Ruby zone geometry derived from existing PUA glyphs (e.g. uniE253):
+# advance=1000, content x=186..815 (629 wide), y=959..1299 (340 tall).
+_RUBY_BASELINE      = 959
+_RUBY_RIGHT         = 815
+_RUBY_LEFT          = 186
+_RUBY_HEIGHT        = 340   # toned PUA: 1299 - 959 (tone 2/4 with accent)
+_RUBY_NEUTRAL_HEIGHT = 311  # neutral-tone PUA: 1270 - 959 (no diacritic above)
+_RUBY_ADV           = 1000
+
+
+def _make_neutral_ruby_glyph(font: TTFont, syllable: str) -> Glyph | None:
+    """Synthesize a ruby glyph for a neutral-tone syllable from Latin letters.
+
+    Scales the individual letter outlines to fit the ruby zone and centers
+    them horizontally within the cell, matching the geometry of PUA glyphs
+    copied from the reference font.
+    """
+    cmap = font["cmap"].getBestCmap()
+    glyf_table = font["glyf"]
+    hmtx = font["hmtx"]
+
+    letters: list[tuple[str, Glyph, int]] = []
+    for ch in syllable:
+        gname = cmap.get(ord(ch))
+        if not gname:
+            return None
+        g = glyf_table[gname]
+        if g.numberOfContours <= 0:
+            return None
+        letters.append((gname, g, hmtx.metrics[gname][0]))
+
+    if not letters:
+        return None
+
+    total_adv = sum(adv for _, _, adv in letters)
+    # Use xMax of tallest letter (ascenders only; ignore descenders for scale)
+    max_h = max(g.yMax for _, g, _ in letters)
+    if max_h <= 0:
+        return None
+
+    # Primary constraint: match the neutral-tone ruby height (311 u — capheight
+    # of neutral PUA glyphs like "ba", "bei"; toned PUA reach 340 via diacritics).
+    # Secondary constraint: letters must not overflow the 1000-unit advance.
+    scale = min(_RUBY_NEUTRAL_HEIGHT / max_h, _RUBY_ADV / total_adv)
+
+    # Center the text horizontally in the 1000-unit cell
+    scaled_w = total_adv * scale
+    x = round((_RUBY_ADV - scaled_w) / 2)
+
+    pen = TTGlyphPen(None)
+    for gname, g, adv in letters:
+        # Translate so letter baseline (y=0) aligns to _RUBY_BASELINE
+        tf = (scale, 0, 0, scale, x, _RUBY_BASELINE)
+        g.draw(TransformPen(pen, tf), glyf_table)
+        x += adv * scale
+
+    return pen.glyph()
 
 
 # ── vmtx sync ────────────────────────────────────────────────────────────────
@@ -196,6 +254,15 @@ def run(font_path: str, combined_path: str, syllable_path: str,
         dry_run: bool = False) -> None:
 
     inv: dict[str, dict] = json.loads(Path(syllable_path).read_text(encoding="utf-8"))
+
+    def _bare(s: str) -> str:
+        return "".join(c for c in unicodedata.normalize("NFD", s)
+                       if unicodedata.category(c) != "Mn")
+
+    bare_to_pua: dict[str, dict] = {}
+    for key, val in inv.items():
+        bare_to_pua.setdefault(_bare(key), val)
+
     all_rules = load_rules(Path(combined_path))
 
     font = TTFont(font_path)
@@ -211,15 +278,46 @@ def run(font_path: str, combined_path: str, syllable_path: str,
     kept: list[dict] = []
     skipped_no_pua = 0
     skipped_missing_cmap = 0
+    # Synthesised neutral-tone ruby glyphs: name → (Glyph, metrics)
+    neutral_rubies: dict[str, tuple[Glyph, tuple[int, int]]] = {}
+
+    def _resolve_pua(marked: str, char: str, char_cp: int) -> str | None:
+        """Return a pua glyph name for `marked`, or None to skip the word."""
+        pua_meta = inv.get(marked)
+        if pua_meta is None and _bare(marked) != marked:
+            pua_meta = bare_to_pua.get(_bare(marked))
+            if pua_meta is not None:
+                inv[marked] = pua_meta
+        if pua_meta is not None:
+            return f"uni{pua_meta['pua'].upper()}"
+        if _bare(marked) != marked:
+            # Toned reading with no PUA at all.
+            print(f"WARNING: no PUA glyph for reading \"{marked}\" "
+                  f"(char U+{char_cp:04X} {char}), skipping")
+            return None
+        # Bare (neutral-tone) syllable: synthesise a ruby glyph on demand.
+        ruby_name = f"ruby.{marked}"
+        if ruby_name not in neutral_rubies:
+            g = _make_neutral_ruby_glyph(font, marked)
+            if g is None:
+                print(f"WARNING: cannot synthesise ruby for \"{marked}\" "
+                      f"(char U+{char_cp:04X} {char}), skipping")
+                return None
+            neutral_rubies[ruby_name] = (g, (_RUBY_ADV, 0))
+        return ruby_name
 
     for rule in all_rules:
-        pua_meta = inv.get(rule["marked"])
-        if pua_meta is None:
-            print(
-                f"WARNING: no PUA glyph for reading \"{rule['marked']}\" "
-                f"(char U+{rule['char_cp']:04X} {rule['char']}), skipping"
-            )
-            skipped_no_pua += 1
+        # Resolve PUA glyph name for every changed character in the word.
+        resolved: list[tuple[int, str]] = []  # (char_idx, pua_name)
+        skip = False
+        for ch in rule["changes"]:
+            pua_name = _resolve_pua(ch["marked"], ch["char"], ch["char_cp"])
+            if pua_name is None:
+                skipped_no_pua += 1
+                skip = True
+                break
+            resolved.append((ch["char_idx"], pua_name))
+        if skip:
             continue
 
         valid_seqs = []
@@ -231,8 +329,7 @@ def run(font_path: str, combined_path: str, syllable_path: str,
                 valid_seqs.append(seq)
 
         if valid_seqs:
-            kept.append({**rule, "sequences": valid_seqs,
-                         "pua_name": f"uni{pua_meta['pua'].upper()}"})
+            kept.append({**rule, "sequences": valid_seqs, "resolved": resolved})
 
     print(
         f"Rules: total={len(all_rules)}  kept={len(kept)}  "
@@ -242,8 +339,11 @@ def run(font_path: str, combined_path: str, syllable_path: str,
     if dry_run:
         for r in kept:
             for seq in r["sequences"]:
-                print(f"  {r['char']} {r['v1']!r}→{r['reading']!r}  "
-                      f"seq={''.join(chr(c) for c in seq)!r}")
+                changes_str = ", ".join(
+                    f"{ch['char']} {ch['v1']!r}→{ch['marked']!r}"
+                    for ch in r["changes"]
+                )
+                print(f"  {''.join(chr(c) for c in seq)!r}  [{changes_str}]")
         return
 
     # ── Build new glyphs ──────────────────────────────────────────────────────
@@ -253,9 +353,8 @@ def run(font_path: str, combined_path: str, syllable_path: str,
     seen_seqs: set[tuple] = set()
 
     for rule in kept:
-        char_gname = best_cmap[rule["char_cp"]]
-        pua_name = rule["pua_name"]
-        base_gname = _get_base_component(font, char_gname)
+        # Map char_idx → pua_name for every changed position in this word.
+        change_map: dict[int, str] = dict(rule["resolved"])
 
         for seq in rule["sequences"]:
             seq_key = tuple(seq)
@@ -263,14 +362,14 @@ def run(font_path: str, combined_path: str, syllable_path: str,
                 continue
             seen_seqs.add(seq_key)
 
-            char_idx = rule.get("char_idx", seq.index(rule["char_cp"]))
             comps: list[tuple[str, int]] = []
             x = 0
             for i, cp in enumerate(seq):
                 g_cp = best_cmap[cp]
-                if i == char_idx:
+                if i in change_map:
+                    base_gname = _get_base_component(font, g_cp)
                     comps.append((base_gname, x))
-                    comps.append((pua_name, x))
+                    comps.append((change_map[i], x))
                 else:
                     comps.append((g_cp, x))
                 x += adv(g_cp)
@@ -284,14 +383,16 @@ def run(font_path: str, combined_path: str, syllable_path: str,
             input_gnames = [best_cmap[cp] for cp in seq]
             liga_rules.append((input_gnames, liga_name))
 
-    print(f"New glyphs={len(new_glyphs)}  GSUB rules={len(liga_rules)}")
+    print(f"New glyphs={len(new_glyphs)}  neutral rubies={len(neutral_rubies)}  GSUB rules={len(liga_rules)}")
 
     # ── Inject into font ──────────────────────────────────────────────────────
-    new_order = glyph_order + [n for n in new_glyphs if n not in glyph_order]
+    all_new_glyphs = {**{n: g for n, (g, _) in neutral_rubies.items()}, **new_glyphs}
+    all_new_metrics = {**{n: m for n, (_, m) in neutral_rubies.items()}, **new_metrics}
+    new_order = glyph_order + [n for n in all_new_glyphs if n not in glyph_order]
     font.setGlyphOrder(new_order)
-    for name, g in new_glyphs.items():
+    for name, g in all_new_glyphs.items():
         glyf[name] = g
-    for name, m in new_metrics.items():
+    for name, m in all_new_metrics.items():
         hmtx.metrics[name] = m
 
     _add_liga_lookup(font, liga_rules)
