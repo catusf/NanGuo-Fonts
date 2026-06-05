@@ -204,8 +204,8 @@ def main() -> None:
     stats = {"hsk": 0, "pinlu": 0, "cc": 0, "fallback": 0, "multi_only": 0}
     neutral_in_v6 = 0
 
-    for cp_hex in old_het:
-        ch = chr(int(cp_hex, 16))
+    for ch in old_het:
+        pinlu_key = f"{ord(ch):04X}"
         readings: list[str] = []
         seen: set[str] = set()
 
@@ -215,12 +215,12 @@ def main() -> None:
                 seen.add(r)
                 readings.append(r)
 
-        in_pinlu = bool(pinlu.get(cp_hex))
+        in_pinlu = bool(pinlu.get(pinlu_key))
         in_hsk = ch in hsk_single
 
         if in_pinlu:
             # kHanyuPinlu is frequency-ordered → determines V1
-            for r in pinlu[cp_hex]:
+            for r in pinlu[pinlu_key]:
                 add(r)
             # HSK single-char readings as additional variants
             for r in hsk_single.get(ch, []):
@@ -250,12 +250,12 @@ def main() -> None:
 
         if not readings:
             # Last resort: keep V1 from existing map
-            v1 = old_het[cp_hex][0]
+            v1 = old_het[ch][0]
             if v1:
                 add(v1)
 
         slots = build_slots(readings)
-        new_het[cp_hex] = slots
+        new_het[ch] = slots
 
         if slots[5] is not None and is_neutral(slots[5]):
             neutral_in_v6 += 1

@@ -223,8 +223,9 @@ def main() -> None:
         added += 1
     print(f"  syllable_inventory: {len(inv):,} total ({added} new)")
 
+    het_char = {chr(int(k, 16)): v for k, v in het.items()}
     (DATA / "heteronym_map.json").write_text(
-        json.dumps(het, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(het_char, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     inv_path.write_text(
         json.dumps(inv, ensure_ascii=False, indent=2), encoding="utf-8"

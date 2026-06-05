@@ -135,7 +135,7 @@ def load_v1_map() -> dict[int, str]:
     """Return {codepoint: tone_numbered_primary_reading} from heteronym_map slot 0."""
     raw = json.loads((DATA / "heteronym_map.json").read_text(encoding="utf-8"))
     return {
-        int(k, 16): tone_marked_to_numbered(v[0])
+        ord(k): tone_marked_to_numbered(v[0])
         for k, v in raw.items()
         if v[0]
     }

@@ -62,7 +62,7 @@ def main() -> None:
                 ordered.append(r)
                 seen.add(r)
         if len(ordered) > 1:
-            het[cp_hex] = ordered[:6]
+            het[ch] = ordered[:6]
 
     inv: dict[str, dict[str, str]] = {
         syl: {"pua": pua_hex} for pua_hex, syl in pua_to_syl.items()

@@ -100,13 +100,13 @@ def tone_numbered_to_marked(syllable: str) -> str:
 # ── heteronym map ─────────────────────────────────────────────────────────────
 
 def load_primary_readings(path: Path) -> dict[str, str]:
-    """Return {hex_codepoint: tone_numbered_primary_reading} from heteronym_map slot 0."""
+    """Return {char: tone_numbered_primary_reading} from heteronym_map slot 0."""
     data: dict[str, list] = json.loads(path.read_text(encoding="utf-8"))
     result: dict[str, str] = {}
-    for hex_cp, variants in data.items():
+    for ch, variants in data.items():
         primary_marked = variants[0]
         if primary_marked is not None:
-            result[hex_cp.upper()] = tone_marked_to_numbered(primary_marked)
+            result[ch] = tone_marked_to_numbered(primary_marked)
     return result
 
 
@@ -151,7 +151,7 @@ def analyze_word(
     any_differs = False
 
     for ch, syl_num in zip(simplified, numbered_syllables):
-        cp = f"{ord(ch):04X}"
+        cp = ch
         primary_num = primary_readings.get(cp)
 
         if primary_num is None:
@@ -203,9 +203,8 @@ def _flatten(chars: list[dict], simplified: str, traditional: str, hsk_level: in
 
 # ── HSK source ────────────────────────────────────────────────────────────────
 
-def load_hsk_words(path: Path, primary_readings: dict[str, str]) -> list[dict]:
-    """Load hsk_words.json and return qualifying ligature entries."""
-    raw: list[dict] = json.loads(path.read_text(encoding="utf-8"))
+def load_hsk_words(raw: list[dict], primary_readings: dict[str, str]) -> list[dict]:
+    """Return qualifying ligature entries from already-loaded hsk_words data."""
     entries: list[dict] = []
 
     for item in raw:
@@ -297,8 +296,11 @@ def main() -> int:
 
     if args.verbose:
         print("Processing HSK words...", file=sys.stderr)
-    hsk_entries = load_hsk_words(args.hsk, primary_readings)
-    seen: set[str] = {e["simplified"] for e in hsk_entries}
+    hsk_data: list[dict] = json.loads(args.hsk.read_text(encoding="utf-8"))
+    hsk_entries = load_hsk_words(hsk_data, primary_readings)
+    # HSK is authoritative: exclude every HSK word from CEDICT so alternative
+    # CEDICT entries (e.g. 结果 jie1 guo3) don't override the correct HSK reading.
+    seen: set[str] = {e.get("simplified", "") for e in hsk_data if len(e.get("simplified", "")) >= 2}
     if args.verbose:
         print(f"  {len(hsk_entries)} HSK ligature entries", file=sys.stderr)
 

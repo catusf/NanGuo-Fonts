@@ -307,11 +307,11 @@ def phase3_composites(font_path: str, syl_map_path: str, pmap: dict,
     dot = max(1, total // 20)
 
     # Sort by codepoint for deterministic ordering.
-    for idx, cp_hex in enumerate(sorted(pmap.keys(), key=lambda h: int(h, 16))):
+    for idx, cp_hex in enumerate(sorted(pmap.keys(), key=ord)):
         prim_syl = pmap[cp_hex]
         if idx % dot == 0:
             print(f"  [{idx / total * 100:3.0f}%]", end="\r")
-        cp = int(cp_hex, 16)
+        cp = ord(cp_hex)
         orig = cm12.get(cp)
         if not orig:
             continue
@@ -603,7 +603,7 @@ def strip_unmapped_hanzi(font, pmap: dict):
     Latin / Greek / Cyrillic / symbols are preserved; only CJK ranges are
     pruned. Glyphs themselves stay in glyf (per spec §8).
     """
-    keep_cps = {int(h, 16) for h in pmap.keys()}
+    keep_cps = {ord(c) for c in pmap.keys()}
     for t in font["cmap"].tables:
         if not hasattr(t, "cmap") or not t.cmap:
             continue
@@ -651,7 +651,7 @@ def phase4_variants(font_path: str, vm_path: str, cfg_dict: dict, cfg: dict,
             if not hasattr(t, "cmap") or not t.cmap:
                 continue
             for cp_hex, vnames in variant_map.items():
-                cp = int(cp_hex, 16)
+                cp = ord(cp_hex)
                 if cp in t.cmap:
                     t.cmap[cp] = vnames[k]
 

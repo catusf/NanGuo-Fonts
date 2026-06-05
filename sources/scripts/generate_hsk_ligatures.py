@@ -124,9 +124,9 @@ def analyze_hsk_word(
     
     for char, pinyin_tone_marked in zip(word, pinyin_parts):
         codepoint_hex = _char_to_hex_codepoint(char)
-        
+
         # Look up primary reading
-        primary_variants = heteronym_map.get(codepoint_hex)
+        primary_variants = heteronym_map.get(char)
         if primary_variants is None:
             # Character not in heteronym_map; skip this word
             return None
