@@ -7,7 +7,7 @@ TTC_S    := fonts/Songti/ttc
 
 .PHONY: all fonts ligadata injectliga bundle samples tests clean
 
-all: fonts ligadata injectliga bundle samples tests
+all: clean fonts ligadata injectliga bundle samples tests
 
 # ── Build base TTF font files ────────────────────────────────────────────────
 fonts:

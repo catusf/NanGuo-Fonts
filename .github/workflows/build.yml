@@ -29,6 +29,15 @@ jobs:
       - name: Build fonts
         run: make fonts
 
+      - name: Generate ligature data
+        run: make ligadata
+
+      - name: Inject ligatures
+        run: make injectliga
+
+      - name: Bundle TTC collections
+        run: make bundle
+
       - name: Build samples
         run: make samples
 
