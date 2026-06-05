@@ -7,7 +7,7 @@
 # Semantic version. Written into name[5] as "Version X.YYY" (Google Fonts
 # canonical form: minor*100 + patch, zero-padded to 3 digits) and into
 # head.fontRevision as the matching fixed-point number. Bump on every release.
-version: "1.1.0"
+version: "1.2.0"
 
 upm_reference: 1000
 
