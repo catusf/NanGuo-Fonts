@@ -3,3 +3,4 @@ pypinyin>=0.51
 fontbakery>=0.12
 pytest>=8.0
 pyyaml>=6.0
+pycccedict>=1.2.0
