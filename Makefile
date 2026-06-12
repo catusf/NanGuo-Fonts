@@ -47,6 +47,8 @@ ligadata:
 	    --cccedict data/cccedict-ligatures.json \
 	    --output   data/all_ligatures.json
 
+	cd $(SOURCES) && $(PYTHON) scripts/make_ligatures_md.py 
+
 # ── Inject contextual reading ligatures into variant-1 fonts ─────────────────
 injectliga:
 	@echo "=== Injecting ligatures into variant-1 fonts ==="
