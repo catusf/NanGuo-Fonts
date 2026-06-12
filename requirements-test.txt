@@ -1,6 +1,6 @@
 fonttools>=4.50
 pypinyin>=0.51
-fontbakery>=0.12
+fontbakery[googlefonts]>=0.12
 pytest>=8.0
 pyyaml>=6.0
 pycccedict>=1.2.0

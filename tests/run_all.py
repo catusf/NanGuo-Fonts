@@ -14,7 +14,7 @@ import sys
 def main() -> int:
     root = pathlib.Path(__file__).resolve().parent.parent
     return subprocess.call(
-        [sys.executable, "-m", "pytest", "tests", "-v", "--tb=short"],
+        [sys.executable, "-m", "pytest", "tests"],
         cwd=str(root),
     )
 

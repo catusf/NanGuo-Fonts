@@ -62,6 +62,8 @@ injectliga:
 	        --combined  data/all_ligatures.json \
 	        --syllables data/syllable_inventory.json; \
 	done
+	@echo "=== Ligature counts after injection ==="
+	$(PYTHON) scripts/count_ligatures.py --only-v1
 
 # ── Bundle TTF variants into TTC collections ─────────────────────────────────
 bundle:
