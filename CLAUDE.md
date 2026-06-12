@@ -20,7 +20,7 @@ here yet — they live wherever the skill is invoked from.
 | `requirements/Make_pinyin_fonts_skills.md` | The build recipe (inputs, CLI, pipeline phases) |
 | `scripts/compare_fonts.py` | Generates the comparison report (input vs. reference output) that `requirements/Output_font_requirements.md` is based on. |
 | `.venv/` | Python 3 venv — see `requirements-test.txt` for test deps |
-| `requirements-test.txt` | Pinned test dependencies (fontTools, pypinyin, fontbakery, pytest) |
+| `requirements-test.txt` | Pinned test dependencies (fontTools, pypinyin, pytest) |
 | `pytest.ini` | pytest configuration (testpaths, markers) |
 | `tests/` | Quality & compatibility test suite — `python tests/run_all.py` |
 | `test.py` | Throwaway scratch file, safe to ignore or replace |
@@ -114,7 +114,7 @@ Target platforms / consumers:
 | Microsoft Office | Word, PowerPoint, Excel pick up all six variants as distinct family members; ruby composites render at common sizes (10/12/16/24/36 pt); no missing-glyph boxes for the GB2312 set. |
 | macOS | Installs via Font Book without validation errors; renders in TextEdit, Pages, Safari; the six variants appear as separate faces, not collapsed into one family. |
 | Linux | `fc-cache -fv` picks them up; renders in GNOME Text Editor / LibreOffice / Firefox under fontconfig + FreeType; hinting doesn't smear the ruby at body sizes. |
-| Google Fonts | Passes [Font Bakery](https://github.com/fonttools/fontbakery) `googlefonts` profile cleanly, including `METADATA.pb`, `OFL.txt`, and `DESCRIPTION.en_us.html` lints. |
+| Google Fonts | Passes [fontspector](https://github.com/fonttools/fontspector) `googlefonts` profile cleanly, including `METADATA.pb`, `OFL.txt`, and `DESCRIPTION.en_us.html` lints. |
 
 ### Running the suite
 
@@ -138,7 +138,7 @@ build regression.
 | `test_composites.py` | Variant `-1` CJK glyphs are 2-component composites with a PUA-named ruby sub-glyph |
 | `test_variants.py` | Sans/Serif share `name[7]` (Preferred Family); PostScript suffixes are `-1`..`-6` and unique |
 | `test_heteronyms.py` | For pypinyin-confirmed heteronyms, variant `-2` glyph differs from `-1` (≥70%); higher variants still provide some divergence |
-| `test_fontbakery.py` | Runs `fontbakery check-googlefonts` per family, fails on any FAIL/ERROR |
+| `test_fontspector.py` | Runs `fontspector --profile googlefonts` per family, fails on any FAIL/FATAL/ERROR |
 
 ### Known build-pipeline gaps (currently `xfail`)
 
@@ -151,14 +151,12 @@ them — fix in `make_pinyin_font.py` and the `xfail` markers will flip to
 - **OS/2.fsSelection `USE_TYPO_METRICS` bit (7) not set** — without it
   Windows GDI and Mac/Linux disagree on line height. All 12 TTFs.
 
-### Fontbakery on Windows / Python 3.14
+### Installing fontspector
 
-The `googlefonts` profile transitively requires `shaperglot` (a Rust wheel).
-If you're on Python 3.14 + Windows without Visual Studio Build Tools,
-`pip install fontbakery[googlefonts]` will fail to compile it. The
-fontbakery test will then **skip** with a clear message. Either install
-Build Tools, drop to Python 3.13 (prebuilt wheels exist), or run the
-fontbakery gate on a Linux/Mac CI runner.
+fontspector is a standalone Rust binary — no Python package needed. Download
+a pre-built release for your platform from
+https://github.com/fonttools/fontspector/releases and place it on `PATH`.
+The test will **skip** with a clear message if the binary is not found.
 
 ## Things to keep in mind when editing here
 

@@ -1,19 +1,14 @@
 #!/usr/bin/env python3
-"""generate_cccedict_ligatures.py — Generate ligature data from HSK + CCCEDICT.
+"""generate_cccedict_ligatures.py — Generate ligature data from CCCEDICT.
 
 Reads heteronym_map.json and compares each multi-character word's per-character
 readings against the primary (variant-1) reading.  Words where at least one
-character uses a non-primary reading are written to cccedict-ligatures.json.
-
-Priority:
-  1. hsk_words.json  — curated HSK-3.0 vocabulary with authoritative pinyin
-  2. CCCEDICT (pycccedict) — broad coverage for remaining words
+character uses a non-primary reading are written to the output file.
 
 Usage:
     python generate_cccedict_ligatures.py \
         --heteronym  sources/data/heteronym_map.json \
-        --hsk        hsk_words.json \
-        --output     sources/data/cccedict-ligatures.json
+        --output     sources/data/all_ligatures.json
 """
 from __future__ import annotations
 
@@ -201,49 +196,17 @@ def _flatten(chars: list[dict], simplified: str, traditional: str, hsk_level: in
     }
 
 
-# ── HSK source ────────────────────────────────────────────────────────────────
-
-def load_hsk_words(raw: list[dict], primary_readings: dict[str, str]) -> list[dict]:
-    """Return qualifying ligature entries from already-loaded hsk_words data."""
-    entries: list[dict] = []
-
-    for item in raw:
-        simplified = item.get("simplified", "")
-        if len(simplified) < 2:
-            continue
-
-        forms = item.get("forms", [])
-        if not forms:
-            continue
-
-        numeric_str = forms[0].get("transcriptions", {}).get("numeric", "")
-        if not numeric_str:
-            continue
-
-        traditional = forms[0].get("traditional", simplified)
-        hsk_level = item.get("hsk_level", 0)
-
-        numbered = _normalize_erhua([s.lower() for s in numeric_str.strip().split()])
-        chars = analyze_word(simplified, numbered, primary_readings)
-        if chars is not None:
-            entries.append(_flatten(chars, simplified, traditional, hsk_level))
-
-    return entries
-
-
 # ── CCCEDICT source ───────────────────────────────────────────────────────────
 
 def _is_all_cjk(word: str) -> bool:
     return all("一" <= c <= "鿿" or "㐀" <= c <= "䶿" for c in word)
 
 
-def load_cccedict_words(
-    primary_readings: dict[str, str],
-    seen: set[str],
-) -> list[dict]:
-    """Load CCCEDICT and return qualifying ligature entries not already in seen."""
+def load_cccedict_words(primary_readings: dict[str, str]) -> list[dict]:
+    """Load CCCEDICT and return qualifying ligature entries."""
     cc = CcCedict()
     entries: list[dict] = []
+    seen: set[str] = set()
 
     for entry in cc.get_entries():
         simplified = entry.get("simplified", "")
@@ -274,18 +237,13 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--heteronym", type=Path, required=True,
                     help="Path to heteronym_map.json")
-    ap.add_argument("--hsk", type=Path, required=True,
-                    help="Path to hsk_words.json")
     ap.add_argument("--output", type=Path, required=True,
-                    help="Output path for cccedict-ligatures.json")
+                    help="Output path for all_ligatures.json")
     ap.add_argument("--verbose", action="store_true")
     args = ap.parse_args()
 
     if not args.heteronym.exists():
         print(f"ERROR: {args.heteronym} not found", file=sys.stderr)
-        return 1
-    if not args.hsk.exists():
-        print(f"ERROR: {args.hsk} not found", file=sys.stderr)
         return 1
 
     if args.verbose:
@@ -295,31 +253,17 @@ def main() -> int:
         print(f"  {len(primary_readings)} characters with primary readings", file=sys.stderr)
 
     if args.verbose:
-        print("Processing HSK words...", file=sys.stderr)
-    hsk_data: list[dict] = json.loads(args.hsk.read_text(encoding="utf-8"))
-    hsk_entries = load_hsk_words(hsk_data, primary_readings)
-    # HSK is authoritative: exclude every HSK word from CEDICT so alternative
-    # CEDICT entries (e.g. 结果 jie1 guo3) don't override the correct HSK reading.
-    seen: set[str] = {e.get("simplified", "") for e in hsk_data if len(e.get("simplified", "")) >= 2}
-    if args.verbose:
-        print(f"  {len(hsk_entries)} HSK ligature entries", file=sys.stderr)
-
-    if args.verbose:
         print("Processing CCCEDICT words...", file=sys.stderr)
-    cc_entries = load_cccedict_words(primary_readings, seen)
+    entries = load_cccedict_words(primary_readings)
     if args.verbose:
-        print(f"  {len(cc_entries)} CCCEDICT ligature entries", file=sys.stderr)
-
-    all_entries = hsk_entries + cc_entries
-    if args.verbose:
-        print(f"Total: {len(all_entries)} ligature entries", file=sys.stderr)
+        print(f"  {len(entries)} CCCEDICT ligature entries", file=sys.stderr)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(
-        json.dumps(all_entries, ensure_ascii=False, indent=2),
+        json.dumps(entries, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    print(f"Wrote {len(all_entries)} entries to {args.output}", file=sys.stderr)
+    print(f"Wrote {len(entries)} entries to {args.output}", file=sys.stderr)
     return 0
 
 

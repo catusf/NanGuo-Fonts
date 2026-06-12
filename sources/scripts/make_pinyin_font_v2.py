@@ -426,6 +426,10 @@ def apply_os2_hhea_metrics(font, m: dict, cfg: dict, cfg_dict: dict):
     os2.usWidthClass = M["os2_width_class"]
     os2.fsType = flags["fs_type"]
     os2.achVendID = cfg["vendor"]["ach_vend_id"]
+    # Clear Latin-2 Eastern Europe codepage bit (bit 1): the source font claims
+    # it but only carries pinyin-related Latin Extended-A glyphs, not the full
+    # Polish/Czech set that fontbakery's missing-codepoints check requires.
+    os2.ulCodePageRange1 &= ~0x02
 
     fs = os2.fsSelection
     if flags["fs_selection_use_typo_metrics_bit_7"]:

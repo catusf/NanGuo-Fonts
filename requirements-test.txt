@@ -1,6 +1,6 @@
 fonttools>=4.50
 pypinyin>=0.51
-fontbakery[googlefonts]>=0.12
+# fontspector is a Rust binary — download from https://github.com/fonttools/fontspector/releases
 pytest>=8.0
 pyyaml>=6.0
 pycccedict>=1.2.0
